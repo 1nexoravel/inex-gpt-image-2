@@ -1,0 +1,21 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Working files (not for commit)
+raw/
+*.psd
+*.ai
+*.sketch
+*.fig
+
+# Original full-size images (use scripts/optimize.sh first)
+*.png
+!assets/images/**/*.png
