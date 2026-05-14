@@ -1,28 +1,30 @@
 # Inex's GPT Image 2 Prompts — Cinematic Anime & Beyond
 
-> 🎨 A curated collection of high-detail prompts for **GPT Image 2** — OpenAI's next-gen image model with pixel-perfect text rendering, cross-image consistency, and commercial-grade illustration quality. Focused on cinematic anime aesthetics, character-reference workflows, and atmospheric storytelling.
+> 🎨 A personal collection of high-detail prompts for **GPT Image 2** — OpenAI's next-gen image model with pixel-perfect text rendering, cross-image consistency, and commercial-grade illustration quality. Focused on cinematic anime aesthetics, character-reference workflows, and atmospheric storytelling.
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 ---
 
 ## 📑 Table of Contents
 
+- [About This Repo](#-about-this-repo)
 - [About GPT Image 2](#-about-gpt-image-2)
 - [How to Use](#-how-to-use)
-- [Categories](#-categories)
-  - [🎭 Commercial Illustration](#-commercial-illustration)
-    - [🚗 Anime Cars](#-anime-cars)
-  - [🖼️ Portraits](#️-portraits)
-  - [🔤 Text Rendering](#-text-rendering)
-  - [📦 Product & Mockups](#-product--mockups)
-  - [🏷️ Logos & Branding](#️-logos--branding)
-  - [🌆 Scenes & Environments](#-scenes--environments)
+- [Prompts](#-prompts)
+  - [🚗 Anime Cars](#-anime-cars)
 - [General Prompting Tips](#-general-prompting-tips)
-- [Contributing](#-contributing)
 - [License](#-license)
+
+---
+
+## 📌 About This Repo
+
+This is a personal dump of GPT Image 2 prompts I use and refine over time. It's not a curated community resource — it's my working library, made public so anyone who finds it useful can copy, remix, or adapt the prompts.
+
+**The prompts are character-agnostic.** They're written as reusable templates: the *character* itself is supplied at generation time via an attached reference image or a free-form description in your own request to the model. The prompts handle composition, lighting, art style, camera angle, mood, and rendering quality — everything *around* the character. This means the same prompt can drive completely different looks depending on the reference you pair it with.
+
+Wherever a prompt requires a reference, it's marked with **📎 Requires**.
 
 ---
 
@@ -39,31 +41,28 @@ This collection focuses on prompts that exploit these strengths, with detailed e
 ## 📖 How to Use
 
 1. Browse the categories below
-2. Click **"Full prompt"** to expand and copy the text
+2. Hover the prompt code block and click the **copy icon** in the top-right corner
 3. Replace placeholder variables in `{CURLY_BRACES}` with your chosen values
-4. For prompts that reference an attached image, upload your character/style reference alongside the prompt
+4. If the prompt is marked **📎 Requires**, attach your character or style reference image to the same chat/request
 5. Paste into GPT Image 2 (via ChatGPT, API, or Sora)
 
 ---
 
-## 📚 Categories
+## 📚 Prompts
 
-### 🎭 Commercial Illustration
+### 🚗 Anime Cars
 
-#### 🚗 Anime Cars
-
-A series exploring cinematic anime illustrations of characters inside premium sports cars, using character-reference attachments and explicit identity-preservation language.
+Cinematic anime illustrations of characters inside premium sports cars, using attached references for identity-lock or style-inspiration workflows.
 
 ---
 
-##### Anime Girl Driving a Supercar at Night
+#### Anime Girl Driving a Supercar at Night
 
 <img src="./assets/images/illustrations/cars/car002.webp" width="600" alt="Anime girl driving a supercar through a neon cyberpunk city at night, cinematic Makoto Shinkai style">
 
-**Category:** Commercial Illustration → Anime Cars · **Tags:** `anime` `cinematic` `cyberpunk` `night` `character-reference` `makoto-shinkai`
+**Category:** Anime Cars · **Tags:** `anime` `cinematic` `cyberpunk` `night` `character-reference` `makoto-shinkai`
 
-<details>
-<summary>📋 Full prompt (click to copy)</summary>
+**📋 Prompt:**
 
 ```
 CAR={McLaren P1 / Nissan GT-R R35 / Lamborghini Revuelto / Porsche 911 GT3 RS / etc}
@@ -81,9 +80,7 @@ Art style: semi-realistic anime illustration, painterly rendering, highly atmosp
 Ultra detailed, masterpiece, best quality, dynamic lighting, expressive eyes, depth of field, film grain, realistic reflections, immersive perspective, high detail environment, elegant color harmony, dramatic night atmosphere.
 ```
 
-</details>
-
-**📎 Requires:** An attached reference image of the character to preserve.
+**📎 Requires:** An attached reference image of the character to preserve. Alternatively, replace the "attached girl" wording with a written character description if you don't have a reference image.
 
 **💡 Why it works:** The prompt opens with an aggressive identity-lock paragraph — explicitly listing *what* must be preserved (facial structure, eye shape, hairstyle, accessories, palette, silhouette, proportions) and *what must not happen* (no replacement, no obscuring, no stylizing away). GPT Image 2 responds very well to negative-space framing like "Do not replace the character." The `{CAR}` placeholder gives you a single swappable variable while everything else stays consistent across renders. The Makoto Shinkai anchor locks in the lighting language; cyberpunk + neon + rain stack mutually reinforcing atmospheric cues.
 
@@ -91,14 +88,13 @@ Ultra detailed, masterpiece, best quality, dynamic lighting, expressive eyes, de
 
 ---
 
-##### Anime Girls in a Convertible at Sunset
+#### Anime Girls in a Convertible at Sunset
 
 <img src="./assets/images/illustrations/cars/car001.webp" width="600" alt="One or two anime girls in a luxury convertible cruising a coastal highway at sunset, cinematic semi-realistic anime style">
 
-**Category:** Commercial Illustration → Anime Cars · **Tags:** `anime` `cinematic` `summer` `convertible` `coastal` `style-reference` `makoto-shinkai`
+**Category:** Anime Cars · **Tags:** `anime` `cinematic` `summer` `convertible` `coastal` `style-reference` `makoto-shinkai`
 
-<details>
-<summary>📋 Full prompt (click to copy)</summary>
+**📋 Prompt:**
 
 ```
 CAR={Any luxury convertible supercar / exotic sports car with a premium modern interior}
@@ -127,43 +123,11 @@ Art style: semi-realistic anime illustration, highly polished painterly renderin
 Ultra detailed, masterpiece, best quality, convertible sports car interior, open roof, luxury atmosphere, immersive perspective, dynamic lighting, realistic reflections, summer mood, glossy paint, high-detail environment, anime cinematic illustration.
 ```
 
-</details>
-
-**📎 Requires:** An attached reference image used as **style inspiration only** (not identity-locked).
+**📎 Requires:** An attached reference image used as **style inspiration only** (not identity-locked). Alternatively, replace the "attached anime girl" wording with a written description of the aesthetic you want as inspiration.
 
 **💡 Why it works:** This is the inverse approach to the night-driving prompt — instead of identity-locking the reference, it explicitly says "*inspired by*… without directly replicating the exact identity." That gives the model permission to create original characters that share the *aesthetic* (palette, fashion, ribbons, hair theme) without copying the face. The `CHARACTERS={1 or 2}` conditional with explicit per-case rules is the key trick: GPT Image 2 follows branching logic well when each branch lists its own positioning, pose, and expression. Pairing identical-styled characters reads naturally as "alternate versions of the same design," which is a much cleaner mental model for the renderer than "two random girls."
 
 **🔧 Variations:** swap sunset for `night blue hour` with neon coastal signage for a darker take; change `bikinis` to `coordinated summer dresses` for a softer, less swimwear-focused composition; replace `coastal highway` with `mountain pass at sunset` for dramatic elevation and curves.
-
----
-
-### 🖼️ Portraits
-
-> *Add your contributions here — see [CONTRIBUTING.md](CONTRIBUTING.md)*
-
----
-
-### 🔤 Text Rendering
-
-> *Add your contributions here — see [CONTRIBUTING.md](CONTRIBUTING.md)*
-
----
-
-### 📦 Product & Mockups
-
-> *Add your contributions here — see [CONTRIBUTING.md](CONTRIBUTING.md)*
-
----
-
-### 🏷️ Logos & Branding
-
-> *Add your contributions here — see [CONTRIBUTING.md](CONTRIBUTING.md)*
-
----
-
-### 🌆 Scenes & Environments
-
-> *Add your contributions here — see [CONTRIBUTING.md](CONTRIBUTING.md)*
 
 ---
 
@@ -172,6 +136,7 @@ Ultra detailed, masterpiece, best quality, convertible sports car interior, open
 These patterns repeat across the prompts in this collection:
 
 - **Use `{CURLY_BRACES}` for swappable variables** — define them at the top of the prompt so the rest stays reusable
+- **Keep the prompt character-agnostic** — describe the scene, lighting, composition, and style; let the character come from an attached reference or a separate description
 - **Identity-lock with explicit lists** — when preserving a reference character, enumerate *exactly* what must be preserved (face, eyes, hair, accessories, palette, silhouette) and *what must not happen* (no replacement, no obscuring)
 - **Use negative-space framing** — "Do not replace the character" works surprisingly well alongside positive descriptions
 - **Distinguish identity-lock vs. style-inspiration** — "preserve her identity exactly" produces a different result from "inspired by the aesthetic without replicating the identity"; pick one and be explicit
@@ -181,17 +146,6 @@ These patterns repeat across the prompts in this collection:
 - **End with quality keywords** — `masterpiece, best quality, ultra detailed, depth of field` at the tail nudges the renderer toward its best output
 - **Short uppercase text works best** — words of 4–8 letters have the highest text-rendering accuracy
 - **Specify text position explicitly** — `"on the chest"`, `"as a banner above"`, `"in the lower-right corner"`
-
-## 🤝 Contributing
-
-Contributions are very welcome! Read [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
-
-Quick version:
-
-1. Fork the repo
-2. Add your image to `assets/images/<category>/`
-3. Add an entry to `README.md` using the [standard template](CONTRIBUTING.md#prompt-template)
-4. Open a PR
 
 ## 📄 License
 
