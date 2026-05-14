@@ -32,39 +32,6 @@ Wherever a prompt requires a reference, it's marked with **📎 Requires**.
 
 The character reference images I used while testing and refining these prompts live in [`assets/images/base/`](./assets/images/base/). Browse them to see what kind of input each prompt was tuned against — useful when comparing your own output against my example renders.
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <a href="./assets/images/base/001.webp">
-        <img src="./assets/images/base/001.webp" width="320" alt="Base character 001">
-      </a>
-      <br><sub><b>Base 001</b></sub>
-    </td>
-    <td align="center" width="50%">
-      <a href="./assets/images/base/002.webp">
-        <img src="./assets/images/base/002.webp" width="320" alt="Base character 002">
-      </a>
-      <br><sub><b>Base 002</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="./assets/images/base/003.webp">
-        <img src="./assets/images/base/003.webp" width="320" alt="Base character 003">
-      </a>
-      <br><sub><b>Base 003</b></sub>
-    </td>
-    <td align="center" width="50%">
-      <a href="./assets/images/base/004.webp">
-        <img src="./assets/images/base/004.webp" width="320" alt="Base character 004">
-      </a>
-      <br><sub><b>Base 004</b></sub>
-    </td>
-  </tr>
-</table>
-
----
-
 ## 🚀 About GPT Image 2
 
 GPT Image 2 stands out in three areas where previous models struggled:
