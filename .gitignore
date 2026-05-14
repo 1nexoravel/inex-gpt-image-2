@@ -18,4 +18,6 @@ raw/
 
 # Original full-size images (use scripts/optimize.sh first)
 *.png
+*.jpeg
+*.jpg
 !assets/images/**/*.png

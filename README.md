@@ -9,6 +9,7 @@
 ## 📑 Table of Contents
 
 - [About This Repo](#-about-this-repo)
+  - [Character Gallery](#-character-gallery)
 - [About GPT Image 2](#-about-gpt-image-2)
 - [How to Use](#-how-to-use)
 - [Prompts](#-prompts)
@@ -27,6 +28,41 @@ This is a personal dump of GPT Image 2 prompts I use and refine over time. It's 
 
 Wherever a prompt requires a reference, it's marked with **📎 Requires**.
 
+### 🧍 Character Gallery
+
+The character reference images I used while testing and refining these prompts live in [`assets/images/base/`](./assets/images/base/). Browse them to see what kind of input each prompt was tuned against — useful when comparing your own output against my example renders.
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="./assets/images/base/001.webp">
+        <img src="./assets/images/base/001.webp" width="320" alt="Base character 001">
+      </a>
+      <br><sub><b>Base 001</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <a href="./assets/images/base/002.webp">
+        <img src="./assets/images/base/002.webp" width="320" alt="Base character 002">
+      </a>
+      <br><sub><b>Base 002</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <a href="./assets/images/base/003.webp">
+        <img src="./assets/images/base/003.webp" width="320" alt="Base character 003">
+      </a>
+      <br><sub><b>Base 003</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <a href="./assets/images/base/004.webp">
+        <img src="./assets/images/base/004.webp" width="320" alt="Base character 004">
+      </a>
+      <br><sub><b>Base 004</b></sub>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## 🚀 About GPT Image 2
@@ -42,10 +78,11 @@ This collection focuses on prompts that exploit these strengths, with detailed e
 ## 📖 How to Use
 
 1. Browse the categories below
-2. Hover the prompt code block and click the **copy icon** in the top-right corner
-3. Replace placeholder variables in `{CURLY_BRACES}` with your chosen values
-4. If the prompt is marked **📎 Requires**, attach your character or style reference image to the same chat/request
-5. Paste into GPT Image 2 (via ChatGPT, API, or Sora)
+2. Click **"📋 Prompt — click to expand"** under any entry to reveal the prompt
+3. Hover the expanded code block and click the **copy icon** in the top-right corner
+4. Replace placeholder variables in `{CURLY_BRACES}` with your chosen values
+5. If the prompt is marked **📎 Requires**, attach your character or style reference image to the same chat/request
+6. Paste into GPT Image 2 (via ChatGPT, API, or Sora)
 
 ---
 
@@ -63,7 +100,8 @@ Cinematic anime illustrations of characters inside premium sports cars, using at
 
 **Category:** Anime Cars · **Tags:** `anime` `cinematic` `cyberpunk` `night` `character-reference` `makoto-shinkai`
 
-**📋 Prompt:**
+<details>
+<summary>📋 <b>Prompt</b> — click to expand</summary>
 
 ```
 CAR={McLaren P1 / Nissan GT-R R35 / Lamborghini Revuelto / Porsche 911 GT3 RS / etc}
@@ -81,6 +119,8 @@ Art style: semi-realistic anime illustration, painterly rendering, highly atmosp
 Ultra detailed, masterpiece, best quality, dynamic lighting, expressive eyes, depth of field, film grain, realistic reflections, immersive perspective, high detail environment, elegant color harmony, dramatic night atmosphere.
 ```
 
+</details>
+
 **📎 Requires:** An attached reference image of the character to preserve. Alternatively, replace the "attached girl" wording with a written character description if you don't have a reference image.
 
 **💡 Why it works:** The prompt opens with an aggressive identity-lock paragraph — explicitly listing *what* must be preserved (facial structure, eye shape, hairstyle, accessories, palette, silhouette, proportions) and *what must not happen* (no replacement, no obscuring, no stylizing away). GPT Image 2 responds very well to negative-space framing like "Do not replace the character." The `{CAR}` placeholder gives you a single swappable variable while everything else stays consistent across renders. The Makoto Shinkai anchor locks in the lighting language; cyberpunk + neon + rain stack mutually reinforcing atmospheric cues.
@@ -95,7 +135,8 @@ Ultra detailed, masterpiece, best quality, dynamic lighting, expressive eyes, de
 
 **Category:** Anime Cars · **Tags:** `anime` `cinematic` `summer` `convertible` `coastal` `style-reference` `makoto-shinkai`
 
-**📋 Prompt:**
+<details>
+<summary>📋 <b>Prompt</b> — click to expand</summary>
 
 ```
 CAR={Any luxury convertible supercar / exotic sports car with a premium modern interior}
@@ -124,6 +165,8 @@ Art style: semi-realistic anime illustration, highly polished painterly renderin
 Ultra detailed, masterpiece, best quality, convertible sports car interior, open roof, luxury atmosphere, immersive perspective, dynamic lighting, realistic reflections, summer mood, glossy paint, high-detail environment, anime cinematic illustration.
 ```
 
+</details>
+
 **📎 Requires:** An attached reference image used as **style inspiration only** (not identity-locked). Alternatively, replace the "attached anime girl" wording with a written description of the aesthetic you want as inspiration.
 
 **💡 Why it works:** This is the inverse approach to the night-driving prompt — instead of identity-locking the reference, it explicitly says "*inspired by*… without directly replicating the exact identity." That gives the model permission to create original characters that share the *aesthetic* (palette, fashion, ribbons, hair theme) without copying the face. The `CHARACTERS={1 or 2}` conditional with explicit per-case rules is the key trick: GPT Image 2 follows branching logic well when each branch lists its own positioning, pose, and expression. Pairing identical-styled characters reads naturally as "alternate versions of the same design," which is a much cleaner mental model for the renderer than "two random girls."
@@ -144,7 +187,8 @@ Character-translation prompts that reinterpret a reference into the visual langu
 
 **Category:** Brazilian Northeastern Folk Art · **Tags:** `xilogravura` `cordel` `woodcut` `folk-art` `nordeste` `character-reference` `identity-lock`
 
-**📋 Prompt:**
+<details>
+<summary>📋 <b>Prompt</b> — click to expand</summary>
 
 ```
 Transform the attached character into a traditional Brazilian Northeastern xilogravura / cordel illustration while fully preserving the original character identity, face, hairstyle, outfit silhouette, colors, and personality.
@@ -207,6 +251,8 @@ Only translate the character into authentic xilogravura / literatura de cordel v
 Ultra detailed, authentic Brazilian cordel engraving style, masterful woodcut illustration, museum-quality folk print aesthetic.
 ```
 
+</details>
+
 **📎 Requires:** An attached reference image of the character to preserve.
 
 **💡 Why it works:** The opening "IMPORTANT CHARACTER RULE" block solves a specific pain point — VRChat/3D model references are usually in T-pose or A-pose, which the model would otherwise faithfully reproduce. By explicitly listing those static poses as forbidden *and* providing a curated "Suggested poses" list at the end, you get a natural cordel hero stance regardless of how stiff the source reference is. The dual identity-lock (open paragraph + closing "Do NOT redesign" reminder) sandwiches the style-translation instructions, which keeps the model focused on *medium translation* rather than *character redesign*. The limited palette (aged paper, charcoal, burnt orange, deep red, dusty beige) gives the model concrete swatches instead of vague "warm tones."
@@ -221,7 +267,8 @@ Ultra detailed, authentic Brazilian cordel engraving style, masterful woodcut il
 
 **Category:** Brazilian Northeastern Folk Art · **Tags:** `clay` `ceramics` `mestre-vitalino` `alto-do-moura` `cangaceiro` `folk-sculpture` `character-reference`
 
-**📋 Prompt:**
+<details>
+<summary>📋 <b>Prompt</b> — click to expand</summary>
 
 ```
 Transform the attached anime character into an authentic traditional Northeastern Brazilian clay folk sculpture in the exact rustic aesthetic of Alto do Moura and Mestre Vitalino ceramics, strongly inspired by classic handcrafted cangaceiro statues from Pernambuco folk art.
@@ -283,6 +330,8 @@ Composition:
 Reference Style: traditional cangaceiro clay statues from Alto do Moura, Mestre Vitalino folk ceramics, authentic Pernambuco artesanato, Brazilian sertao folk sculpture realism.
 ```
 
+</details>
+
 **📎 Requires:** An attached reference image of the character. The specific traits in the second paragraph (`white hair, red eyes, twin tails, animal ears, gothic personality, weapon silhouette`) are tuned to a specific character — **edit those to match your reference** when reusing this prompt.
 
 **💡 Why it works:** This prompt fuses *medium translation* (anime → clay sculpture) with *cultural translation* (modern outfit → cangaceiro attire) simultaneously. The "Character Adaptation" block does the cultural mapping piece by piece (dress → cangaceira clothing, weapons → folk-art clay versions) which prevents the model from defaulting to generic "rustic" without committing to the cangaço aesthetic. Naming Mestre Vitalino as a specific artisan anchors the visual register much more reliably than "Brazilian folk sculpture" alone. The "Avoid" block ("anime plastic appearance, realistic human anatomy") is crucial — without it, the model often produces a hybrid anime-clay look instead of authentic naïve folk anatomy.
@@ -297,7 +346,8 @@ Reference Style: traditional cangaceiro clay statues from Alto do Moura, Mestre 
 
 **Category:** Brazilian Northeastern Folk Art · **Tags:** `mamulengo` `puppet` `folk-theater` `pernambuco` `handcrafted` `character-reference` `identity-lock`
 
-**📋 Prompt:**
+<details>
+<summary>📋 <b>Prompt</b> — click to expand</summary>
 
 ```
 Transform the attached character into an authentic Brazilian Northeastern mamulengo puppet while fully preserving the original character identity, face, hairstyle, outfit silhouette, colors, and personality.
@@ -356,6 +406,8 @@ Only reinterpret the character as a traditional Northeastern Brazilian mamulengo
 Ultra detailed Brazilian folk puppet realism, authentic Pernambuco mamulengo aesthetic, handcrafted artisan theater masterpiece, cultural documentary quality.
 ```
 
+</details>
+
 **📎 Requires:** An attached reference image of the character to preserve.
 
 **💡 Why it works:** Compared to the xilogravura prompt, this one preserves anime-typical "exaggerated folk-art facial features" instead of fighting against them — mamulengos themselves have exaggerated features, so the natural overlap with anime stylization works in your favor. The "visible seams, stitching, cloth folds, and puppet construction details" line is the high-leverage instruction: GPT Image 2 takes that literally and renders actual textile structure rather than smooth illustrated fabric, which is what sells the "this is a real handmade puppet" reading. The Festa Junina flags + dark stage curtain combo gives the model a cohesive stage scene without leaving composition up to chance.
@@ -370,7 +422,8 @@ Ultra detailed Brazilian folk puppet realism, authentic Pernambuco mamulengo aes
 
 **Category:** Brazilian Northeastern Folk Art · **Tags:** `wooden-puppet` `mamulengo` `boneco-de-olinda` `carved-wood` `folk-sculpture` `pernambuco` `style-translation` `identity-flex`
 
-**📋 Prompt:**
+<details>
+<summary>📋 <b>Prompt</b> — click to expand</summary>
 
 ```
 Redesign the attached character as an authentic handcrafted Northeastern Brazilian folk-art wooden puppet sculpture, inspired by mamulengo puppets, Bonecos de Olinda, rustic artisan carvings, and traditional Pernambuco folk craftsmanship.
@@ -456,6 +509,8 @@ Avoid:
 
 Ultra detailed handcrafted wooden folk-art character redesign, authentic Northeastern Brazilian artisan puppet aesthetic, rustic carved wood sculpture realism, museum-quality cultural folk-art craftsmanship.
 ```
+
+</details>
 
 **📎 Requires:** An attached reference image used as **loose identity inspiration** — the prompt deliberately overrides faithful preservation, keeping only colors, hairstyle, accessories, and overall expression as anchor cues.
 
