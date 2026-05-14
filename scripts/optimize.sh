@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
-# Optimize an image for the Inex's GPT Image 2 Prompts repo.
+# Scan the repo for .png images and convert them to optimized .webp.
+# Skips files where the .webp already exists (idempotent — safe to re-run).
 #
 # Usage:
-#   ./scripts/optimize.sh <input> <output>
+#   ./scripts/optimize.sh
 #
-# Example:
-#   ./scripts/optimize.sh raw/my-output.png assets/images/portraits/cyberpunk-001.webp
+# Flags:
+#   --delete-source    Remove the original .png after a successful conversion
+#   --force            Re-convert even if the .webp already exists
+#   --dry-run          Show what would be done without actually doing it
 #
 # Requirements:
 #   - ImageMagick 7+ (`magick` command)
@@ -14,38 +17,95 @@
 
 set -euo pipefail
 
-if [ $# -ne 2 ]; then
-  echo "Usage: $0 <input> <output>"
-  echo ""
-  echo "Example:"
-  echo "  $0 raw/my-output.png assets/images/portraits/cyberpunk-001.webp"
-  exit 1
-fi
+# --- Parse flags ---
+DELETE_SOURCE=0
+FORCE=0
+DRY_RUN=0
 
-INPUT="$1"
-OUTPUT="$2"
+for arg in "$@"; do
+  case "$arg" in
+    --delete-source) DELETE_SOURCE=1 ;;
+    --force)         FORCE=1 ;;
+    --dry-run)       DRY_RUN=1 ;;
+    -h|--help)
+      sed -n '2,/^$/p' "$0" | sed 's/^# \{0,1\}//'
+      exit 0
+      ;;
+    *)
+      echo "Unknown flag: $arg"
+      echo "Run with --help for usage."
+      exit 1
+      ;;
+  esac
+done
 
-if [ ! -f "$INPUT" ]; then
-  echo "Error: input file '$INPUT' not found"
-  exit 1
-fi
-
+# --- Check magick is available ---
 if ! command -v magick >/dev/null 2>&1; then
   echo "Error: 'magick' (ImageMagick 7+) not found. Install it first."
   exit 1
 fi
 
-# Ensure output directory exists
-mkdir -p "$(dirname "$OUTPUT")"
+# --- Locate repo root (assume script lives in <repo>/scripts/) ---
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+cd "$REPO_ROOT"
 
-# Resize to max 1024px on long side, convert to WebP at quality 85
-magick "$INPUT" \
-  -resize "1024x1024>" \
-  -quality 85 \
-  -strip \
-  "$OUTPUT"
+# --- Counters ---
+CONVERTED=0
+SKIPPED=0
+FAILED=0
 
-# Report
-IN_SIZE=$(du -h "$INPUT" | cut -f1)
-OUT_SIZE=$(du -h "$OUTPUT" | cut -f1)
-echo "✅ Optimized: $INPUT ($IN_SIZE) → $OUTPUT ($OUT_SIZE)"
+echo "🔍 Scanning $REPO_ROOT for .png files..."
+echo ""
+
+# --- Find every .png, excluding common junk folders ---
+while IFS= read -r -d '' png; do
+  webp="${png%.png}.webp"
+
+  # Skip if .webp already exists (unless --force)
+  if [ -f "$webp" ] && [ $FORCE -eq 0 ]; then
+    echo "⏭️  Skip:    $png  (already converted)"
+    SKIPPED=$((SKIPPED + 1))
+    continue
+  fi
+
+  IN_SIZE=$(du -h "$png" | cut -f1)
+
+  if [ $DRY_RUN -eq 1 ]; then
+    echo "🔸 Would:   $png  →  $webp  (was $IN_SIZE)"
+    CONVERTED=$((CONVERTED + 1))
+    continue
+  fi
+
+  # Convert
+  if magick "$png" -resize "1024x1024>" -quality 85 -strip "$webp" 2>/dev/null; then
+    OUT_SIZE=$(du -h "$webp" | cut -f1)
+    echo "✅ Convert: $png ($IN_SIZE)  →  $webp ($OUT_SIZE)"
+    CONVERTED=$((CONVERTED + 1))
+
+    if [ $DELETE_SOURCE -eq 1 ]; then
+      rm "$png"
+      echo "   🗑️  Removed source: $png"
+    fi
+  else
+    echo "❌ Failed:  $png"
+    FAILED=$((FAILED + 1))
+  fi
+
+done < <(find . \
+  -type d \( -name .git -o -name node_modules -o -name raw \) -prune -o \
+  -type f -iname "*.png" -print0)
+
+# --- Summary ---
+echo ""
+echo "─────────────────────────────────────"
+echo "  Converted: $CONVERTED"
+echo "  Skipped:   $SKIPPED  (already had .webp)"
+if [ $FAILED -gt 0 ]; then
+  echo "  Failed:    $FAILED"
+fi
+echo "─────────────────────────────────────"
+
+if [ $DRY_RUN -eq 1 ]; then
+  echo "(Dry run — no files were actually modified.)"
+fi
