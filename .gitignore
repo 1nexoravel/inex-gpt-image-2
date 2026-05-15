@@ -20,4 +20,3 @@ raw/
 *.png
 *.jpeg
 *.jpg
-!assets/images/**/*.png
