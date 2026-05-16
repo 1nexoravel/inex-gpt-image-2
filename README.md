@@ -15,8 +15,11 @@
 - [Prompts](#-prompts)
   - [🚗 Anime Cars](#-anime-cars)
   - [🛏️ Dakimakura](#️-dakimakura)
+  - [🛋️ Interior & Intimate Scenes](#️-interior--intimate-scenes)
   - [🌌 Cosmic & Cinematic Scenes](#-cosmic--cinematic-scenes)
+  - [🖼️ Wallpapers](#️-wallpapers)
   - [📝 Typography & Poster Art](#-typography--poster-art)
+  - [🇧🇷 Brazilian Heritage & Print Culture](#-brazilian-heritage--print-culture)
   - [🪴 Brazilian Northeastern Folk Art](#-brazilian-northeastern-folk-art)
 - [General Prompting Tips](#-general-prompting-tips)
 - [License](#-license)
@@ -335,6 +338,278 @@ Negative prompt:
 **💡 Why it works:** Built as a deliberate companion to the front-side prompt — note the explicit line `"designed as the BACK side companion illustration to a dakimakura front-side artwork"` which tells the model this is part of a set, encouraging stylistic consistency. The "Optional details" block (lifted leg, hair across pillow, glance over shoulder) provides creative variations without forcing them — useful pattern when you want the renderer to pick one of several valid moves rather than rigidly executing one. The pose description is intentionally less prescriptive than the front-side because back-views have fewer hard constraints; instead, the prompt focuses heavily on what's *visible* (back, shoulders, waistline) to prevent awkward truncation.
 
 **🔧 Variations:** generate front + back as a paired set using identical character reference and seed, then print both for a complete pillow cover; swap `glance over the shoulder` → `face fully turned away with only hair visible` for a more abstract back design; change the palette via the background line for matching seasonal sets.
+
+---
+
+### 🛋️ Interior & Intimate Scenes
+
+Anime illustrations focused on quiet domestic moments, soft lighting, and emotionally restrained intimacy. Heavy emphasis on environmental atmosphere over action.
+
+---
+
+#### Bedroom Afternoon (Soft Anime Intimacy)
+
+<img src="./assets/images/illustrations/interior/001.webp" width="600" alt="Soft intimate anime illustration of a character lying on a bed with golden afternoon sunlight streaming through the window">
+
+**Category:** Interior & Intimate Scenes · **Tags:** `anime` `intimate` `bedroom` `golden-hour` `soft-lighting` `character-reference` `identity-lock`
+
+**📋 Prompt:**
+
+```
+Use the attached reference character ONLY for the character design, outfit, hairstyle, colors, accessories, and identity.
+
+Recreate the scene in the exact emotional and cinematic style of a soft intimate anime illustration:
+- warm golden sunlight streaming through a bedroom window
+- dreamy late afternoon atmosphere
+- soft bloom lighting
+- subtle lens flare and chromatic aberration
+- delicate anime rendering
+- highly detailed painterly shading
+- soft shadows across the body and bed sheets
+- calm, intimate, relaxed mood
+- cinematic composition
+- shallow depth of field
+- gentle ambient glow
+- slightly overexposed highlights
+- premium anime illustration quality
+
+Pose and camera:
+- character lying diagonally across a bed
+- body partially curled naturally
+- camera positioned above at a tilted angle
+- one arm resting near the head
+- relaxed fingers
+- direct eye contact toward the viewer
+- soft sleepy expression
+- natural body perspective foreshortening
+- elegant composition with the face as focal point
+- hair spread naturally on the pillow and sheets
+- legs partially visible and softly framed
+
+Environment:
+- soft white bed sheets with natural folds
+- cozy bedroom atmosphere
+- sunlight rays crossing the scene
+- subtle pillow details
+- soft ambient particles and light artifacts
+- intimate indoor lighting
+
+Art style:
+- modern high-end anime illustration
+- ultra detailed anime eyes
+- delicate eyelashes
+- soft skin gradients
+- expressive face
+- refined lineart
+- painterly anime rendering similar to premium anime key visuals
+- cinematic color grading
+- warm cream, gold, and pastel tones
+- highly aesthetic composition
+
+IMPORTANT:
+- preserve the attached character exactly
+- keep the attached outfit unchanged
+- keep the hairstyle and colors unchanged
+- do not redesign the character
+- prioritize mood, lighting, pose, framing, and atmosphere from the reference image
+- avoid exaggerated anatomy
+- avoid overly sharp shadows
+- avoid photorealism
+- avoid NSFW explicitness
+- tasteful anime sensuality only
+
+masterpiece, best quality, absurdres, cinematic anime illustration, soft lighting, dreamy atmosphere, volumetric sunlight, anime bedroom scene, emotional composition, ultra detailed
+```
+
+**📎 Requires:** An attached reference image — character, outfit, and hair fully identity-locked.
+
+**💡 Why it works:** This prompt nails intimate anime aesthetics by stacking specific *technical* lighting choices that produce the look — `chromatic aberration`, `slightly overexposed highlights`, `volumetric sunlight`, `lens flare`. These are camera/lens artifacts, not illustration techniques, which is what gives the output its "anime film still" quality rather than "character portrait" feel. The pose block is unusually specific (diagonal across bed, tilted camera, foreshortening, hair spread on pillow) — that level of detail prevents the model from defaulting to a generic seated portrait. The explicit `avoid NSFW explicitness / tasteful anime sensuality only` line is doing important guardrail work: it tells the model the *register* is romantic-intimate, not erotic, and keeps the output in publishable territory.
+
+**🔧 Variations:** swap `late afternoon` for `early morning blue-hour` for cooler tones; change `lying diagonally on bed` to `sitting by the window with knees drawn up` for a different intimate moment; replace `bedroom` with `tatami room with shoji screens` for a Japanese-traditional setting; remove `direct eye contact` and use `looking out the window` for a more contemplative pose.
+
+---
+
+#### Gothic Mansion Close-Up (Anime Opening Frame)
+
+<img src="./assets/images/illustrations/wallpapers/002.webp" width="600" alt="Ultra-intimate close-up anime portrait in a gothic Victorian mansion, melancholic anime opening aesthetic">
+
+**Category:** Interior & Intimate Scenes · **Tags:** `anime` `gothic` `close-up` `victorian` `melancholic` `anime-opening` `aristocratic` `style-reference`
+
+**📋 Prompt:**
+
+```
+Use the attached references ONLY as visual/style references.
+
+GOAL:
+Create a highly atmospheric anime scene in the EXACT aesthetic language of melancholic gothic mystery anime openings from the late 2010s-early 2020s.
+
+IMPORTANT CAMERA CHANGE:
+The camera must be close to the character's face.
+Ultra intimate cinematic POV.
+The composition should feel emotionally invasive and claustrophobic, like a slow anime opening close-up frame.
+
+CAMERA / POV:
+- extreme close-up shot
+- face occupies most of the frame
+- only partial shoulders/hair visible
+- eyes positioned near cinematic upper-third framing
+- shallow depth of field
+- soft lens compression
+- intimate facial framing
+- subtle off-center composition
+- delicate perspective distortion from close distance
+- background heavily blurred into dreamy gothic shapes
+- cinematic portrait framing
+- visual novel opening close-up aesthetic
+- extremely near camera distance
+- viewer feels physically close to the character
+- subtle breathing-space negative composition
+- quiet psychological intimacy
+- elegant oppressive closeness
+- anime opening "silent stare" framing
+
+CHARACTER STYLE:
+- delicate anime girl designs
+- pale porcelain skin
+- long silver/white hair with extremely soft shading
+- layered silky bangs partially covering one eye
+- extremely thin and refined linework
+- fragile facial structure
+- tiny nose and soft small lips
+- pale cool-toned complexion
+- subtle blush gradients
+- gothic aristocratic beauty
+
+EYES (VERY IMPORTANT):
+- large soft anime eyes with fragile melancholic appearance
+- semi-lidded sleepy eyes
+- distant emotionally restrained gaze
+- slightly empty expression
+- thin elegant eyelashes with layered sharp lash tips
+- soft lower lashes
+- faint glossy reflections
+- translucent iris rendering
+- icy blue-violet eyes
+- subtle heterochromia
+- muted luminous pupils
+- extremely soft eye shading
+- delicate gradient irises
+- faint gray rings around the iris
+- soft reflective anime highlights
+- watery crystalline appearance
+- no exaggerated sparkle
+- tired aristocratic expression
+- gentle downward eye angle
+- subtle sadness in the eyes
+- elegant emotionally detached doll-like anime eye design
+- highly detailed but soft eyes
+- delicate eyelid shadows
+- slightly blurred dreamy eye rendering
+- avoid modern hyper-saturated anime eyes
+- avoid sharp shounen eyes
+- avoid moe cartoon eyes
+
+OUTFIT:
+- aristocratic gothic maid attire
+- Victorian-inspired fashion
+- black ribbons
+- lace frills
+- elegant embroidery
+- dark bows near the hair
+- refined monochrome palette
+- subtle religious/gothic ornamentation
+- elegant silhouette design
+
+ENVIRONMENT STYLE:
+- luxurious gothic mansion interior
+- antique chandeliers
+- faded paintings
+- Victorian architecture
+- dim warm lighting mixed with cold green-gray shadows
+- dusty cinematic atmosphere
+- subtle fog/haze
+- polished dark surfaces
+- old European aristocratic estate feeling
+- blurred flowers in antique vases
+- muted color palette
+- environment mostly out of focus due to close lens proximity
+
+LIGHTING:
+- cinematic low-contrast anime lighting
+- soft bloom
+- slight film grain
+- volumetric light
+- hazy glow around chandeliers
+- desaturated colors
+- gentle ambient occlusion
+- soft shadow gradients
+- dreamy atmospheric depth
+- soft facial rim light
+- subtle eye reflections
+- delicate shadow transitions across cheeks and eyelids
+
+COLOR PALETTE:
+- muted ivory
+- faded crimson
+- dusty rose
+- dark walnut wood
+- pale gray-green
+- antique gold
+- desaturated black
+- cold silver tones
+
+RENDERING STYLE:
+- ultra detailed anime face rendering
+- soft painterly compositing
+- cinematic anime frame
+- realistic environmental texture but anime character rendering
+- subtle blur and chromatic aberration
+- atmospheric depth haze
+- old film feeling
+- high-quality anime production aesthetic
+- soft skin rendering
+- extremely delicate hair strands
+- refined anime eyelash detail
+
+POSE / EXPRESSION:
+- looking slightly downward toward viewer
+- subtle head tilt
+- emotionally restrained expression
+- calm silent stare
+- tiny melancholic mouth expression
+- relaxed facial muscles
+- aristocratic emotional distance
+- NEVER comedic expression
+- NEVER exaggerated emotion
+- NEVER T-pose
+- NEVER A-pose
+
+IMPORTANT:
+- NO modern neon cyberpunk elements
+- NO vibrant saturated colors
+- NO glossy plastic rendering
+- NO generic fantasy RPG aesthetic
+- NO AI-art sharpness
+- NO 3D Pixar look
+- avoid hyperreal skin pores
+- avoid action poses
+
+MOOD:
+lonely aristocratic mansion,
+quiet psychological tension,
+dreamlike sadness,
+gothic elegance,
+soft emotional distance,
+haunting beauty,
+silent intimate eye contact,
+slow atmospheric anime opening energy
+```
+
+**📎 Requires:** Attached references — used as style/aesthetic anchors rather than strict identity-lock (the character traits are described prescriptively in the prompt body).
+
+**💡 Why it works:** This prompt is structurally fascinating because it dedicates an *entire 22-line block* exclusively to eye rendering — that's unusual but extremely effective. For close-up anime portraits, the eyes carry almost all the emotional weight, so over-specifying them (semi-lidded, melancholic, translucent iris, faint gray rings, subtle heterochromia, no exaggerated sparkle) gives the model a precise target that prevents drift into generic "moe sparkle" or "shounen sharp" defaults. The "anime opening" framing is doing cultural-anchor work — naming a specific era (late 2010s-early 2020s) locks in a recognizable aesthetic family (think *Princess Principal*, *Violet Evergarden* OP frames). The repeated `NO` / `avoid` blocks at the end suppress every default the model would otherwise reach for (cyberpunk, saturated, glossy, RPG, AI-sharp, Pixar).
+
+**🔧 Variations:** swap `aristocratic gothic maid attire` for `Victorian aristocrat with high collar` if you want less anime-trope-specific styling; change `icy blue-violet eyes` to a specific character eye color from your reference; replace `gothic mansion interior` with `abandoned cathedral with stained glass` for a more sacred mood; tighten `late 2010s-early 2020s anime openings` to a specific show reference if you want a particular OP director's framing.
 
 ---
 
@@ -848,6 +1123,293 @@ masterpiece, best quality, cinematic anime illustration, parallel worlds, mirror
 
 ---
 
+### 🖼️ Wallpapers
+
+Atmospheric anime art designed for decorative use — wallpapers, profile backgrounds, playlist covers. Moody, symbolic, and emotionally restrained pieces where mood matters more than narrative.
+
+---
+
+#### Chaotic Abstract Mixed-Media (Avant-Garde Artbook)
+
+<img src="./assets/images/illustrations/wallpapers/001.webp" width="600" alt="Character partially consumed and dissolved into chaotic ink eruptions, watercolor blooms, and mixed-media abstraction inspired by experimental Japanese artbook aesthetics">
+
+**Category:** Wallpapers · **Tags:** `wallpaper` `abstract` `mixed-media` `ink` `watercolor` `artbook` `avant-garde` `style-translation`
+
+**📋 Prompt:**
+
+```
+create image
+Use the attached reference character ONLY as identity reference for:
+- core facial structure
+- hair silhouette and color placement
+- cat ears and tail
+- outfit identity
+- recognizable accessories and motifs
+- overall recognizable character essence ONLY
+
+ABSOLUTE STYLE PRIORITY:
+The final artwork must feel FAR MORE ABSTRACT than character-focused.
+The character should appear partially consumed, dissolved, fragmented, submerged, and reconstructed through chaotic mixed-media abstraction.
+Avoid clean anime rendering entirely.
+The image should resemble an experimental contemporary anime artbook page rather than a normal character illustration.
+
+PRIMARY VISUAL GOAL:
+Create an ultra-chaotic abstract anime composition inspired by dark avant-garde mixed-media aesthetics similar to Meola, Ruuya, and experimental Japanese artbook illustration culture.
+
+The character must NOT remain fully anatomically readable.
+Large portions of the body should dissolve into:
+- ink eruptions
+- watercolor bleeding
+- fragmented silhouettes
+- paint explosions
+- tangled calligraphic strokes
+- smoke ribbons
+- scratched textures
+- abstract graphic noise
+- broken geometry
+- floating debris
+- visual corruption
+- layered painterly destruction
+
+ABSTRACTION RULES:
+- anatomy should become unstable and partially unreadable
+- limbs may partially disappear into ink masses
+- hair should dissolve into abstract ribbons, smoke, splatters, and flowing paint trails
+- clothing should merge with darkness and texture layers
+- edges of the body should fragment into particles and chaotic brushwork
+- facial features should only remain partially clear
+- one eye may be obscured or swallowed by abstraction
+- silhouette should feel unstable and dreamlike
+- avoid complete physical coherence
+- the artwork should prioritize emotional abstraction over anatomy
+
+STYLE DIRECTION:
+- extremely dense visual layering
+- heavy distressed canvas textures
+- aggressive ink splashes
+- watercolor blooms
+- scratched film textures
+- torn-paper collage feeling
+- mixed media appearance
+- chaotic visual overlap
+- abstract floral decay
+- fragmented butterflies
+- thorn vines
+- shattered glass shapes
+- drifting feathers
+- smoke clouds
+- painterly visual static
+- ink drips everywhere
+- distorted typography fragments
+- surreal environmental fragments
+- asymmetrical composition
+- emotional visual overload
+
+COLOR DIRECTION:
+- dominant black-and-white palette
+- deep crushed blacks
+- overexposed whites
+- selective neon accents ONLY
+- cyan, violet, magenta, crimson, emerald, or electric blue accents
+- color should appear like glowing contamination inside monochrome darkness
+- avoid balanced color distribution
+- large areas should remain monochrome
+
+LIGHTING:
+- non-realistic lighting
+- glowing fog-like highlights
+- selective bloom
+- chromatic aberration
+- dirty luminous textures
+- atmospheric overexposure
+- some areas swallowed entirely by darkness
+- some areas blown out into white noise
+
+COMPOSITION:
+- asymmetrical and emotionally unstable
+- visual flow spiraling around the character
+- overlapping foreground/background abstraction
+- fragmented depth
+- negative space interrupted by chaotic detail clusters
+- cinematic framing mixed with painterly destruction
+- composition should feel suffocating and immersive
+
+CHARACTER EXPRESSION:
+- melancholic
+- emotionally distant
+- eerie calmness
+- vacant gaze
+- dreamlike emotional detachment
+
+POSE RULES:
+- NEVER use T-pose
+- NEVER use A-pose
+- NEVER use VRChat idle pose
+- NEVER use model-sheet pose
+- use a drifting, collapsing, floating, seated, curled, suspended, or emotionally broken pose
+- pose should integrate into the abstract flow instead of feeling posed
+
+QUALITY:
+- masterpiece quality
+- highly textured painterly finish
+- experimental anime illustration
+- abstract mixed-media artbook aesthetic
+- emotionally overwhelming
+- visually dense
+- no clean rendering
+- no empty background
+- no minimalism
+- no generic anime wallpaper appearance
+- no clean lineart dominance
+- no polished character illustration look
+
+IMPORTANT:
+The artwork should feel like the character is being erased and reborn inside a storm of ink, paint, memory fragments, and emotional noise.
+The abstraction itself must dominate the image more than the character.
+```
+
+**📎 Requires:** An attached reference image — identity preserved only as *essence* (face structure, hair color, ears/tail), with explicit permission to dissolve anatomy.
+
+**💡 Why it works:** This prompt is one of the most radical in the collection because it *inverts* the entire identity-lock paradigm. The line `"the abstraction itself must dominate the image more than the character"` is unusual: most prompts treat the character as the focal point and everything else as supporting; here, the character is just *one element in an emotional collage*. The `"ABSTRACTION RULES"` block lists specific permissions (limbs may disappear, one eye may be obscured, silhouette should feel unstable) — those explicit allowances are critical because GPT Image 2 defaults to anatomical coherence. Naming `Meola, Ruuya, and experimental Japanese artbook` anchors the style to a specific underground aesthetic family rather than generic "abstract art." The selective neon color rule (`color should appear like glowing contamination inside monochrome darkness`) prevents the model from defaulting to "balanced colorful abstract."
+
+**🔧 Variations:** swap `dominant black-and-white + neon accents` for `dominant sepia + crimson + gold` for a warmer ink-painting variant; change `cat ears and tail` to your reference's specific traits; replace `Meola, Ruuya` with other experimental references (`Yoshitaka Amano sketch style`, `Yusuke Murata loose linework`) for different style families; tighten `chaotic mixed-media` to a specific medium (`pure ink-wash sumi-e destruction`, `acrylic gestural painting only`) for cleaner stylistic targets.
+
+---
+
+#### Shadow Wings with Bullet Holes (Symbolic Wall Scene)
+
+<img src="./assets/images/illustrations/wallpapers/003.webp" width="600" alt="Anime character standing against a textured wall with massive shadow wings projected behind, featuring clean round puncture holes letting golden sunlight through">
+
+**Category:** Wallpapers · **Tags:** `wallpaper` `anime` `symbolic` `shadow-wings` `painterly` `melancholic` `urban` `environmental-storytelling` `16:9`
+
+**📋 Prompt:**
+
+```
+create image
+16:9
+Use the attached image ONLY as an aesthetic and compositional reference.
+
+Create a highly atmospheric anime-style illustration with symbolic environmental storytelling and painterly cinematic aesthetics.
+
+The scene must feel melancholic, psychologically symbolic, quiet, mysterious, and emotionally restrained.
+
+VISUAL STYLE:
+- painterly anime illustration
+- semi-realistic anime rendering
+- watercolor + ink wash influence
+- textured brushwork
+- cinematic lighting gradients
+- gritty wall textures
+- soft bloom and atmospheric glow
+- subtle film grain
+- layered environmental shading
+- muted/desaturated colors with warm golden-hour highlights
+- imperfect painterly edges and ink splatter textures
+
+CORE CONCEPT:
+- a lone character stands against a large textured wall
+- behind the character, massive wings appear ONLY as shadow projected onto the wall
+- the wings are not physical
+- they are formed from darkness, ink-like shading, smoke-like shadow texture, and environmental silhouette
+- the wings should clearly resemble recognizable bird or angel wings while still remaining abstract and symbolic
+- visible feather-like wing structure and layered silhouette shape
+- the wing shadow should feel elegant, tragic, and ominous
+
+CRITICAL SHADOW WING DETAILS:
+- the shadow wings contain multiple clean ROUND puncture holes
+- the holes should resemble circular bullet-like perforations in darkness
+- perfectly or near-perfectly rounded shapes
+- varying sizes of circular punctures
+- the holes affect ONLY the shadow
+- the wall underneath remains completely intact
+- the revealed wall texture behind the holes must perfectly match the surrounding illuminated wall
+- no cracks, debris, or physical wall damage
+- the holes are simply absences of shadow
+- warm sunlight naturally passes through these circular openings
+- some holes softly glow from transmitted light
+- subtle feather fragmentation and ink-drip distortion around certain punctures
+- parts of the shadow wing dissolve into dripping darkness and abstract splashes
+
+COMPOSITION:
+- asymmetrical composition
+- character positioned slightly off-center
+- giant shadow wings dominate most of the wall
+- strong negative space usage
+- emotional balance between fragile character and overwhelming symbolic shadow
+- wall acts as a visual storytelling surface
+- environmental grime, stains, splashes, and urban decay textures
+
+LIGHTING:
+- strong directional golden-hour sunlight
+- warm light cutting through cool shadows
+- dramatic wall contrast
+- soft volumetric atmosphere
+- cinematic rim lighting
+- selective overexposure in brightest areas
+- atmospheric diffusion across textured surfaces
+
+MOOD:
+- melancholic
+- introspective
+- symbolic
+- dreamlike
+- lonely
+- cinematic
+- emotionally restrained
+- poetic visual tension
+- quiet psychological atmosphere
+
+CHARACTER DIRECTION:
+- character-agnostic
+- any original anime character design
+- natural anatomy
+- subtle facial expression
+- grounded clothing design
+- wind-blown hair and fabric
+- restrained realistic pose
+- avoid exaggerated movement
+- avoid fanservice
+
+BACKGROUND:
+- stained concrete or tiled wall
+- visible grime and age
+- abstract circular environmental lighting shapes
+- subtle paint drips and splatters
+- layered painterly wall texture
+- urban poetic atmosphere
+
+CAMERA:
+- medium full-body shot
+- eye-level or slightly low-angle framing
+- cinematic anime composition
+- emphasis on shadow silhouette readability
+- atmospheric depth created through light and texture
+
+IMPORTANT:
+- the wings must visibly read as wings first, abstract shadow second
+- maintain recognizable feather silhouette structure
+- circular punctures must be clean and visually intentional
+- the punctures destroy only the shadow, not the wall
+- avoid literal fantasy aesthetics
+- avoid glossy modern anime rendering
+- avoid hyper-saturated colors
+- preserve painterly softness and ambiguity
+- no text, watermark, logo, or UI elements
+
+QUALITY TAGS:
+masterpiece, cinematic anime illustration, symbolic shadow wings, feathered shadow silhouette, circular shadow punctures, painterly anime art, melancholic atmosphere, emotional environmental storytelling, textured anime scene, poetic shadow composition, urban cinematic aesthetic, abstract wing symbolism
+```
+
+**📎 Requires:** An attached image used as **aesthetic/compositional reference only** — the character is fully described in the prompt as "any original anime character design."
+
+**💡 Why it works:** This prompt nails a specific symbolic visual that's notoriously hard to render — *shadows with absences*. The `CRITICAL SHADOW WING DETAILS` block goes into surgical specificity: the holes affect *only the shadow*, not the wall; the wall behind the holes must match the surrounding illuminated wall; the holes are *absences of shadow*, not cracks or damage. Without that level of explicit logic, the model defaults to either physical wall damage (bullet holes drilled into concrete) or simply skipping the effect. The "wings must visibly read as wings first, abstract shadow second" line is a clever priority hierarchy that prevents the model from going too abstract and losing the recognizable angel/bird imagery. The 16:9 specification at the top forces ultra-wide cinematic framing where the shadow wings can actually dominate the wall space.
+
+**🔧 Variations:** swap `golden-hour sunlight` for `moonlight casting cool blue shadows` for a nocturnal version; change `bullet-like puncture holes` to `cracked-glass pattern` or `dissolving petal-shapes` for different symbolic distortions; replace `concrete or tiled wall` with `aged wooden church wall` for a more sacred-melancholic setting; tighten "abstract wing symbolism" to a specific motif (broken wings, burning wings, etched constellation wings).
+
+---
+
+
+
 ### 📝 Typography & Poster Art
 
 Prompts that integrate large cinematic typography into anime scenes, treating text as a compositional element rather than an overlay.
@@ -949,6 +1511,274 @@ Composition:
 **💡 Why it works:** This prompt sits at the intersection of three difficult things: pose authenticity (the long anti-T-pose block with 10 concrete pose examples), GPT Image 2's text rendering strength (paired with restraint — `low-contrast off-white` lettering, `avoid bold commercial poster aesthetics`), and editorial design composition. Including 5 example text strings is genius: the model picks one or generates similar phrasing, but the *register* is locked. Serif typography + sakura petals + film grain stacks reinforcing "anime movie poster" cues without ever using the word "poster" prescriptively. The result feels published, not promoted.
 
 **🔧 Variations:** swap the example text lines for any 5 phrases in your desired tone (haiku fragments, song lyrics, location stamps); change `sakura petals` to `snow drift` or `falling autumn leaves` for seasonal variants; replace `serif typography` with `Japanese vertical kanji + small English subtitle` for a Japanese-poster aesthetic.
+
+---
+
+#### Crystal Mall Exhibition Poster (Luxury Editorial)
+
+<img src="./assets/images/illustrations/typography/002.webp" width="600" alt="Premium exhibition poster featuring the character transformed into a rainbow crystal sculpture at a luxury shopping mall installation">
+
+**Category:** Typography & Poster Art · **Tags:** `poster` `exhibition` `luxury` `crystal` `gemstone` `editorial` `commercial-design` `character-translation`
+
+**📋 Prompt:**
+
+```
+Create a premium modern exhibition poster / magazine-cover style promotional artwork set inside a luxurious contemporary shopping mall atrium at night, featuring the attached character transformed entirely into a surreal faceted rainbow diamond sculpture as the centerpiece of a public crystal art installation.
+
+The artwork should look like a professionally designed high-end advertising campaign for an immersive mall exhibition. The composition combines cinematic product photography, luxury fashion editorial aesthetics, futuristic exhibition branding, and ultra-detailed CGI rendering.
+
+CHARACTER REQUIREMENTS:
+Transform the attached character completely into a transparent refractive gemstone entity while preserving the recognizable identity, facial structure, hairstyle silhouette, proportions, outfit design language, iconic visual traits, and overall silhouette of the original character.
+
+The entire body is composed of sharp low-poly crystalline geometry with hundreds of angular diamond facets. Every surface behaves like physically accurate rainbow crystal material with:
+- intense spectral dispersion
+- chromatic aberration
+- rainbow caustics
+- internal reflections
+- refractive depth
+- translucent gemstone layering
+- prism-like light splitting
+- iridescent reflections
+- vivid multicolored glints
+
+Hair strands become jagged transparent crystal spikes and faceted gemstone ribbons. Clothing folds are reinterpreted as angular geometric crystal planes. The eyes are luminous gemstone cores with subtle internal rainbow glow.
+
+The character stands naturally on a sleek circular exhibition platform inside the mall, surrounded by velvet ropes, luxury lighting fixtures, reflective polished floors, floating crystal fragments, and decorative prism sculptures. The installation should feel like a premium futuristic museum exhibit inside a luxury shopping center.
+
+ENVIRONMENT:
+Modern upscale shopping mall interior with:
+- cinematic depth of field
+- glossy reflective floor
+- blurred luxury storefronts
+- elegant architectural lighting
+- soft crowd silhouettes in the distance
+- ambient volumetric light
+- holographic reflections
+- rainbow light projections cast onto nearby surfaces
+- suspended prism installations
+- floating crystal dust particles
+- reflective caustic patterns
+
+LIGHTING:
+Use dramatic cinematic lighting with:
+- strong backlight
+- colorful rim lighting
+- bright prism reflections
+- realistic gemstone refractions
+- shimmering rainbow highlights
+- volumetric glow
+- octane render style illumination
+- Unreal Engine 5 quality rendering
+- physically based rendering
+
+DESIGN / LAYOUT:
+The final image must look like a professionally designed modern exhibition poster or luxury magazine cover.
+
+Use:
+- clean contemporary typography
+- minimalist premium layout
+- modern grid-based composition
+- elegant spacing
+- luxury branding aesthetics
+- subtle futuristic UI accents
+- premium editorial design
+- modern sans-serif typography
+- stylish information hierarchy
+
+ALL TEXT MUST BE IN ENGLISH.
+
+Include realistic professional exhibition promotional text such as:
+- exhibition title
+- slogan/tagline
+- exhibition dates
+- shopping mall location
+- short immersive experience description
+- premium feature list
+- QR code area
+- social media icons
+- elegant branding elements
+
+Example style references for text:
+"LUMINA CRYSTAL"
+"AN EXHIBITION OF LIGHT, ART, IMAGINATION."
+"SEE THE WORLD IN A NEW LIGHT."
+"IMMERSIVE CRYSTAL EXPERIENCE"
+"LIMITED EXHIBITION"
+
+STYLE:
+Ultra-detailed cinematic fantasy render, luxury advertisement aesthetic, premium magazine cover design, futuristic mall exhibition campaign, octane render aesthetic, highly reflective transparent surfaces, physically based rendering, Unreal Engine 5 quality, masterpiece quality, ultra sharp focus, sophisticated composition.
+
+IMPORTANT:
+- Maintain a single continuous character body with correct anatomy.
+- Preserve the attached character's recognizable appearance and proportions.
+- Avoid melted geometry or amorphous crystal blobs.
+- Avoid T-pose or A-pose; use a natural dynamic pose.
+- Ensure anatomically correct hands, fingers, and limbs.
+- Emphasize low-poly faceted gemstone surfaces over smooth glass.
+- Do not use outdated graphic design styles.
+- The poster must feel modern, premium, sleek, minimalistic, and professionally art-directed.
+```
+
+**📎 Requires:** An attached reference image — identity preserved through facial structure, silhouette, and proportions, with the entire body translated into refractive crystal material.
+
+**💡 Why it works:** This is a *dual-task prompt* — it asks GPT Image 2 to do two hard things simultaneously: render a physically accurate crystal/gemstone character (with refraction, dispersion, caustics) AND lay out a publishable editorial poster around it. The trick is in the structural split: each task gets its own dedicated block (CHARACTER REQUIREMENTS, ENVIRONMENT, LIGHTING, DESIGN/LAYOUT). The explicit `Emphasize low-poly faceted gemstone surfaces over smooth glass` is doing important work because the model defaults to smooth crystal-ball aesthetics; the low-poly faceting is what makes it read as *sculpture* rather than *blob*. The example text strings (LUMINA CRYSTAL, etc.) lock the *register* of commercial copy without forcing exact wording. `ALL TEXT MUST BE IN ENGLISH` is critical because the model otherwise mixes Japanese/Chinese characters into design copy when given anime-adjacent context.
+
+**🔧 Variations:** swap `rainbow crystal` for `obsidian black mirror`, `liquid mercury`, or `frozen ice sculpture` for different material aesthetics with the same poster structure; change `shopping mall atrium` to `airport terminal exhibition` or `art biennale pavilion` for different commercial contexts; replace the example text strings with your own brand/concept for a real promotional mockup; tighten `low-poly faceted` to `Swarovski crystal precision faceting` for jewelry-grade detail.
+
+---
+
+### 🇧🇷 Brazilian Heritage & Print Culture
+
+Prompts that reinterpret characters through Brazilian historical, archival, and print-medium aesthetics — antique stamps, currency, postal artifacts, and broader national heritage iconography (distinct from the Northeastern regional folk tradition).
+
+---
+
+#### Antique Brazilian Postage Stamp (Lithographic Engraving)
+
+<img src="./assets/images/illustrations/brazil/001.webp" width="600" alt="Character reinterpreted as a low-resolution antique Brazilian postage stamp from early 1900s with coarse engraving and aged paper texture">
+
+**Category:** Brazilian Heritage & Print Culture · **Tags:** `postage-stamp` `philately` `engraving` `lithograph` `antique-print` `correio-do-brasil` `archival` `low-fidelity`
+
+**📋 Prompt:**
+
+```
+create image:
+Transform the attached character into an authentic low-resolution antique Brazilian postage stamp illustration inspired by genuine late 19th-century and early 20th-century Correio do Brasil print technology, especially imperfect intaglio engraving, coarse lithographic ink transfer, antique halftone printing, and early postal reproduction limitations.
+
+CRITICAL STYLE GOAL:
+The image must NOT look digitally sharp, modern, HD, clean, or highly rendered.
+It should resemble a physically printed historical Brazilian stamp scanned from aged paper — visibly rough, noisy, imperfect, low-fidelity, and mechanically reproduced using primitive engraving and lithographic methods.
+
+The final result should feel like:
+- an old stamp enlarged beyond its original print size
+- visibly limited by antique printing technology
+- slightly blurry in micro-details
+- heavily textured with dot patterns and ink noise
+- imperfectly registered printing plates
+- aged archival paper with ink bleeding and worn line precision
+
+IMPORTANT PRINT CHARACTERISTICS:
+- coarse engraving lines
+- visible ink spread
+- stippling and dense dot shading
+- halftone texture
+- rough cross-hatching
+- broken contour lines
+- uneven ink absorption
+- imperfect print registration
+- faded micro-details
+- slightly muddy engraved shadows
+- tactile paper grain overpowering fine details
+- subtle print smearing
+- antique print degradation
+- low-DPI historical print appearance
+- enlarged vintage stamp scan realism
+
+The artwork should resemble:
+- a real 1890-1930 Brazilian stamp enlarged under magnification
+- worn museum philately scans
+- antique postal archives
+- faded engraved currency and stamp reproductions
+- early government printing presses with mechanical imperfections
+
+Character treatment:
+- reinterpret the character through simplified engraved portraiture
+- avoid anime-clean line art
+- reduce facial sharpness
+- soften eye rendering into engraved ink shapes
+- simplify clothing details into readable print masses
+- preserve identity while adapting it to low-resolution engraved reproduction
+- no glossy surfaces
+- no digital gradients
+- no clean cel shading
+- no modern rendering fidelity
+
+Visual rendering:
+- monochromatic or duotone only
+- faded navy ink, sepia, dark green, or burgundy
+- extremely dense stippling
+- heavy etched shadows
+- dot-based tonal transitions
+- visible print grain
+- degraded edge fidelity
+- noisy engraved texture
+- antique paper discoloration
+- subtle foxing and age stains
+- worn corners and perforations
+- irregular ink density
+
+Stamp structure:
+- authentic perforated edges
+- asymmetrical wear
+- ornate but imperfect border engravings
+- antique Correio do Brasil typography
+- engraved denomination markings
+- vintage postal insignia
+- imperial and republican Brazilian symbolism
+- historical decorative symmetry
+- flawed mechanical print alignment
+
+Composition:
+- vertically framed classical stamp format
+- centered engraved portrait
+- highly decorative but visually compressed layout
+- dense antique linework
+- low-detail readability like real stamps
+- visually crowded ornamental print design
+- realistic antique reproduction limitations
+
+Texture emphasis:
+- aged cellulose paper
+- visible fibers
+- rough ink transfer
+- oxidation stains
+- faded printing
+- dirty scan texture
+- archival wear
+- pressure inconsistencies from antique presses
+- tactile low-quality historical print realism
+
+Mood:
+- archival
+- historical
+- official
+- nostalgic
+- worn
+- scholarly
+- authentic
+- mechanically printed
+- antique Brazilian philatelic realism
+
+Avoid:
+- ultra HD rendering
+- crisp digital detail
+- modern sharpness
+- smooth gradients
+- glossy surfaces
+- clean vector aesthetics
+- pristine linework
+- anime rendering polish
+- modern print quality
+- cinematic lighting
+- photorealistic skin rendering
+
+Ultra authentic degraded antique Brazilian postage stamp scan, low-fidelity historical print reproduction, coarse engraved lithographic realism, enlarged archival philately texture, imperfect antique printing aesthetics, museum-grade worn stamp authenticity.
+
+ADDITIONAL IMPORTANT INSTRUCTION:
+Intentionally simulate low print resolution and primitive reproduction quality. The image should feel physically printed in the early 1900s, then enlarged digitally from a tiny real-world stamp, revealing all imperfections, dot patterns, ink spread, and engraving degradation.
+
+Avoid T-pose and A-pose; use a natural formal portrait pose appropriate for historical engraved stamp portraiture.
+```
+
+**📎 Requires:** An attached reference image — identity preserved through silhouette/key features, with the entire visual translated into low-fidelity antique print language.
+
+**💡 Why it works:** This is the most aggressively *anti-quality* prompt in the entire collection — and that's the entire point. The model's default is to produce HD, clean, sharp output, so this prompt has to explicitly fight against every default at multiple levels. The opening `"The image must NOT look digitally sharp, modern, HD, clean, or highly rendered"` sets the tone, then the prompt stacks 30+ degradation directives (coarse engraving, stippling, ink spread, paper grain, foxing, oxidation stains, asymmetric wear). The framing as `"a real 1890-1930 Brazilian stamp enlarged under magnification"` is a *cultural-artifact identity anchor* — the model has training data on actual antique philately scans and pulls authenticity from that pool. Specifying `monochromatic or duotone only` with a limited palette (faded navy, sepia, dark green, burgundy) is critical: full color destroys the antique reading immediately. The "Avoid" block at the end (ultra HD, crisp digital, glossy, anime rendering polish, cinematic lighting) is doing heavy redirective work — those are all the defaults the model would otherwise produce.
+
+**🔧 Variations:** swap `1890-1930` for `1850s imperial Brazil with Pedro II iconography` for a more imperial-era stamp variant; change `monochromatic navy ink` to `polychromatic 4-color old print with imperfect registration` for early color stamps; replace `vertically framed classical stamp format` with `horizontal commemorative envelope (envelope-with-stamp composition)` for a postal-historical document feel; tighten `Correio do Brasil typography` to a specific historical Brazilian government typeface era for sharper period accuracy.
+
+---
+
+
 
 ---
 
@@ -2879,6 +3709,200 @@ Ultra detailed Brazilian embroidery masterpiece, authentic Bordado Sertanejo rea
 **💡 Why it works:** Where prompt 012 (Renda Renascença) used delicate ivory lace with sacred ceremonial tone, this prompt does the opposite — warm folk-art saturation with vivid reds, yellows, blues, greens and *visible thread texture everywhere*. The line `"raised embroidered textures"` is the key technical demand: it tells the model the embroidery should have *physical depth*, not be flat painted ornamentation. The "handcrafted asymmetry" + "embroidery knots and thread intersections" forces visible irregularity that authentic Bordado Sertanejo has — machine-made embroidery is perfectly symmetric, which is exactly why the "Avoid" block targets `machine-made textile look`. The optional decorative elements (cacti, suns, moons, birds) give the model concrete Bordado Sertanejo motif vocabulary rather than generic flowers.
 
 **🔧 Variations:** swap the warm saturated palette for `earth tones only (browns, ochres, dusty reds)` for a more rustic countryside variant; change `embroidered textile backdrop` to `traditional Bordado Sertanejo workshop with hanging samples` for documentary framing; tighten the facial treatment to `embroidered Brazilian saint icon style` for sacred folk-art crossover.
+
+---
+
+
+#### Chita Nordestina Folk Fashion Editorial (017)
+
+<img src="./assets/images/illustrations/nordeste/nordeste017.webp" width="600" alt="Character reimagined as a Brazilian folk-fashion editorial portrait featuring authentic Chita Nordestina textile aesthetics">
+
+**Category:** Brazilian Northeastern Folk Art · **Tags:** `chita-nordestina` `folk-fashion` `editorial` `textile` `floral` `nordeste` `cotton` `style-translation`
+
+**📋 Prompt:**
+
+```
+create image:
+
+Use the attached character ONLY as identity reference (face, hairstyle silhouette, colors, accessories, ears, tail, personality essence, and recognizable visual traits).
+
+Transform the character into an elegant Brazilian folk-fashion editorial entirely inspired by authentic Chita Nordestina textile aesthetics.
+
+IMPORTANT:
+The focus is exclusively on the beauty of Chita fabric culture and handcrafted Brazilian floral textile fashion.
+
+DO NOT include:
+- Festa Junina decorations
+- bonfires
+- paper flags
+- fireworks
+- straw hats
+- quadrilha dancing
+- carnival aesthetics
+- festival scenes
+
+The image must feel like a sophisticated Brazilian textile-fashion portrait rooted in authentic popular fabric artistry.
+
+Character redesign:
+- fully redesign the outfit using authentic Chita Nordestina aesthetics
+- oversized tropical floral prints
+- vibrant saturated cotton fabrics
+- handcrafted Brazilian folk-fashion styling
+- layered flowing skirts and sleeves
+- decorative ribbon details
+- elegant rural-inspired silhouette
+- colorful ornamental textile combinations
+- floral maximalism
+- handcrafted textile richness
+- traditional Brazilian popular fabric aesthetics
+
+Dress design:
+- dramatic flowing Chita dress
+- large-scale floral repetition
+- colorful layered fabrics
+- visible cotton texture
+- handcrafted tailoring feel
+- decorative lace trims
+- stitched textile details
+- soft fabric folds
+- elegant folkloric movement
+- museum-quality textile realism
+
+Facial expression and emotion:
+- calm and poetic expression
+- soft nostalgic gaze
+- subtle warm smile
+- delicate emotional warmth
+- serene folkloric elegance
+- gentle contemplative eyes
+- peaceful and graceful mood
+- expressive but restrained emotion
+- natural relaxed facial muscles
+- elegant editorial fashion presence
+- slight blush from warm sunlight
+- emotionally soft and inviting atmosphere
+
+Pose and body language:
+- elegant relaxed fashion pose
+- natural folkloric grace
+- flowing fabric movement
+- gentle body curves
+- subtle movement in the skirt and sleeves
+- calm posture instead of energetic dancing
+- soft artisanal femininity
+- NEVER use mannequin poses
+- NEVER use T-pose or A-pose
+
+Scene:
+- rustic handcrafted Brazilian interior
+- aged painted walls
+- warm countryside atmosphere
+- subtle artisan setting
+- soft natural window light
+- minimal environmental distraction
+- focus on textile beauty and silhouette
+
+Composition:
+- cinematic folk-fashion editorial framing
+- emphasis on fabric movement and dress silhouette
+- elegant visual balance
+- ornamental textile composition
+- character centered as wearable folk-art
+- layered textile richness dominating the frame
+
+Texture and materials:
+- realistic cotton fabric realism
+- visible woven textile structure
+- handcrafted stitching
+- layered fabric depth
+- tactile artisan quality
+- authentic Chita material realism
+- soft natural lighting interacting with cloth fibers
+
+Color palette:
+- strong reds
+- deep blues
+- warm yellows
+- vibrant greens
+- oranges
+- saturated pinks
+- warm Brazilian countryside harmony
+- maximalist floral color rhythm
+
+Rendering style:
+- ultra detailed folk-fashion illustration
+- cinematic editorial lighting
+- soft artisanal atmosphere
+- painterly textile realism
+- handcrafted visual richness
+- elegant Brazilian folk-art fashion photography
+- natural fabric physics
+- highly detailed floral textile rendering
+- warm cinematic shadows
+- soft depth of field
+
+Mood:
+- elegant
+- warm
+- folkloric
+- poetic
+- decorative
+- handcrafted
+- vibrant
+- emotionally soft
+- culturally authentic
+
+Avoid:
+- glossy CGI look
+- cyberpunk
+- modern haute couture
+- anime idol styling
+- minimalism
+- exaggerated expressions
+- comedic expressions
+- energetic dance poses
+- festival iconography
+
+Ultra detailed Chita Nordestina fashion masterpiece, authentic Brazilian floral textile realism, handcrafted folk-fashion editorial aesthetic, museum-quality Brazilian popular fabric artistry, elegant emotional warmth, poetic folkloric fashion portrait.
+```
+
+**📎 Requires:** An attached reference image — identity preserved through facial essence, hair, ears/tail; outfit fully reinterpreted as Chita Nordestina editorial fashion.
+
+**💡 Why it works:** The most interesting structural choice here is the *explicit "DO NOT include" block* at the top, listing all the obvious Festa Junina associations (bonfires, paper flags, fireworks, straw hats, quadrilha). Without that block, the model conflates Chita fabric with Festa Junina costume by default because they share cultural overlap. By forbidding the festival iconography upfront, the prompt redirects the model toward *editorial fashion* — Chita as a textile tradition standing on its own. The line `"calm posture instead of energetic dancing"` reinforces this redirection. The dress design block emphasizes "large-scale floral repetition" + "visible cotton texture" which are the two visual signatures that distinguish authentic Chita from generic floral prints. The "Avoid" block targeting `modern haute couture` is doing important work: it prevents the model from rendering a polished runway version that loses the *handcrafted popular-fabric* identity.
+
+**🔧 Variations:** swap `rustic Brazilian interior` for `colonial Brazilian courtyard with tropical foliage` for an outdoor editorial; change `large-scale floral repetition` to `medium-scale floral mosaic` for a more refined patterning; replace `cotton` with `linen-cotton blend with starched finish` for a more formal textile feel; tighten the palette to `red + indigo + cream only` for a more disciplined editorial composition.
+
+---
+
+#### Public Bronze Statue at Brazilian Landmark (018)
+
+<img src="./assets/images/illustrations/nordeste/nordeste018.webp" width="600" alt="Cinematic photograph of a large bronze statue of the character permanently installed at a Brazilian landmark with realistic urban environment and pedestrians">
+
+**Category:** Brazilian Northeastern Folk Art · **Tags:** `bronze-statue` `monument` `public-art` `sculpture` `marco-zero` `recife` `documentary` `urban-realism`
+
+**📋 Prompt:**
+
+```
+create image
+LOCAL="{argument name="location" default="no meio do marco zero no recife antigo"}" 
+Status name="Inex"
+
+Create a highly detailed cinematic photograph of a large bronze statue based on the attached character, permanently installed at LOCAL during a bright sunny day. The statue preserves the recognizable identity, facial structure, hairstyle silhouette, proportions, outfit design language, and iconic visual traits of the attached character while realistically adapted into monumental bronze sculpture form.
+
+The statue stands prominently in the middle of LOCAL, integrated naturally into the surrounding urban environment with pedestrians, city architecture, vehicles, street details, trees, public benches, and environmental storytelling appropriate to the chosen place. The sculpture is mounted on a realistic stone pedestal with engraved metallic plaque and subtle weathering. If its T-pose or A-pose change it. 
+
+The bronze material should feature realistic metallic reflections, oxidized patina variations, fine sculpted surface texture, visible craftsmanship marks, polished highlights on exposed edges, and believable sunlight interaction. Strong natural sunlight casts sharp realistic shadows across the ground and surrounding structures, creating a vivid midday atmosphere with blue sky and warm illumination.
+
+The character's pose should feel iconic, dynamic, and commemorative, like an important cultural landmark or famous public monument. Maintain accurate anatomy and a coherent full-body sculpted structure. Avoid duplicated limbs, disconnected parts, floating elements, deformed hands, extra fingers, broken symmetry, warped anatomy, T-pose, A-pose, low-detail sculpture, toy-like appearance, melted bronze textures, or unrealistic proportions.
+
+Ultra-realistic photography, monumental public art, cinematic composition, realistic urban scale, high-detail bronze material, physically based lighting, depth of field, sharp focus, authentic environmental integration, museum-quality sculpture realism, 8k detail.
+```
+
+**📎 Requires:** An attached reference image — identity preserved through facial structure, hairstyle, proportions, and outfit design language, translated into monumental bronze.
+
+**💡 Why it works:** This prompt does something unusual — it uses a *templated variable system* at the top (`LOCAL="{argument...default="no meio do marco zero no recife antigo"}"`) that mimics the syntax of code/automation tools. Even though GPT Image 2 doesn't *execute* the template, the structure tells the model "this is a variable representing a location" and the model substitutes contextually. Naming `marco zero no recife antigo` (the actual zero-marker plaza in old Recife) as the default location grounds the prompt in a specific real-world setting the model has training data for. The two-paragraph structure works well: first paragraph establishes the *sculpture identity* (bronze, identity-preserving, monumental), second paragraph establishes *environmental integration* (pedestrians, architecture, pedestal with plaque). The detailed material spec ("oxidized patina variations, fine sculpted surface texture, visible craftsmanship marks") is what sells the bronze realism over generic metallic appearance. The long anti-failure list at the end (no duplicated limbs, no warped anatomy, no melted bronze, no toy-like appearance) catches the common sculpture-rendering bugs.
+
+**🔧 Variations:** change `LOCAL` to other Brazilian landmarks for thematic variants — `Praça XV no Rio de Janeiro`, `Largo do Pelourinho em Salvador`, `Paulista esquina com Consolação em São Paulo`, `Praça da Sé em São Luís do Maranhão`; swap `bright sunny day` for `golden-hour sunset with long shadows` or `overcast moody afternoon` for different lighting moods; change `bronze` to `weathered marble` or `dark granite` for different sculpture materials with appropriate pedestal/finish changes; remove `pedestrians, vehicles` for a quiet contemplative variant.
 
 ---
 
