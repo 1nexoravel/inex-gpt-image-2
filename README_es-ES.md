@@ -5,22 +5,22 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
 <p align="center">
-[![English](https://img.shields.io/badge/English-Click_to_View-lightgrey?style=flat-square)](./README.md)
-[![简体中文](https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-Click_to_View-lightgrey?style=flat-square)](./README_zh.md)
-[![繁體中文](https://img.shields.io/badge/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-Click_to_View-lightgrey?style=flat-square)](./README_zh-TW.md)
-[![日本語](https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-Click_to_View-lightgrey?style=flat-square)](./README_ja-JP.md)
-[![한국어](https://img.shields.io/badge/%ED%95%9C%EA%B5%AD%EC%96%B4-Click_to_View-lightgrey?style=flat-square)](./README_ko-KR.md)
-[![ไทย](https://img.shields.io/badge/%E0%B9%84%E0%B8%97%E0%B8%A2-Click_to_View-lightgrey?style=flat-square)](./README_th-TH.md)
-[![Tiếng Việt](https://img.shields.io/badge/Ti%E1%BA%BFng%20Vi%E1%BB%87t-Click_to_View-lightgrey?style=flat-square)](./README_vi-VN.md)
-[![हिन्दी](https://img.shields.io/badge/%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80-Click_to_View-lightgrey?style=flat-square)](./README_hi-IN.md)
-![Español](https://img.shields.io/badge/Espa%C3%B1ol-Current-brightgreen?style=flat-square)
-[![Español (Latinoamérica)](https://img.shields.io/badge/Espa%C3%B1ol%20%28Latinoam%C3%A9rica%29-Click_to_View-lightgrey?style=flat-square)](./README_es-419.md)
-[![Deutsch](https://img.shields.io/badge/Deutsch-Click_to_View-lightgrey?style=flat-square)](./README_de-DE.md)
-[![Français](https://img.shields.io/badge/Fran%C3%A7ais-Click_to_View-lightgrey?style=flat-square)](./README_fr-FR.md)
-[![Italiano](https://img.shields.io/badge/Italiano-Click_to_View-lightgrey?style=flat-square)](./README_it-IT.md)
-[![Português (Brasil)](https://img.shields.io/badge/Portugu%C3%AAs%20%28Brasil%29-Click_to_View-lightgrey?style=flat-square)](./README_pt-BR.md)
-[![Português](https://img.shields.io/badge/Portugu%C3%AAs-Click_to_View-lightgrey?style=flat-square)](./README_pt-PT.md)
-[![Türkçe](https://img.shields.io/badge/T%C3%BCrk%C3%A7e-Click_to_View-lightgrey?style=flat-square)](./README_tr-TR.md)
+  <a href="./README.md"><img src="https://img.shields.io/badge/English-Click_to_View-lightgrey?style=flat-square" alt="English"></a>
+  <a href="./README_zh.md"><img src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-Click_to_View-lightgrey?style=flat-square" alt="简体中文"></a>
+  <a href="./README_zh-TW.md"><img src="https://img.shields.io/badge/%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-Click_to_View-lightgrey?style=flat-square" alt="繁體中文"></a>
+  <a href="./README_ja-JP.md"><img src="https://img.shields.io/badge/%E6%97%A5%E6%9C%AC%E8%AA%9E-Click_to_View-lightgrey?style=flat-square" alt="日本語"></a>
+  <a href="./README_ko-KR.md"><img src="https://img.shields.io/badge/%ED%95%9C%EA%B5%AD%EC%96%B4-Click_to_View-lightgrey?style=flat-square" alt="한국어"></a>
+  <a href="./README_th-TH.md"><img src="https://img.shields.io/badge/%E0%B9%84%E0%B8%97%E0%B8%A2-Click_to_View-lightgrey?style=flat-square" alt="ไทย"></a>
+  <a href="./README_vi-VN.md"><img src="https://img.shields.io/badge/Ti%E1%BA%BFng%20Vi%E1%BB%87t-Click_to_View-lightgrey?style=flat-square" alt="Tiếng Việt"></a>
+  <a href="./README_hi-IN.md"><img src="https://img.shields.io/badge/%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80-Click_to_View-lightgrey?style=flat-square" alt="हिन्दी"></a>
+  <img src="https://img.shields.io/badge/Espa%C3%B1ol-Current-brightgreen?style=flat-square" alt="Español">
+  <a href="./README_es-419.md"><img src="https://img.shields.io/badge/Espa%C3%B1ol%20%28Latinoam%C3%A9rica%29-Click_to_View-lightgrey?style=flat-square" alt="Español (Latinoamérica)"></a>
+  <a href="./README_de-DE.md"><img src="https://img.shields.io/badge/Deutsch-Click_to_View-lightgrey?style=flat-square" alt="Deutsch"></a>
+  <a href="./README_fr-FR.md"><img src="https://img.shields.io/badge/Fran%C3%A7ais-Click_to_View-lightgrey?style=flat-square" alt="Français"></a>
+  <a href="./README_it-IT.md"><img src="https://img.shields.io/badge/Italiano-Click_to_View-lightgrey?style=flat-square" alt="Italiano"></a>
+  <a href="./README_pt-BR.md"><img src="https://img.shields.io/badge/Portugu%C3%AAs%20%28Brasil%29-Click_to_View-lightgrey?style=flat-square" alt="Português (Brasil)"></a>
+  <a href="./README_pt-PT.md"><img src="https://img.shields.io/badge/Portugu%C3%AAs-Click_to_View-lightgrey?style=flat-square" alt="Português"></a>
+  <a href="./README_tr-TR.md"><img src="https://img.shields.io/badge/T%C3%BCrk%C3%A7e-Click_to_View-lightgrey?style=flat-square" alt="Türkçe"></a>
 </p>
 
 ---
