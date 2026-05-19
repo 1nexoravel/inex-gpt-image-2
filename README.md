@@ -18,6 +18,9 @@
   - [🛋️ Interior & Intimate Scenes](#️-interior--intimate-scenes)
   - [🌌 Cosmic & Cinematic Scenes](#-cosmic--cinematic-scenes)
   - [🖼️ Wallpapers](#️-wallpapers)
+  - [👗 Outfit Variants](#-outfit-variants)
+  - [✏️ Sketches & Drawings](#️-sketches--drawings)
+  - [😂 Meme & Cursed](#-meme--cursed)
   - [📝 Typography & Poster Art](#-typography--poster-art)
   - [🇧🇷 Brazilian Heritage & Print Culture](#-brazilian-heritage--print-culture)
   - [🪴 Brazilian Northeastern Folk Art](#-brazilian-northeastern-folk-art)
@@ -1409,6 +1412,327 @@ masterpiece, cinematic anime illustration, symbolic shadow wings, feathered shad
 ---
 
 
+
+### 👗 Outfit Variants
+
+Templated outfit redesigns of the same reference character, built around a `{outfit_color}` or similar variable so you can spin off color/style permutations from a single prompt structure.
+
+---
+
+#### Bunny Girl (Vertical Wallpaper, 1:2)
+
+<img src="./assets/images/illustrations/outfits/bunny001.webp" width="400" alt="Anime bunny girl outfit redesign of the reference character, vertical 1:2 smartphone wallpaper composition">
+
+**Category:** Outfit Variants · **Tags:** `bunny-girl` `outfit-variant` `wallpaper` `1:2-aspect` `vertical` `templated` `character-reference`
+
+**📋 Prompt:**
+
+```
+Use the attached reference character ONLY as the identity reference for the face, hairstyle, body proportions, accessories, and recognizable visual traits.
+
+OUTFIT COLOR: {argument name="outfit color" default="black"}
+
+Create a vertical anime illustration with a strict 1:2 aspect ratio (width:height), optimized for a tall smartphone wallpaper composition.
+
+Transform the character into an elegant bunny girl while preserving the recognizable identity from the reference image.
+
+STYLE:
+- high-quality anime illustration
+- clean polished linework
+- soft cinematic shading
+- elegant mature fashion aesthetic
+- stylish modern anime rendering
+- atmospheric lighting
+- subtle glow and bloom
+- visually balanced composition
+- tasteful and fashionable presentation
+
+OUTFIT:
+- {outfit color} bunny girl outfit
+- glossy or matte fabric depending on lighting
+- bunny ears matching the outfit
+- elegant collar with bow tie
+- fitted corset-style bodice
+- sheer black tights or stockings
+- cuffs and stylish accessories
+- optional heels
+- outfit should look fashionable and anime-stylized rather than realistic
+
+POSE:
+- natural confident pose
+- seated, leaning, kneeling, or standing pose with strong silhouette readability
+- expressive body language
+- avoid exaggerated anatomy
+- NEVER use T-pose, A-pose, reference-sheet pose, or static idle pose
+
+COMPOSITION:
+- vertical framing with the character occupying most of the canvas height
+- dynamic use of negative space
+- cinematic perspective
+- soft foreground blur and depth
+- elegant framing emphasizing the character silhouette
+
+BACKGROUND:
+- stylish lounge, neon room, stage lighting, luxury interior, abstract gradients, or soft atmospheric environment
+- blurred background allowed
+- subtle decorative elements
+- cohesive color harmony with the outfit
+
+EXPRESSION:
+- confident, mysterious, playful, calm, or melancholic expression
+- expressive anime eyes
+- preserve the character's recognizable emotional aura
+
+QUALITY:
+- masterpiece quality
+- highly detailed anime rendering
+- polished illustration finish
+- clean anatomy
+- soft cinematic lighting
+- no low detail
+- no chibi style
+- no realism
+- no photorealistic skin
+- no distorted hands
+- no extra limbs
+```
+
+**📎 Requires:** An attached reference image — identity preserved through face, hair, proportions, accessories.
+
+**💡 Why it works:** This is the first templated prompt in the collection — `OUTFIT COLOR: {argument name="outfit color" default="black"}` follows the GPT Image 2 templated-variable syntax (same pattern as the Bronze Statue prompt's `LOCAL` variable). Even though GPT Image 2 doesn't *execute* templates, this syntax tells the model "this is a slot the user fills in," and the substitution `{outfit color} bunny girl outfit` flows naturally through the prompt. The strict **1:2 aspect ratio** specification at the top is critical — without it, the model defaults to square or portrait crops that don't work as phone wallpapers (which need ~1:2 to fill a modern smartphone screen). The pose block offers 4 alternatives (seated, leaning, kneeling, standing) which gives the model flexibility while suppressing the T-pose default. The background block also lists 5 alternatives (lounge, neon room, stage, luxury, gradient) — letting the renderer pick what fits the chosen color rather than locking one.
+
+**🔧 Variations:** swap `{outfit color}` for `red`, `white`, `pastel pink`, `metallic gold`, `holographic iridescent` for color variants of the same composition; change `bunny girl outfit` to `maid outfit`, `china dress`, `idol stage costume`, or `gothic lolita` to create parallel outfit-variant prompts; replace `1:2` with `9:16` for a stricter mobile screen ratio; tighten `stylish lounge, neon room, stage lighting` to one specific environment for stronger atmospheric anchoring.
+
+---
+
+### ✏️ Sketches & Drawings
+
+Prompts that simulate traditional analog drawing media — ballpoint pen, pencil, marker, ink. The output looks physically hand-drawn rather than digitally rendered, with paper grain, pen pressure variation, and natural human imperfections.
+
+---
+
+#### Blue BIC Ballpoint Pen Sketch (Rooftop Scene)
+
+<img src="./assets/images/illustrations/sketches/bbp001.webp" width="600" alt="Character illustrated as a traditional blue ballpoint pen sketch on rough sketchbook paper, with urban rooftop scenario and casual pose">
+
+**Category:** Sketches & Drawings · **Tags:** `ballpoint-pen` `bic-pen` `sketch` `analog` `traditional-media` `monochrome-blue` `hand-drawn` `sketchbook`
+
+**📋 Prompt:**
+
+```
+Use the attached reference image ONLY as the identity reference for the character's face, hairstyle, proportions, clothing design, accessories, tail, ears, and recognizable visual traits.
+
+Transform the image into a highly believable traditional blue ballpoint pen sketch, as if manually drawn on rough sketchbook paper using a cheap blue BIC pen.
+
+IMPORTANT:
+- Preserve the original character identity and outfit.
+- Preserve the anime proportions and recognizable silhouette.
+- Keep the same general aesthetic and visual appeal.
+- The final image must feel physically hand-drawn, NOT digitally filtered.
+- Avoid clean digital anime rendering.
+
+STYLE:
+authentic blue BIC ballpoint pen drawing,
+traditional analog sketch,
+raw sketchbook illustration,
+expressive handmade linework,
+messy artist practice sketch,
+rough notebook doodle aesthetic,
+hand-drawn imperfections,
+visible pen motion,
+traditional scanned paper texture
+
+MEDIUM:
+monochrome blue ink only,
+blue ballpoint pen strokes,
+visible ink buildup,
+slight ink skipping,
+natural pen pressure variation,
+occasional ink pooling,
+subtle smudging from hand movement,
+rough off-white sketchbook paper,
+visible paper grain,
+tiny paper imperfections,
+realistic scanned sketch appearance
+
+DRAWING TECHNIQUE:
+dense cross-hatching,
+layered hatch buildup,
+scribble shading,
+rough contour lines,
+overlapping sketch marks,
+gesture drawing energy,
+construction lines still visible,
+uneven handmade strokes,
+rough unfinished areas,
+loose expressive sketch flow,
+natural asymmetry,
+visible pen strokes in every shaded area
+
+SHADING:
+heavy cross-hatching in shadows,
+lighter sparse strokes in highlights,
+rough shadow transitions,
+diagonal hatch patterns,
+circular scribble shading,
+manual tonal buildup,
+no smooth gradients,
+no airbrushing,
+no soft digital shading
+
+POSE & EXPRESSION:
+give the character a cool relaxed urban pose,
+slightly leaning posture,
+one hand inside hoodie pocket,
+other hand casually making a peace sign near the face,
+one leg bent naturally,
+dynamic body tilt,
+confident but cute expression,
+soft smug smile,
+half-lidded eyes,
+laid-back street fashion vibe,
+natural dynamic pose,
+avoid stiff posing,
+avoid T-pose,
+avoid A-pose
+
+SCENARIO:
+urban rooftop setting,
+chain-link fence background,
+graffiti walls,
+city skyline in the distance,
+telephone poles and cables,
+concrete rooftop textures,
+small stickers and doodles on walls,
+street fashion atmosphere,
+cozy urban anime vibe,
+all drawn entirely with blue pen hatching
+
+COMPOSITION:
+full body shot,
+vertical composition,
+slightly tilted camera angle,
+character centered,
+tail flowing naturally,
+hair reacting naturally to movement,
+background fully integrated with the sketch style
+
+QUALITY:
+masterpiece,
+best quality,
+ultra detailed,
+highly believable traditional media simulation,
+authentic analog imperfections,
+real hand-drawn feel,
+raw expressive pen illustration,
+scanned sketchbook page aesthetic
+
+AVOID:
+digital painting,
+clean vector lines,
+watercolor,
+marker rendering,
+colored pencils,
+photorealism,
+3D render look,
+smooth shading,
+AI glossy finish,
+overly polished details,
+empty background,
+white void background,
+watermark,
+text,
+logo
+```
+
+**📎 Requires:** An attached reference image — identity, outfit, and proportions preserved, with the rendering medium fully translated to analog ballpoint pen sketch.
+
+**💡 Why it works:** This prompt fights against GPT Image 2's strongest default — *clean digital rendering*. The opening directive `"The final image must feel physically hand-drawn, NOT digitally filtered"` sets the goal, and then the prompt stacks 30+ specific *physical media artifacts* the model has to reproduce: ink buildup, ink skipping, ink pooling, hand smudging, paper grain, pen pressure variation, construction lines still visible. Naming a specific real-world product (BIC ballpoint pen) anchors the rendering to a concrete media memory the model has training data for — much stronger than "blue pen sketch." The `"AVOID"` block at the end is comprehensive: it kills `digital painting, clean vector lines, watercolor, marker, colored pencils, photorealism, 3D, smooth shading, AI glossy finish` — all the rendering styles the model would otherwise default to. The "rooftop with chain-link fence" scenario is doing important framing work: the integrated environment forces the model to draw the background in the same medium as the character, preventing the common failure of "clean character on filtered-photo background."
+
+**🔧 Variations:** swap `blue BIC pen` for `black fineliner` or `red biro` for different ballpoint variants with the same hand-drawn feel; change `cross-hatching` dominant technique to `stippling` (dots) for a denser engraving-like result; replace `urban rooftop` with `cafe interior at a window seat` for a more intimate slice-of-life sketch; tighten `cheap BIC pen` to `Pilot G2 gel pen` for a slightly cleaner ink quality while keeping analog feel.
+
+---
+
+### 😂 Meme & Cursed
+
+Silly, playful, or cursed transformations where the character becomes something it shouldn't — food, household objects, hybrid creatures. The aesthetic embraces absurdity and the joke is the point.
+
+---
+
+#### Bread Creature (Shokupan Hybrid)
+
+<img src="./assets/images/illustrations/meme/001.webp" width="600" alt="Cute anime bread creature where the character's head grows organically out of a fluffy shokupan loaf, resting on a wooden kitchen table">
+
+**Category:** Meme & Cursed · **Tags:** `meme` `cursed` `food-hybrid` `bread` `shokupan` `loaf-cat` `cute` `creature` `style-translation`
+
+**📋 Prompt:**
+
+```
+masterpiece, best quality, ultra detailed, cute anime bread creature, fully fused bread-anime hybrid, living loaf creature
+
+the character is NOT wearing bread,
+the character IS the bread
+
+entire body replaced by a single fluffy shokupan loaf,
+no humanoid torso,
+no human neck,
+no shoulders,
+no chest,
+no arms,
+no separate body parts visible,
+
+the anime girl's head organically grows out of the front/top of the bread loaf,
+face smoothly embedded into the bread surface,
+seamless anatomical fusion between skin and bread,
+bread texture naturally transitions into cheeks and hairline,
+the loaf body and head are biologically connected as one creature,
+
+soft baked bread skin,
+golden brown crust,
+puffy dough texture,
+rounded blob-like silhouette,
+tiny hidden cat paws underneath,
+loaf cat pose,
+resting on a wooden kitchen table,
+
+cute sleepy expression,
+cat ears,
+cozy bakery atmosphere,
+soft warm lighting,
+funny but adorable food creature aesthetic,
+
+(reference image used only for face/hair/ear design)
+
+negative prompt:
+human body,
+humanoid anatomy,
+neck,
+shoulders,
+torso,
+hoodie,
+clothes,
+separate head,
+head attached to bread,
+bread around neck,
+costume,
+person inside bread,
+full body girl,
+extra limbs,
+deformed anatomy,
+t-pose,
+a-pose,
+uncanny,
+horror,
+nsfw
+```
+
+**📎 Requires:** An attached reference image — used **only** for face, hair, ears design; everything else (body, anatomy, identity below the neck) is discarded.
+
+**💡 Why it works:** This prompt does something almost no other prompt in the collection does — it *aggressively* uses contrastive directives: `"the character is NOT wearing bread, the character IS the bread"`. That single line resolves the entire ambiguity that would otherwise produce the wrong output (an anime girl wearing a bread costume, or holding bread, or sitting next to bread). The list of body parts being *removed* (no torso, no neck, no shoulders, no chest, no arms) is explicit anatomical subtraction — without that, the model preserves humanoid structure by default. The "loaf cat pose" anchor is a brilliant reference: it points to the well-known internet meme of cats sitting in loaf shape, which the model has training data for, so it understands the silhouette goal immediately. The negative prompt is doing crucial guardrail work — `"head attached to bread"` is specifically suppressed because that's the most common partial-failure mode (head sitting on top of bread rather than fused into it). The closing `nsfw` block is important because requests with `cute anime girl + creature transformation` can drift toward weird territory; explicit suppression keeps it wholesome-cursed.
+
+**🔧 Variations:** swap `shokupan loaf` for `croissant`, `bagel`, `melon-pan` (very on-theme with anime), `donut`, or `dumpling` for different food-hybrid creatures; change `cozy bakery atmosphere` to `kitchen counter at night` for a cuter sleepy-snack vibe; replace `cat paws underneath` with `tiny bird feet` or `frog legs` for different absurd anatomy combinations; tighten the cursed-cute balance by removing `cat ears` if your reference character doesn't have them.
+
+---
 
 ### 📝 Typography & Poster Art
 
