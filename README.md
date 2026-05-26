@@ -38,6 +38,7 @@
   - [🌌 Cosmic & Cinematic Scenes](#-cosmic--cinematic-scenes)
   - [🖼️ Wallpapers](#️-wallpapers)
   - [👗 Outfit Variants](#-outfit-variants)
+  - [💪 Body Variants](#-body-variants)
   - [✏️ Sketches & Drawings](#️-sketches--drawings)
   - [😂 Meme & Cursed](#-meme--cursed)
   - [📝 Typography & Poster Art](#-typography--poster-art)
@@ -1750,6 +1751,34 @@ text
 **💡 Why it works:** This prompt is one of the most aggressive *anti-default* prompts in the collection — it has to fight against three GPT Image 2 defaults simultaneously: (1) tall fashion-model proportions when "competition" is mentioned, (2) bronze/orange stage tan when "bodybuilder" is mentioned, (3) hyper-realistic IFBB anatomy when "muscular" is mentioned. The numbered approach (`"DO NOT make her tall"` / `"DO NOT elongate the legs"` / `"DO NOT give her fashion model proportions"`) repeated three different ways forces the model to break its proportion defaults. The "skin + rendering consistency" block is doing crucial composition work — without it, the model often renders the face in one anime style and the body in a different shader, producing a "pasted-on face" effect. Calling out `"4.5-heads-tall proportions"` is a concrete anatomical specification that produces consistent shortstack output. The 30+ item negative prompt at the end catches every common failure mode (giantess, hyper-realism, dark tan, head pasted onto body, small/realistic tail). Naming `wellness` competition specifically (versus generic "bodybuilding") locks the muscular but feminine aesthetic.
 
 **🔧 Variations:** swap `competition stage` for `gym training environment` for a workout-context variant; change `4.5-heads-tall` to `5-heads-tall` for slightly less extreme shortstack proportions; replace `sparkly black competition bikini` with `colorful posing suit (red/blue/green)` for different competition divisions; tighten "wellness" to "bikini division" or "figure division" for specific IFBB-style category targeting.
+
+---
+
+### 💪 Body Variants
+
+Body-type modifier prompts designed to be **combined with other prompts** (typically Outfit Variants or full scene prompts). These describe anatomical proportions and physique only — paste them alongside a scene prompt to shape the character's body type in the output.
+
+---
+
+#### Curvy Brazilian Body Modifier
+
+<img src="./assets/images/illustrations/outfits/bikini002.webp" width="600" alt="Curvy voluptuous anime character with glamorous Brazilian fashion proportions, wide hips, thick thighs, narrow waist in a swimsuit photoshoot">
+
+**Category:** Body Variants · **Tags:** `body-modifier` `curvy` `brazilian-proportions` `voluptuous` `combinable` `high-fashion`
+
+**📋 Prompt:**
+
+```
+The character has an extremely curvy and voluptuous adult body type inspired by glamorous Brazilian fashion model proportions, with very wide hips, thick thighs, a narrow waist, soft belly curves, and a prominently full bust. Body silhouette is exaggerated yet elegant and aesthetically balanced, emphasizing mature feminine curves and luxurious beauty. Legs are thick and shapely, hips broad and rounded, overall physique soft, healthy, sensual, and visually striking while remaining tasteful and high-end.
+
+Swimsuit naturally conforms to the character's curvy physique, with realistic fabric tension, subtle compression, and refined silhouette definition. The overall impression should resemble a high-fashion summer photoshoot with premium commercial illustration quality.
+```
+
+**📎 Requires:** This prompt is a **modifier**, not a standalone scene. Combine it with a scene prompt (e.g. Beach Sunset Run, Red Latex Dress, Bunny Girl) to apply the body type to that scene. Append it as an additional paragraph **after** the main prompt block in your GPT Image 2 request.
+
+**💡 Why it works:** This prompt isolates *anatomy from scene*, which is a structurally unusual approach in this collection — most prompts bundle body proportions inside a larger scene description. Treating body type as a separable modifier means you can apply the same proportions across multiple outfits/scenes without rewriting the anatomical spec each time. The Brazilian fashion-model reference is a strong cultural anchor — Brazilian beauty standards specifically favor wider hips + narrow waist + thick thighs (the "hourglass amplified" silhouette), which is different from the slimmer fashion-model proportions the model defaults to when given "fashion photoshoot" cues. The `"exaggerated yet elegant and aesthetically balanced"` line is doing register-control work: it tells the model to push proportions further than realism but stop short of caricature. The fabric-tension callout ("realistic fabric tension, subtle compression") prevents the model from rendering loose-fit clothing — it forces the swimsuit/garment to conform to the curvy silhouette.
+
+**🔧 Variations:** swap `glamorous Brazilian` → `vintage pin-up`, `runway high-fashion`, or `K-pop idol` for different cultural-aesthetic anchors with similar curvy silhouette; tighten `extremely curvy` → `moderately curvy` for less exaggerated proportions; replace `swimsuit` with `dress`, `corset`, or `bodysuit` for non-beach combinations (the fabric-tension principle still applies); pair with the Beach Sunset Run prompt for editorial beach + curvy results, or with the Red Latex Dress prompt for sultry latex + curvy results.
 
 ---
 
