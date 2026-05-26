@@ -1524,6 +1524,235 @@ QUALITY:
 
 ---
 
+
+#### Beach Sunset Run (Golden Hour)
+
+<img src="./assets/images/illustrations/outfits/bikini001.webp" width="600" alt="Anime woman joyfully running out of shallow ocean waves at golden sunset, cinematic tropical beach scene with athletic curvy figure">
+
+**Category:** Outfit Variants · **Tags:** `bikini` `beach` `sunset` `golden-hour` `athletic` `dynamic-motion` `summer` `character-reference`
+
+**📋 Prompt:**
+
+```
+Use the uploaded character strictly as the identity reference only. Preserve the exact face, hairstyle, hair color, fox ears, fluffy tail, eye shape, and overall anime identity from the reference image. Transform her into a premium cinematic beach illustration at golden sunset. Adult anime woman with an athletic yet voluptuous curvy body, elegant mature proportions, wide hips, thick thighs, narrow waist, soft natural curves, and tasteful high-fashion swimsuit styling.
+
+She is joyfully running out of shallow ocean waves toward the viewer, energetic dynamic movement, bright genuine smile, wet hair strands flowing naturally, water splashing around her legs, cinematic tropical beach environment, warm sunset lighting, reflective wet skin highlights, realistic fabric tension and wet swimsuit details, luxurious commercial anime art quality, highly detailed rendering, natural anatomy, premium summer fashion photography aesthetic.
+
+Dynamic natural pose, expressive motion, avoid stiff posing, avoid T-pose and A-pose. Soft wind movement in hair and transparent beach fabric accessory. Realistic lighting, depth of field, dramatic sunset reflections on water, emotionally warm atmosphere, polished high-end illustration quality.
+```
+
+**📎 Requires:** An attached reference image — identity locked through face, hair, ears/tail, eyes; outfit fully reinterpreted as beach swimwear.
+
+**💡 Why it works:** This prompt is unusually short for a high-detail output (only 3 paragraphs) because it leans heavily on *cinematographic anchors* rather than checklist density. `"golden sunset"` + `"warm sunset lighting"` + `"dramatic sunset reflections on water"` repeats the lighting cue three times across the prompt, which is a deliberate technique — repeated atmospheric anchors are more reliable than a single mention. The "joyfully running out of shallow ocean waves toward the viewer" pose description is doing critical work: it specifies *direction of motion* (out of waves, toward camera), *energy* (joyful/dynamic), and *body interaction* (water splashing around legs) — much stronger than "standing on beach." `"premium summer fashion photography aesthetic"` near the end pulls the rendering toward editorial commercial quality rather than illustration-style. The proportions block ("wide hips, thick thighs, narrow waist") gives the model concrete anatomy targets while the `"tasteful high-fashion swimsuit"` directive keeps it in publishable register.
+
+**🔧 Variations:** swap `golden sunset` → `early morning blue-hour` for cooler tones; change `running out of waves toward viewer` → `walking along the shore looking back over shoulder` for a more contemplative composition; replace `tropical beach` with `rocky northern coast with dramatic cliffs` for a different beach aesthetic; tighten the outfit to a specific style (`one-piece athletic swimsuit`, `vintage retro swimsuit`, `metallic high-fashion swimwear`).
+
+---
+
+#### Red Latex Dress (Intimate POV Toast)
+
+<img src="./assets/images/illustrations/outfits/latexdress.webp" width="600" alt="Intimate POV anime portrait of character in glossy red latex dress holding a wine glass, viewer holding a matching glass in foreground for first-person toast composition">
+
+**Category:** Outfit Variants · **Tags:** `latex` `red-dress` `intimate-pov` `first-person` `wine` `vertical-close-up` `glossy` `character-reference` `identity-lock`
+
+**📋 Prompt:**
+
+```
+Use the uploaded character strictly as the EXCLUSIVE identity reference. Preserve the exact delicate anime face, soft brown eyes, long blonde bangs partially covering the eyes, side braid, twin buns with black ribbons, fluffy cat ears, large fluffy tail, and the overall recognizable avatar identity.
+
+Transform the scene into an extremely intimate cinematic anime POV portrait with a very close vertical composition, as if the viewer is taller than her and looking slightly downward from their own perspective.
+
+The character should be MUCH closer to the camera, leaning forward toward the viewer with a warm, gentle, slightly shy expression, soft smile, and natural blush. She is holding a transparent wine/champagne glass filled with deep red wine using a glossy long red vinyl/latex glove. A second matching wine glass is being held by the viewer's hand in the lower-right foreground, creating an intimate first-person toast perspective. Keep both glasses positioned lower in the composition near the bottom of the frame so they do not cover the character's face.
+
+Replace the original outfit entirely with an elegant glossy red vinyl/latex dress matching the gloves exactly: highly reflective shiny material, luxurious premium texture, form-fitting design, tasteful soft neckline, short layered skirt details, sophisticated anime fashion aesthetic. Maintain adult anime proportions and elegant styling.
+
+Use soft cinematic lighting with realistic glossy reflections on the latex material, ultra-detailed anime rendering, highly refined eyes, soft skin shading, detailed hair strands, subtle depth of field, and an intimate luxurious atmosphere. Background should remain dark, neutral, and softly blurred to emphasize the character.
+
+High-detail anime illustration, premium rendering quality, natural dynamic pose, avoid T-pose and A-pose, no text, no watermark, no extra objects.
+```
+
+**📎 Requires:** An attached reference image — identity-locked through specific listed features (brown eyes, blonde bangs, side braid, twin buns, cat ears, fluffy tail). **Edit the second paragraph trait list to match your reference character.**
+
+**💡 Why it works:** This prompt is built around a single compositional concept — *first-person toast POV* — and stacks every detail to reinforce that single visual. The viewer-perspective directives are precise: `"as if the viewer is taller than her and looking slightly downward"`, `"a second matching wine glass is being held by the viewer's hand in the lower-right foreground"`. That second glass in the lower-right is the entire trick: it tells the model "this is a POV shot," not "this is a portrait of someone holding a glass." Without that foreground element, the model would default to a regular portrait. The matching gloves + dress in same material/color is doing visual-cohesion work — single material across multiple garment elements reads as intentional couture rather than mismatched outfit. `"Keep both glasses positioned lower in the composition near the bottom of the frame so they do not cover the character's face"` is preventive instruction — without it, the model often places hand-held objects in front of the face.
+
+**🔧 Variations:** swap `red latex dress` for `black satin evening dress` or `midnight blue velvet` for different formal aesthetics with the same POV structure; change `wine/champagne glass` to `coffee mug` or `martini glass` for different drink contexts; replace the dark blurred background with `cozy fireplace with warm orange light` for a more romantic intimate setting; tighten the expression from `slightly shy` to `confident sultry` or `playfully teasing` for different emotional registers.
+
+---
+
+#### Wellness Bodybuilder (Compact Stylized Athlete)
+
+<img src="./assets/images/illustrations/outfits/bodybuilder001.webp" width="600" alt="Compact muscular anime wellness competition athlete with shortstack proportions, sparkly black competition bikini on stage with dramatic lighting">
+
+**Category:** Outfit Variants · **Tags:** `bodybuilder` `wellness` `competition` `shortstack` `athletic` `stage` `muscular` `character-reference` `identity-lock`
+
+**📋 Prompt:**
+
+```
+Use the attached image ONLY as identity reference for the character's:
+face, hairstyle, hair color, eyes, cat ears, fluffy tail, and overall recognizable appearance.
+
+Create a full-body anime-style illustration of the same character as a compact muscular wellness competitor.
+
+IMPORTANT PROPORTIONS:
+Keep the character SHORT and COMPACT.
+DO NOT make her tall.
+DO NOT give her fashion model proportions.
+DO NOT elongate the legs or torso.
+
+The body must remain:
+shortstack,
+compact,
+wide,
+stylized,
+cute,
+anime-like.
+
+Approximately 4.5-heads-tall proportions.
+Large head-to-body ratio.
+Shorter legs.
+Wide hips.
+Large thighs.
+Thick glutes.
+Compact athletic waist.
+
+The body should feel like:
+a stylized anime wellness athlete,
+not a realistic tall bodybuilder.
+
+IMPORTANT BODY STYLE:
+Muscular lower body with soft feminine curves.
+Strong thighs and glutes.
+Compact muscle mass.
+Cute anime silhouette preserved.
+
+Avoid:
+IFBB proportions,
+giantess proportions,
+hyper-realistic anatomy,
+extreme muscles,
+male musculature.
+
+FACE RULES:
+Keep the original anime face style and identity.
+Large anime eyes.
+Small nose.
+Soft jawline.
+Cute calm expression.
+Slightly confident expression.
+
+IMPORTANT SKIN + RENDERING CONSISTENCY:
+The ENTIRE body must use the SAME pale soft anime skin tone as the original face.
+NO bodybuilding spray tan.
+NO dark stage tan.
+NO orange skin.
+NO bronze skin.
+
+Use:
+soft pale anime skin,
+light creamy skin tone,
+uniform skin color across face and body,
+same rendering style on head and body,
+same lighting response,
+same gloss intensity,
+same shadow softness,
+same anime shading style,
+same subsurface softness.
+
+The face and body must feel physically connected and rendered together as one character.
+No visible difference between facial skin and body skin.
+No pasted-on face look.
+No disconnected rendering.
+No different shader style between face and body.
+
+TAIL:
+Keep the original oversized fluffy anime tail.
+Large fluffy tail.
+Wide soft fur shape.
+High fur density.
+Cute oversized anime silhouette.
+
+Do NOT make the tail:
+small,
+thin,
+realistic,
+rat-like,
+short-haired.
+
+OUTFIT:
+Sparkly black wellness competition bikini.
+Competition heels.
+Small competition badge.
+Subtle jewelry.
+
+POSE:
+Cute confident wellness competition pose.
+Natural posture.
+Slight hip angle.
+Relaxed shoulders.
+One hand near thigh.
+Cute confident stage presence.
+
+Avoid:
+T-pose,
+A-pose,
+overly exaggerated arching.
+
+SCENE:
+Professional bodybuilding competition stage.
+Warm dramatic spotlights.
+Dark background.
+Stage floor reflections.
+Cinematic fitness stage atmosphere.
+
+STYLE:
+Ultra detailed.
+High quality anime rendering.
+Semi-realistic lighting.
+Stylized anime anatomy.
+Compact silhouette.
+Cute anime face with athletic compact body.
+
+IMPORTANT NEGATIVE PROMPT:
+tall body,
+long legs,
+elongated proportions,
+fashion model body,
+realistic adult face,
+male body,
+extreme muscularity,
+giantess,
+hyper-realism,
+dark tan,
+orange tan,
+bronze skin,
+bodybuilder spray tan,
+pale face with darker body,
+different face/body skin tone,
+separate face lighting,
+detached face shading,
+head pasted onto body,
+small tail,
+thin tail,
+realistic tail,
+T-pose,
+A-pose,
+bad anatomy,
+extra limbs,
+deformed hands,
+blurry,
+low quality,
+watermark,
+text
+```
+
+**📎 Requires:** An attached reference image — face, hair, ears, tail identity-locked; body proportions fully reinterpreted as compact muscular shortstack.
+
+**💡 Why it works:** This prompt is one of the most aggressive *anti-default* prompts in the collection — it has to fight against three GPT Image 2 defaults simultaneously: (1) tall fashion-model proportions when "competition" is mentioned, (2) bronze/orange stage tan when "bodybuilder" is mentioned, (3) hyper-realistic IFBB anatomy when "muscular" is mentioned. The numbered approach (`"DO NOT make her tall"` / `"DO NOT elongate the legs"` / `"DO NOT give her fashion model proportions"`) repeated three different ways forces the model to break its proportion defaults. The "skin + rendering consistency" block is doing crucial composition work — without it, the model often renders the face in one anime style and the body in a different shader, producing a "pasted-on face" effect. Calling out `"4.5-heads-tall proportions"` is a concrete anatomical specification that produces consistent shortstack output. The 30+ item negative prompt at the end catches every common failure mode (giantess, hyper-realism, dark tan, head pasted onto body, small/realistic tail). Naming `wellness` competition specifically (versus generic "bodybuilding") locks the muscular but feminine aesthetic.
+
+**🔧 Variations:** swap `competition stage` for `gym training environment` for a workout-context variant; change `4.5-heads-tall` to `5-heads-tall` for slightly less extreme shortstack proportions; replace `sparkly black competition bikini` with `colorful posing suit (red/blue/green)` for different competition divisions; tighten "wellness" to "bikini division" or "figure division" for specific IFBB-style category targeting.
+
+---
+
 ### ✏️ Sketches & Drawings
 
 Prompts that simulate traditional analog drawing media — ballpoint pen, pencil, marker, ink. The output looks physically hand-drawn rather than digitally rendered, with paper grain, pen pressure variation, and natural human imperfections.
