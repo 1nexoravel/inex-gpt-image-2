@@ -15,6 +15,7 @@ raw/
 *.ai
 *.sketch
 *.fig
+*.zip
 
 # Original full-size images (use scripts/optimize.sh first)
 *.png

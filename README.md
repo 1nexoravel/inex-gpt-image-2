@@ -636,6 +636,39 @@ slow atmospheric anime opening energy
 
 ---
 
+
+#### Messy Couch Nap (Cozy Living Room POV)
+
+<img src="./assets/images/illustrations/interior/002.webp" width="600" alt="Anime character sleeping messily on a living room sofa with drool, soft cozy evening lighting, close-up POV near the head">
+
+**Category:** Interior & Intimate Scenes · **Tags:** `anime` `intimate` `sleeping` `cozy` `living-room` `pov` `domestic` `character-reference` `identity-lock`
+
+**📋 Prompt:**
+
+```
+Use the uploaded image strictly as the identity reference only. Preserve the exact face, hairstyle, hair color, eye shape, body proportions, species traits, silhouette, clothing style cues, and overall recognizable visual identity of the referenced character. Do not censor, obscure, crop, block, blur, or cover the face in any way.
+
+Create a cozy anime-style indoor illustration of the same character sleeping messily on a living room sofa. The point of view is very close to the character's head and upper torso, as if the viewer is sitting beside the couch. The character is sprawled out awkwardly and ungracefully across the sofa in a natural sleeping pose, with limbs loosely positioned and posture slightly twisted from falling asleep unintentionally.
+
+The character is sleeping deeply with their mouth slightly open, wearing a soft sleepy smile, visibly relaxed and comfortable. A small bit of drool is running from the corner of the mouth onto the sofa pillow or blanket, emphasizing the deep carefree sleep. Eyes fully closed, cheeks slightly relaxed, peaceful sleepy expression.
+
+The living room environment should feel warm, lived-in, and cozy: soft ambient evening lighting, subtle clutter, cushions, coffee table, shelves, warm lamp light, curtains, and domestic details visible in the background. Make the interior feel believable and comfortable rather than staged.
+
+Camera composition: close-up perspective near the head, slightly angled from above, emphasizing the sleepy facial expression and messy pose while still showing enough of the couch and room to establish the environment.
+
+Art style: high-quality anime illustration, soft shading, cinematic lighting, detailed fabric folds, expressive sleeping expression, intimate cozy atmosphere, natural pose, warm colors, polished rendering.
+
+Avoid T-pose, A-pose, stiff anatomy, symmetry, exaggerated glamour posing, excessive sharpness, horror atmosphere, or overly clean/composed sleeping posture.
+```
+
+**📎 Requires:** An attached reference image — identity fully locked through face, hair, eyes, body, species traits, clothing.
+
+**💡 Why it works:** This prompt is built around a single counter-intuitive directive: *make the pose ugly on purpose*. Most anime prompts default to "elegant" / "graceful" / "composed" — this one explicitly requests `"sprawled out awkwardly and ungracefully"`, `"posture slightly twisted from falling asleep unintentionally"`, and even adds drool. The result reads as authentic and lived-in rather than glamorized. The "Avoid" block reinforces this by explicitly killing `"exaggerated glamour posing"` and `"overly clean/composed sleeping posture"` — those are the defaults the model would otherwise produce. The "lived-in, cozy, believable rather than staged" environment directive prevents the model from rendering a sterile catalog-style living room. The opening identity-lock paragraph adds an unusual line — `"Do not censor, obscure, crop, block, blur, or cover the face in any way"` — which preemptively kills the common failure where the model places a pillow/blanket/hand over the face when generating sleeping characters.
+
+**🔧 Variations:** swap `living room sofa` for `reading nook with armchair`, `bedroom floor next to the bed`, or `study desk with head down on the keyboard` for different "fell asleep unexpectedly" contexts; change `evening warm lighting` to `late morning sunlight through blinds` for a different time-of-day; remove the drool detail if you want a slightly less cursed-cozy register; tighten the environment with specific items (`open book on chest`, `laptop still on with screensaver`, `controller dropped on the floor`) for richer "fell asleep doing X" storytelling.
+
+---
+
 ### 🌌 Cosmic & Cinematic Scenes
 
 Atmospheric anime illustrations exploring scale, emotion, and surreal environments — characters in impossible or sublime situations, with heavy emphasis on lighting and environmental storytelling.
