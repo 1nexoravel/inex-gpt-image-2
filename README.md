@@ -166,6 +166,120 @@ Ultra detailed, masterpiece, best quality, convertible sports car interior, open
 
 ---
 
+
+#### Rear Door Open — POV Invitation Inside Supercar
+
+<img src="./assets/images/illustrations/cars/car003.webp" width="600" alt="Cinematic anime night POV illustration of a character seated in a luxury sports car rear seat, holding the viewer's hand through an open rear door, with neon city reflections">
+
+**Category:** Anime Cars · **Tags:** `anime` `cinematic` `cars` `pov` `intimate` `night` `neon` `first-person` `character-reference`
+
+**📋 Prompt:**
+
+```
+CAR={McLaren P1 / Nissan GT-R R35 / Lamborghini Revuelto / Porsche 911 GT3 RS / etc}
+
+Use the attached image only as reference for composition, framing, camera angle, perspective, and overall atmosphere.
+
+Create a cinematic anime illustration at night from a highly immersive POV perspective.
+
+Scene:
+The viewer is standing outside a {CAR} with the rear passenger door open. The camera is positioned slightly above eye level and tilted downward toward the rear passenger compartment, creating the feeling of someone about to enter the vehicle.
+
+Composition:
+- framing through the open rear door
+- luxury sports car or supercar interior occupying a large portion of the scene
+- character seated diagonally on the rear seat (or rear seating area when applicable)
+- legs naturally oriented toward the viewer
+- direct eye contact with the camera
+- character reaching forward and holding the viewer's hand
+- intimate invitation gesture
+- natural dynamic pose
+- avoid T-pose
+- avoid A-pose
+- elegant cinematic storytelling
+
+Character:
+- preserve the identity of the attached character reference
+- relaxed expression
+- subtle warmth
+- soft smile
+- fully visible face
+- fully visible eyes
+- natural body language
+- looking directly at the viewer
+
+Vehicle Interior:
+- premium luxury sports car interior
+- detailed leather and alcantara surfaces
+- illuminated dashboard
+- ambient LED lighting
+- carbon fiber accents
+- polished trim
+- realistic door panel details
+- luxury materials
+- reflections on glossy surfaces
+- subtle depth of field
+
+Lighting:
+- nighttime urban environment
+- soft neon reflections from outside
+- city lights reflected on windows
+- cinematic anime lighting
+- volumetric glow
+- realistic reflections
+- soft bloom
+- subtle chromatic aberration
+- atmospheric lighting gradients
+
+Environment:
+- futuristic city at night
+- blurred neon signs
+- wet streets outside
+- distant headlights
+- rain droplets on glass
+- reflections on vehicle bodywork
+
+Camera:
+- POV perspective
+- viewer's hand visible in foreground
+- character holding the viewer's hand
+- camera close to the door frame
+- slight downward angle
+- wide-angle lens (24mm-35mm)
+- immersive perspective
+- natural perspective distortion
+- luxury automotive photography influence
+
+Style:
+masterpiece,
+best quality,
+ultra detailed,
+semi-realistic anime,
+premium anime illustration,
+anime movie quality,
+high-end anime key visual,
+cinematic composition,
+beautiful reflections,
+depth of field,
+film grain,
+luxury aesthetic,
+emotional ambience,
+painterly rendering,
+dramatic night atmosphere,
+detailed hands,
+accurate anatomy,
+immersive perspective,
+8k
+```
+
+**📎 Requires:** An attached reference image — used for both character identity AND compositional/framing reference (the prompt mentions matching atmosphere from the image).
+
+**💡 Why it works:** This is the first POV car prompt in the collection, and it pulls a key trick from the Red Latex Dress prompt: explicitly placing the viewer's hand visible in the foreground (`"viewer's hand visible in foreground / character holding the viewer's hand"`). That one detail flips the entire composition from "portrait of someone in a car" to "first-person scene of being invited into the car." The `{CAR}` variable at the top mirrors the same pattern from the Night Driving prompt (car002), making this part of a coherent series. The wide-angle lens spec (`24mm-35mm`) gives the model a concrete optical anchor that produces natural perspective distortion at door-frame proximity — without it, the model defaults to a flatter 50mm-equivalent look that breaks the POV feeling. Door-frame + slight downward angle + character reaching forward stacks three positional cues that mutually reinforce the "about to enter the vehicle" reading.
+
+**🔧 Variations:** swap `{CAR}` for sedan/SUV options for less aggressive contexts (`Rolls-Royce Phantom`, `Mercedes Maybach`, `Range Rover SV`); change `nighttime urban` to `golden hour at private airport tarmac` for a more cinematic "private jet client pickup" mood; replace `rear passenger compartment` with `front passenger seat` for a co-driver invitation framing; remove `rain droplets on glass` if you want a dry desert highway variant; tighten "intimate invitation gesture" to "playfully patting the seat next to her" for a more casual reading.
+
+---
+
 ### 🛏️ Dakimakura
 
 Print-ready 1:3 vertical compositions for life-size body pillow covers, with front and back companion illustrations. Built around dense pose and anatomy rules and explicit negative-prompt blocks to keep the output print-quality.
@@ -666,6 +780,52 @@ Avoid T-pose, A-pose, stiff anatomy, symmetry, exaggerated glamour posing, exces
 **💡 Why it works:** This prompt is built around a single counter-intuitive directive: *make the pose ugly on purpose*. Most anime prompts default to "elegant" / "graceful" / "composed" — this one explicitly requests `"sprawled out awkwardly and ungracefully"`, `"posture slightly twisted from falling asleep unintentionally"`, and even adds drool. The result reads as authentic and lived-in rather than glamorized. The "Avoid" block reinforces this by explicitly killing `"exaggerated glamour posing"` and `"overly clean/composed sleeping posture"` — those are the defaults the model would otherwise produce. The "lived-in, cozy, believable rather than staged" environment directive prevents the model from rendering a sterile catalog-style living room. The opening identity-lock paragraph adds an unusual line — `"Do not censor, obscure, crop, block, blur, or cover the face in any way"` — which preemptively kills the common failure where the model places a pillow/blanket/hand over the face when generating sleeping characters.
 
 **🔧 Variations:** swap `living room sofa` for `reading nook with armchair`, `bedroom floor next to the bed`, or `study desk with head down on the keyboard` for different "fell asleep unexpectedly" contexts; change `evening warm lighting` to `late morning sunlight through blinds` for a different time-of-day; remove the drool detail if you want a slightly less cursed-cozy register; tighten the environment with specific items (`open book on chest`, `laptop still on with screensaver`, `controller dropped on the floor`) for richer "fell asleep doing X" storytelling.
+
+---
+
+
+#### Underwater Bubble Bikini (Floating in Aquatic Sphere)
+
+<img src="./assets/images/illustrations/interior/003.webp" width="600" alt="Anime character curled in a dynamic floating pose inside a massive transparent water bubble, wearing a black triangle bikini, with refracted sunlight beams and tiny fish in a bright turquoise aquatic environment">
+
+**Category:** Interior & Intimate Scenes · **Tags:** `anime` `underwater` `bubble` `bikini` `dynamic-pose` `foreshortening` `aquatic` `splash-art` `character-reference` `identity-lock`
+
+**📋 Prompt:**
+
+```
+Use the attached image strictly as the full scene and character identity reference. Preserve exactly the same face, red eyes, long crimson hair, animal ears, black bikini design, proportions, expression, accessories, tail, and recognizable anime identity. Keep the same playful seductive energy and underwater fantasy atmosphere.
+
+Create an ultra-detailed anime underwater illustration with a dynamic floating composition inside a massive transparent water bubble suspended in a bright turquoise aquatic environment. The character is curled into an elegant floating pose with dramatic foreshortening: legs bent dynamically toward the camera, one foot extended downward, torso slightly twisted, arms raised playfully against the inner surface of the bubble, hair flowing freely in all directions with fluid underwater motion.
+
+Outfit:
+minimal black triangle bikini with thin straps, glossy wet fabric, tiny gold ring accessories, black frilled wrist scrunchies, fantasy animal-ear accessories, sleek black tail element flowing behind the body.
+
+Expression:
+playful teasing smile with confident mischievous energy, direct eye contact toward the viewer, fully visible uncensored face, lively anime emotion.
+
+Environment:
+crystal-clear underwater setting filled with floating air bubbles, sparkling water particles, refracted sunlight beams, tiny fish swimming around the character, oversized translucent bubble sphere surrounding the body, floating inflatable rings in the distance, cute aquatic mascot float on the lower right, shimmering caustic reflections, energetic ocean atmosphere.
+
+Motion and effects:
+dynamic underwater hair movement, swirling ribbons of water, bubble distortion, water droplets sliding across the transparent sphere, refracted highlights, fluid motion trails, cinematic splash effects, glossy reflections across skin and water surface.
+
+Lighting:
+bright tropical aqua lighting, soft volumetric underwater rays, cool cyan glow, reflective wet highlights on skin and bikini fabric, sparkling specular highlights, luminous water atmosphere.
+
+Art style:
+premium modern anime illustration, ultra-clean linework, highly detailed skin rendering, glossy anime eyes, soft cel-shading blended with painterly gradients, cinematic composition, visual novel CG quality, high-end gacha splash-art aesthetic, masterpiece quality, absurdly detailed.
+
+Camera:
+wide-angle underwater perspective with strong depth, floating centered composition, dynamic diagonal flow, immersive aquatic framing.
+
+Dynamic natural pose only, avoid T-pose and A-pose completely. No watermark, no logo, no extra text.
+```
+
+**📎 Requires:** An attached reference image — full identity lock (face, eyes, hair, ears, tail, bikini design, proportions, expression). The character-specific traits (crimson hair, red eyes, animal ears) should be edited if reusing with a different reference.
+
+**💡 Why it works:** This prompt is structured around a single technical achievement: rendering a *character inside a transparent water sphere underwater* — a layered composition that requires the model to understand multiple refraction surfaces (the bubble surface + the surrounding water). Naming this explicitly as `"oversized translucent bubble sphere surrounding the body"` plus `"water droplets sliding across the transparent sphere"` tells the model there are two distinct water boundaries to render. The dramatic foreshortening directive (`"legs bent dynamically toward the camera, one foot extended downward"`) gives the model concrete anatomical positioning rather than vague "floating pose." The `"high-end gacha splash-art aesthetic"` reference is a specific cultural anchor — gacha mobile game character illustrations have very recognizable splash compositions with dynamic floating poses and caustic highlights, which the model has training data for. The bright turquoise palette + small fish + inflatable rings keeps the energy playful-summery rather than drifting into ominous deep-sea aesthetics.
+
+**🔧 Variations:** swap `bright turquoise tropical aquatic environment` for `dark deep-sea bioluminescent setting` for a moody variant with glowing jellyfish and dark blue tones; change `black triangle bikini` to `iridescent mermaid-scale swimsuit` for a fantasy-aquatic look; replace `playful teasing smile` with `serene meditative expression and closed eyes` for a calmer contemplative composition; remove the bubble sphere entirely for a more conventional underwater scene; tighten "tiny fish" to specific species (`clownfish school`, `glowing jellyfish ribbons`, `tropical angelfish`).
 
 ---
 
@@ -1176,6 +1336,199 @@ masterpiece, best quality, cinematic anime illustration, parallel worlds, mirror
 **💡 Why it works:** Probably the most ambitious prompt structurally — it asks GPT Image 2 to render *two distinct versions of the same character* in a single composition with mirrored positioning. The "upper world" / "lower reflection" / "lower character" three-block split lets the model treat each as its own design brief while the explicit `"both characters clearly readable"` and `"mirrored positioning matching the upper version"` lines anchor them spatially. The "Extra reflection detail" section is doing world-building work — telling the model that the dimensional split affects *information* too, not just architecture (upside-down billboards as a logical consequence). The repeated `"NO umbrella / NO parasol / no additional props"` block exists because the model tends to add umbrellas to gothic anime girls automatically — explicit negative listing kills the default.
 
 **🔧 Variations:** swap `Victorian / Gothic` ↔ `Futuristic 2030` for different era contrasts (e.g. `Edo period` ↔ `cyberpunk`); change the weapon from scythe to your character's signature item (the prompt structure handles any weapon if you keep the "redesign with same silhouette identity" language); convert the reflection into `water surface in a flooded street` for a more naturalistic mirror.
+
+---
+
+
+#### Cosmic Café — Ocean Aquarium Window (Galactic Diner)
+
+<img src="./assets/images/illustrations/fantasy/fantasywater.webp" width="600" alt="Premium anime illustration of a surreal café/restaurant traveling through space with massive panoramic windows showing a cosmic ocean filled with stars, nebulae, translucent planets, and luminous sea creatures">
+
+**Category:** Cosmic & Cinematic Scenes · **Tags:** `anime` `cinematic` `cosmic` `surreal` `café` `aquarium` `melancholic` `wide-shot` `character-reference`
+
+**📋 Prompt:**
+
+```
+Use a imagem anexada apenas como referência de identidade visual e composição geral da cena. Preserve a atmosfera sonhadora, o estilo anime refinado, a iluminação cósmica azulada e a sensação contemplativa do ambiente original.
+
+Crie uma ilustração anime premium extremamente detalhada de um café/restaurante surreal viajando pelo espaço, com enormes janelas panorâmicas mostrando um oceano cósmico infinito repleto de estrelas, nebulosas, planetas translúcidos, águas flutuantes e criaturas marinhas luminosas nadando no vazio espacial.
+
+A composição deve replicar fielmente o enquadramento da referência:
+
+- personagem sentado sozinho em uma cabine acolchoada próxima à janela
+- perspectiva lateral ampla do interior do vagão/café
+- mesas e bancos alinhados em profundidade
+- grande área negativa mostrando o espaço exterior
+- enquadramento cinematográfico horizontal
+- reflexo do personagem no vidro
+- ambiente silencioso e melancólico
+
+Exterior surreal:
+
+- enormes esferas geométricas flutuantes contendo oceanos inteiros
+- águas vivas brilhantes atravessando o espaço
+- peixes tropicais luminosos nadando no ar
+- partículas brilhantes e bolhas flutuando
+- galáxia extremamente detalhada ao fundo
+- cores predominantes azul, violeta, ciano e rosa neon suave
+
+Interior:
+
+- iluminação ambiente suave azulada e lilás
+- bancos acolchoados luxuosos
+- luminárias ornamentais delicadas
+- reflexos cinematográficos no vidro
+- brilho difuso elegante
+- atmosfera calma, nostálgica e etérea
+
+O personagem deve estar sentado de maneira relaxada observando a paisagem espacial, expressão contemplativa e serena, mãos apoiadas sobre um livro/tablet no colo. Roupa elegante casual com estética anime moderna e harmoniosa com o cenário.
+
+Qualidade visual:
+
+- masterpiece anime illustration
+- ultra detailed environment
+- cinematic wide shot
+- dreamy sci-fi atmosphere
+- highly detailed stars and nebulae
+- glowing underwater-space aesthetic
+- soft volumetric lighting
+- detailed reflections on glass
+- atmospheric depth
+- premium anime background art
+- Makoto Shinkai inspired lighting
+- surreal cosmic aquarium aesthetic
+- beautiful color harmony
+- highly detailed luminous effects
+- natural character pose (avoid T-pose, avoid A-pose)
+- fully visible face and eyes
+- no censorship on face
+
+Negative prompt:
+low quality, blurry, bad anatomy, empty background, flat lighting, low detail stars, poorly drawn perspective, distorted furniture, deformed hands, extra limbs, ugly face, cropped character, stiff pose, T-pose, A-pose, muddy colors, noisy image, low detail environment, overexposed lighting, watermark, logo, text, poorly drawn reflections, generic sci-fi background
+```
+
+**📎 Requires:** An attached reference image — used both for identity AND for general scene composition (the prompt explicitly references replicating the framing from the source image).
+
+**💡 Why it works:** This is the first prompt in the collection written entirely in Portuguese, which is intentional — *GPT Image 2 handles Portuguese well, and writing the prompt in your native language often produces more nuanced results when the imagery itself is culturally/emotionally specific* (the contemplative-melancholic mood is harder to nail in translated English). The core visual concept — *cosmic ocean aquarium visible through café windows* — is unusually specific and stacks two normally-incompatible aesthetics: underwater scenes (jellyfish, tropical fish, bubbles) and space scenes (galaxies, nebulae, planets). By naming them as a single fused environment ("oceano cósmico", "galáxia extremamente detalhada ao fundo"), the prompt forces the model to render them together rather than picking one. Naming Makoto Shinkai locks the lighting register; the explicit reflection of the character on the glass adds spatial credibility to the scene. The reading-on-tablet pose anchor (`"mãos apoiadas sobre um livro/tablet no colo"`) avoids the default "character looking dramatically out the window" cliché.
+
+**🔧 Variations:** swap `café/restaurante` for `vagão de trem espacial` (space train car) for a more Galaxy Express 999 reference; change the predominantly blue palette to `dourado, âmbar e magenta` for a sunset-cosmic mood; replace the contemplative pose with `personagem dormindo recostado na janela` for a deeper melancholic frame; remove jellyfish/tropical fish and keep only nebulae/planets for a cleaner cosmic-only environment.
+
+---
+
+
+#### Gothic Cyber Maid — Industrial Chair Top-Down
+
+<img src="./assets/images/illustrations/fantasy/crazymaid001.webp" width="600" alt="Gothic cyber-guro anime maid character lounging in an industrial futuristic chair with chains, twin pink tails, holding a lollipop, top-down dynamic perspective with red-and-white horror-fashion atmosphere">
+
+**Category:** Cosmic & Cinematic Scenes · **Tags:** `gothic` `cyber` `maid` `horror-fashion` `top-down` `industrial` `pink-twintails` `character-reference` `identity-lock`
+
+**📋 Prompt:**
+
+```
+Use a imagem anexada apenas como referência de identidade do personagem, composição, atmosfera e direção artística. Preserve exatamente o rosto, cabelo rosa longo em twintails, olhos rosados, expressão provocante/brincalhona, estética gothic maid e toda a aparência reconhecível original do personagem.
+
+Crie uma ilustração anime masterpiece extremamente detalhada em estética gothic cyber-guro elegante, combinando horror estilizado, fashion underground japonesa e composição cinematográfica premium. A cena deve replicar fielmente o mesmo ângulo de câmera inclinado visto de cima, com perspectiva dinâmica ampla e forte profundidade visual.
+
+O personagem está relaxado dentro de uma cadeira metálica industrial futurista semelhante a uma cadeira médica/interrogatório cyberpunk, sentado de forma casual e dominante, pernas abertas em composição assimétrica natural, olhando diretamente para a câmera com sorriso provocante enquanto segura um pirulito parcialmente na boca.
+
+Visual do personagem:
+
+- cabelo rosa longo extremamente detalhado em twintails volumosos
+- franja brilhante com reflexos suaves
+- olhos rosa/vermelho brilhantes altamente renderizados
+- blush delicado
+- maquiagem suave estilo gothic fashion
+- expressão travessa, confiante e levemente sádica
+- pele extremamente polida com highlights cinematográficos
+
+Roupa:
+
+- gothic maid outfit preto e branco ultra detalhado
+- vestido maid moderno com estética punk/lolita
+- mangas pretas ajustadas
+- avental branco com manchas vermelhas estilizadas
+- cruz metálica pendurada no pescoço
+- correntes metálicas envolvendo pernas e cadeira
+- leg warmers brancos enrugados extremamente detalhados
+- botas pretas pesadas estilo techwear/gothic
+- acessórios metálicos brilhantes
+- tecido com múltiplas camadas e microdetalhes
+
+Composição:
+
+- câmera inclinada diagonal vista de cima
+- personagem ocupando quase toda a cena
+- pernas estendidas em direção à câmera
+- foreshortening forte e dinâmico
+- composição caótica porém organizada visualmente
+- forte sensação de profundidade cinematográfica
+- enquadramento compacto e intenso
+
+Ambiente:
+
+- sala branca industrial estilizada
+- cadeira mecânica/cirúrgica futurista
+- correntes penduradas nas paredes
+- superfícies metálicas reflexivas
+- iluminação branca intensa contrastando com vermelho escuro
+- manchas vermelhas estilizadas espalhadas pelo ambiente
+- utensílios cirúrgicos/gothic decorativos
+- atmosfera horror-fashion sofisticada
+- estética inspirada em album cover anime underground
+
+Iluminação:
+
+- iluminação cinematográfica branca intensa
+- sombras suaves porém contrastadas
+- reflexos especulares fortes na pele e metal
+- bloom leve
+- ambient occlusion detalhado
+- highlights brilhantes nos olhos, cabelo e acessórios
+- atmosfera fria com contraste vermelho profundo
+
+Qualidade visual:
+
+- ultra detailed anime illustration
+- masterpiece quality
+- absurdres
+- highly detailed gothic cyber aesthetic
+- cinematic composition
+- dynamic top-down perspective
+- extreme detail rendering
+- premium anime shading
+- glossy skin highlights
+- highly detailed chains and metallic objects
+- detailed fabric folds
+- atmospheric depth
+- anime horror fashion aesthetic
+- complex environmental storytelling
+- expressive detailed eyes
+- highly polished rendering
+- dynamic natural pose (avoid T-pose, avoid A-pose)
+- fully visible face and eyes
+- no censorship on face
+
+Estilo artístico:
+
+- dark anime fashion editorial
+- gothic cyberpunk lolita aesthetic
+- semi-realistic anime rendering
+- highly detailed lineart
+- painterly lighting
+- sharp focus on character
+- visual novel CG quality
+- luxury anime illustration
+- Japanese underground art aesthetic
+
+Negative prompt:
+low quality, blurry, bad anatomy, stiff pose, T-pose, A-pose, extra limbs, malformed hands, deformed feet, ugly face, poorly drawn eyes, flat lighting, weak perspective, low detail background, censored face, hidden eyes, cropped body, poorly drawn chains, simple shading, bad proportions, distorted limbs, messy anatomy, low detail fabric, generic anime style, watermark, logo, text, jpeg artifacts, washed colors, poorly drawn metallic surfaces
+```
+
+**📎 Requires:** An attached reference image — preserves identity (pink twintails, rose eyes, gothic maid aesthetic) AND camera angle/composition from the source.
+
+**💡 Why it works:** This prompt sits at the intersection of three normally-difficult aesthetic registers: *gothic-cyber* (chains, industrial chair, white surgical room), *maid fashion* (apron, ribbons, twintails), and *horror-fashion editorial* (stylized red stains, sadistic expression). Naming `"gothic cyber-guro"` is a precise subgenre reference that Japanese underground art has well-established conventions for — the model has training data on it. The top-down camera with strong foreshortening (`"câmera inclinada diagonal vista de cima"`, `"pernas estendidas em direção à câmera"`) is the single highest-leverage compositional choice: it transforms a static "character on chair" into a dynamic dominance composition. The `"manchas vermelhas estilizadas"` (stylized red stains) rather than literal blood keeps the horror in *fashion-editorial register* rather than gore. The white surgical room contrasted with deep red provides the high-contrast lighting essential for editorial-fashion reads.
+
+**🔧 Variations:** swap `cadeira médica/interrogatório` for `throne with industrial metal frame` for a more regal-dominant variant; change `pirulito` (lollipop) to `cigarette holder` or `wine glass` for different age/mood implications; replace `manchas vermelhas` with `dark ink stains` or `oil splatter` for a less horror-coded but still editorial look; tighten the underground aesthetic by adding specific designer references (`"inspired by Limi Feu / Yohji Yamamoto darkwear aesthetic"`).
 
 ---
 
@@ -1784,6 +2137,90 @@ text
 **💡 Why it works:** This prompt is one of the most aggressive *anti-default* prompts in the collection — it has to fight against three GPT Image 2 defaults simultaneously: (1) tall fashion-model proportions when "competition" is mentioned, (2) bronze/orange stage tan when "bodybuilder" is mentioned, (3) hyper-realistic IFBB anatomy when "muscular" is mentioned. The numbered approach (`"DO NOT make her tall"` / `"DO NOT elongate the legs"` / `"DO NOT give her fashion model proportions"`) repeated three different ways forces the model to break its proportion defaults. The "skin + rendering consistency" block is doing crucial composition work — without it, the model often renders the face in one anime style and the body in a different shader, producing a "pasted-on face" effect. Calling out `"4.5-heads-tall proportions"` is a concrete anatomical specification that produces consistent shortstack output. The 30+ item negative prompt at the end catches every common failure mode (giantess, hyper-realism, dark tan, head pasted onto body, small/realistic tail). Naming `wellness` competition specifically (versus generic "bodybuilding") locks the muscular but feminine aesthetic.
 
 **🔧 Variations:** swap `competition stage` for `gym training environment` for a workout-context variant; change `4.5-heads-tall` to `5-heads-tall` for slightly less extreme shortstack proportions; replace `sparkly black competition bikini` with `colorful posing suit (red/blue/green)` for different competition divisions; tighten "wellness" to "bikini division" or "figure division" for specific IFBB-style category targeting.
+
+---
+
+
+#### Princess Close-Up POV (Sensual Wide-Angle)
+
+<img src="./assets/images/illustrations/outfits/princess001.webp" width="600" alt="Extremely close vertical POV anime portrait of a princess character with red eyes, brown hair, horse ears, ornate blue tiara, red ribbon, and elegant white dress, with intense blush and seductive expression">
+
+**Category:** Outfit Variants · **Tags:** `princess` `pov` `close-up` `wide-angle` `seductive` `vertical` `foreshortening` `character-reference` `identity-lock`
+
+**📋 Prompt:**
+
+```
+Use a imagem anexada apenas como referência de identidade do personagem. Preserve exatamente o mesmo rosto, olhos avermelhados, cabelo castanho, orelhas de cavalo, tiara ornamentada azul, laço vermelho, acessórios, blush intenso e toda a aparência reconhecível do personagem original. Não alterar a identidade visual.
+
+Crie uma ilustração anime premium extremamente detalhada replicando fielmente o EXATO ângulo, pose corporal, expressão facial e enquadramento da imagem de referência.
+
+A composição deve manter:
+
+- câmera extremamente próxima em perspectiva POV íntima
+- ângulo alto inclinado olhando para baixo
+- rosto parcialmente inclinado para cima encarando diretamente a câmera
+- expressão sedutora e provocante com sorriso discreto
+- olhos semicerrados
+- blush intenso nas bochechas
+- corpo comprimido próximo à câmera criando forte sensação de profundidade
+- enquadramento fechado no rosto, ombros e torso
+- perspectiva exagerada estilo lente grande angular anime
+
+Roupa:
+
+- vestido branco elegante exatamente no mesmo estilo da referência
+- tecido delicado e brilhante
+- gola caída sobre os ombros
+- detalhes refinados e luxuosos
+- acessórios azuis e dourados preservados
+- aparência sofisticada e sensual
+- sem nudez explícita
+
+Iluminação:
+
+- iluminação branca intensa e suave vinda do fundo
+- brilho cinematográfico forte nas bordas do corpo e cabelo
+- highlights brilhantes na pele
+- bloom delicado
+- sombras suaves
+- acabamento anime semi-realista extremamente polido
+
+Detalhes importantes:
+
+- mesma inclinação do tronco
+- mesma proximidade extrema da câmera
+- mesma posição dos ombros e cabeça
+- mesma sensação de pressão do corpo contra a lente
+- mesmo enquadramento compacto
+- mesma energia provocante e confiante da expressão original
+
+Qualidade visual:
+
+- ultra detailed anime illustration
+- identical camera angle to reference
+- identical facial expression
+- identical clothing style
+- cinematic close-up composition
+- highly detailed skin shading
+- glossy skin highlights
+- premium anime rendering
+- masterpiece quality
+- dynamic foreshortening
+- expressive detailed eyes
+- natural dynamic pose (avoid T-pose, avoid A-pose)
+- fully visible face and eyes
+- elegant sensual atmosphere
+- no censorship on face
+
+Negative prompt:
+low quality, blurry, bad anatomy, wrong angle, incorrect expression, different pose, stiff pose, T-pose, A-pose, deformed hands, extra limbs, distorted torso, flat lighting, ugly face, poorly drawn eyes, cropped face, hidden eyes, censored face, low detail skin, poorly drawn clothes, wrong perspective, weak foreshortening, watermark, logo, text, overexposed image, malformed body
+```
+
+**📎 Requires:** An attached reference image — full identity lock (red eyes, brown hair, horse ears, blue tiara, red ribbon, white dress). Edit the identity-trait list to match your reference when reusing.
+
+**💡 Why it works:** This prompt belongs to a small family of *reference-replication* prompts where the goal isn't to generate a new composition but to *re-render the exact same scene* with full identity preservation — useful when an existing image has the right framing but needs cleaner rendering or different details. The directive `"replicando fielmente o EXATO ângulo, pose corporal, expressão facial e enquadramento"` is repeated three times in different phrasings across the prompt (`"identical camera angle to reference"`, `"identical facial expression"`, `"mesma inclinação do tronco"`, `"mesma proximidade extrema"`) — that level of redundancy is deliberate: it locks the composition tightly to the source image, preventing the model from "creatively reinterpreting" the scene. The `"corpo comprimido próximo à câmera"` + `"perspectiva exagerada estilo lente grande angular"` combo describes the wide-angle close-up distortion effect, which produces the characteristic *pressing-against-the-lens* feeling. The `"sem nudez explícita"` line is important register-control given the seductive directives elsewhere — keeps the output in suggestive-elegant rather than explicit territory.
+
+**🔧 Variations:** swap `vestido branco` for the same dress in `dark midnight blue with silver embroidery` for a darker variant; change `iluminação branca intensa vinda do fundo` to `golden hour warm light from the side` for a different lighting mood; replace `expressão sedutora` with `shy embarrassed expression with averted eyes` for a softer emotional register; tighten the framing from "rosto, ombros e torso" to just `face and shoulders only` for tighter portrait-only compositions.
 
 ---
 
