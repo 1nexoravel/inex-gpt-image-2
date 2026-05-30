@@ -44,6 +44,7 @@
   - [📝 Typography & Poster Art](#-typography--poster-art)
   - [🇧🇷 Brazilian Heritage & Print Culture](#-brazilian-heritage--print-culture)
   - [🪴 Brazilian Northeastern Folk Art](#-brazilian-northeastern-folk-art)
+  - [🏙️ Liminal & Abstract Spaces](#️-liminal--abstract-spaces)
 - [General Prompting Tips](#-general-prompting-tips)
 - [License](#-license)
 
@@ -4974,6 +4975,3281 @@ Ultra-realistic photography, monumental public art, cinematic composition, reali
 **💡 Why it works:** This prompt does something unusual — it uses a *templated variable system* at the top (`LOCAL="{argument...default="no meio do marco zero no recife antigo"}"`) that mimics the syntax of code/automation tools. Even though GPT Image 2 doesn't *execute* the template, the structure tells the model "this is a variable representing a location" and the model substitutes contextually. Naming `marco zero no recife antigo` (the actual zero-marker plaza in old Recife) as the default location grounds the prompt in a specific real-world setting the model has training data for. The two-paragraph structure works well: first paragraph establishes the *sculpture identity* (bronze, identity-preserving, monumental), second paragraph establishes *environmental integration* (pedestrians, architecture, pedestal with plaque). The detailed material spec ("oxidized patina variations, fine sculpted surface texture, visible craftsmanship marks") is what sells the bronze realism over generic metallic appearance. The long anti-failure list at the end (no duplicated limbs, no warped anatomy, no melted bronze, no toy-like appearance) catches the common sculpture-rendering bugs.
 
 **🔧 Variations:** change `LOCAL` to other Brazilian landmarks for thematic variants — `Praça XV no Rio de Janeiro`, `Largo do Pelourinho em Salvador`, `Paulista esquina com Consolação em São Paulo`, `Praça da Sé em São Luís do Maranhão`; swap `bright sunny day` for `golden-hour sunset with long shadows` or `overcast moody afternoon` for different lighting moods; change `bronze` to `weathered marble` or `dark granite` for different sculpture materials with appropriate pedestal/finish changes; remove `pedestrians, vehicles` for a quiet contemplative variant.
+
+---
+
+### 🏙️ Liminal & Abstract Spaces
+
+Prompts for environments that exist between architecture, memory, and dream — empty pools, abandoned stations, impossible malls, supermarkets at 3 AM, vacation destinations that feel remembered rather than visited. Each location has multiple prompts ranging from **pure liminal** (real-world architecture with unsettling emptiness) → **liminal+abstract** (subtle impossible geometry) → **abstract surreal** (architecture dissolves into dream logic).
+
+**Important — these prompts work with OR without a character reference:**
+- **With a reference image:** the character appears small, contemplative, integrated into the space (never looking at the camera).
+- **Without a reference image:** the prompts include explicit anti-character rules — no people, no silhouettes, no shadows of figures. The emptiness *is* the subject.
+
+> 💚 **Credits:** Several of these prompts reference the visual aesthetic of **Dr. Morro**'s VRChat liminal worlds, which inspired the entire category. Spaces designed for crowds, occupied by nobody — built between simulation and memory.
+
+---
+
+#### Liminal Pool — Glass Block Walls (Pure Liminal)
+
+<img src="./assets/images/illustrations/liminal/pool001.webp" width="600" alt="Massive empty indoor swimming pool with endless glass block walls, pale blue-gray daylight, abandoned yet preserved liminal atmosphere">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `pool` `pure-liminal` `architecture` `empty` `dreamlike` `optional-character` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+CHARACTER RULES
+
+If a character reference image is attached:
+
+Use the attached image strictly as the character identity reference. Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, species traits, skin tone, body shape, charm, and overall recognizable visual identity shown in the reference image. Do not redesign, replace, reinterpret, or significantly alter the character.
+
+The character should appear naturally integrated into the environment.
+
+If no character reference image is attached:
+
+Do not generate any person, humanoid, anime character, animal, creature, silhouette, shadow figure, mannequin, statue, or human-like presence.
+
+The scene must consist exclusively of architecture, lighting, atmosphere, water, reflections, environmental details, and empty space.
+
+The feeling of absence should become a major part of the composition.
+
+CHARACTER PRESENCE
+
+When a character reference image is attached:
+- include exactly one character
+- no additional people
+- no crowds
+- no background figures
+- no reflections showing additional people
+
+When no character reference image is attached:
+- absolutely no characters
+- absolutely no people
+- absolutely no humanoid forms
+- absolutely no silhouettes
+- absolutely no figures visible anywhere in the scene
+```
+
+**📎 Requires:** Optional reference image — the prompt branches based on whether a reference is attached.
+
+**💡 Why it works:** This is the *base template* for the entire liminal series — a conditional character-handling block that gets reused across all 16 prompts in this category. The structural trick is the binary branching: explicit "if/then" rules for both reference-attached and reference-absent scenarios. Most prompts assume a character is present and the model fills in defaults; this one explicitly says *no defaults* when no reference exists. The `"feeling of absence should become a major part of the composition"` line is the entire liminal aesthetic in one sentence: empty space *is* the subject, not a missing element. The minimal scene description (just architecture / water / reflections / empty space) gives the model room to lean fully into the liminal-pool training data without competing details.
+
+**🔧 Variations:** add specific architectural anchors (`"endless glass-block walls"`, `"oversized ceilings disappearing into atmospheric haze"`) for stronger liminal pool aesthetics; tighten to a specific time-of-day (`"pale blue-gray afternoon light"`, `"fluorescent-only night atmosphere"`); swap `pool` for `hot springs` / `bathhouse` / `aquarium` for related liminal aquatic spaces; combine with explicit Dr. Morro VRChat aesthetic anchors for stronger reference matching.
+
+---
+
+#### Liminal Pool — Contemplative Empty Bath (Liminal + Character POV)
+
+<img src="./assets/images/illustrations/liminal/pool002.webp" width="600" alt="Liminal swimming pool environment with optional contemplative character integrated into the empty space, emotionally distant atmosphere">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `pool` `liminal-abstract` `contemplative` `character-integration` `optional-character` `architecture` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+[CHARACTER HANDLING]
+
+If a character reference image is attached:
+
+Use the attached image strictly as the character identity reference. Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, species traits, skin tone, body shape, charm, and overall recognizable identity shown in the reference image. Do not redesign, replace, reinterpret, or significantly alter the character.
+
+Place the character naturally within the environment. The character should appear contemplative, emotionally distant, and integrated into the scene rather than posed for the viewer.
+
+The character should not look at the camera. Natural pose, relaxed body language, physically plausible anatomy, avoid T-pose, avoid A-pose.
+
+If clothing is visible in the reference image, preserve the overall visual identity and impression of the original outfit unless otherwise specified.
+
+If no character reference image is attached:
+
+Do not generate any people, humanoids, animals, creatures, silhouettes, statues, mannequins, or character-like figures.
+
+The image should focus entirely on the environment, architecture, atmosphere, scale, lighting, reflections, and spatial composition.
+
+The scene must feel abandoned, empty, and completely devoid of visible life.
+```
+
+**📎 Requires:** Optional reference image — when attached, character is positioned as contemplative observer rather than focal subject.
+
+**💡 Why it works:** This is the *character-integration variant* of the liminal pool base — pool001 is pure environment, pool002 adds explicit character behavior rules. The single highest-leverage directive is `"The character should not look at the camera"` — this single rule transforms the output from a portrait-in-environment to a person-existing-in-environment. The `"contemplative, emotionally distant, and integrated"` triplet defines the character's emotional register, suppressing default poses (smile-and-pose, action stance, dramatic looking-into-distance hero shot). The outfit-preservation clause `"unless otherwise specified"` is a small but useful escape valve — lets you override with a different outfit in a follow-up message without rewriting the whole prompt.
+
+**🔧 Variations:** swap `contemplative` for `seated by the edge dangling feet in the water` for a more grounded pose; tighten emotional register to `quietly nostalgic` or `peacefully resigned` for different moods; pair with the pool003 architectural anchors below for a complete liminal pool scene; remove the outfit-preservation clause if you want to combine with an Outfit Variants prompt (e.g. liminal bikini variant).
+
+---
+
+#### Liminal Pool — Glass Block Cathedral (Full Liminal + Abstract)
+
+<img src="./assets/images/illustrations/liminal/pool003.webp" width="600" alt="Vast surreal swimming pool with infinite glass block walls extending impossibly far, suspended walkways, non-euclidean architectural relationships, pale blue-gray haze, deep liminal atmosphere">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `pool` `abstract-surreal` `non-euclidean` `glass-blocks` `vrchat` `architecture` `optional-character` `dr-morro-inspired` `masterpiece`
+
+**📋 Prompt:**
+
+```
+Character Handling (Conditional):
+
+If a character reference image is attached, use the attached image strictly as the character identity reference. Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, species traits, cat ears, skin tone, body shape, charm, and overall recognizable anime identity shown in the reference image. Do not redesign, replace, reinterpret, or alter the character.
+
+Outfit (only when a character reference image is attached):
+
+Preserve exactly the outfit shown in the reference image, including its design, silhouette, materials, colors, proportions, accessories, textures, and overall visual identity. Do not replace, redesign, reinterpret, modify, stylize, or substitute the outfit with alternative clothing.
+
+If no character reference image is attached:
+
+Do not generate any character, person, humanoid figure, silhouette, animal, creature, or visible living being.
+
+The image must depict only the environment.
+
+The scene should work equally well as:
+
+- a solitary character exploring the environment (when a reference image exists)
+
+or
+
+- a completely empty liminal environment (when no reference image exists)
+
+Scene:
+
+An immense indoor aquatic structure detached from ordinary reality.
+
+The environment should be slightly more abstract than a real swimming pool while still remaining believable as a physical place.
+
+Strong inspiration from liminal-space environments similar to surreal VRChat exploration worlds, emphasizing dreamlike architecture, impossible spatial relationships, emotional solitude, and quiet existential atmosphere.
+
+If a character is present:
+
+The character stands alone in waist-deep water and quietly gazes toward a colossal wall of glass blocks stretching seemingly forever into the distance.
+
+The character is not looking at the camera.
+
+Natural posture, relaxed body language, contemplative mood, emotionally distant presence.
+
+The pool appears abandoned yet carefully maintained.
+
+Architecture:
+
+- enormous glass-block walls extending beyond visible limits
+- oversized ceilings disappearing into atmospheric haze
+- repeating structural modules with subtle geometric variation
+- observation decks suspended over vast empty space
+- distant staircases connecting to unknown levels
+- corridors that appear longer than physically possible
+- elevated walkways fading into fog
+- large voids between architectural elements
+- subtle non-euclidean spatial impressions
+- architectural repetition that feels dreamlike rather than mechanical
+
+The environment should feel like a memory of a swimming pool rather than a perfectly realistic pool.
+
+Emphasize the sensation of:
+
+- being completely alone
+- existing between places
+- suspended reality
+- nostalgia for a place never visited
+- endless quiet
+- dream logic
+- architectural déjà vu
+- impossible scale
+- peaceful emptiness
+- subtle unreality
+
+The glass-block wall dominates the composition, generating overwhelming perspective lines and geometric rhythm.
+
+The pool extends far beyond realistic proportions, gradually dissolving into blue-gray haze and darkness.
+
+Additional liminal elements:
+
+- distant changing-room entrances with lights still functioning
+- silent emergency exit signs
+- empty maintenance corridors
+- unused pool equipment neatly arranged
+- observation windows overlooking vacant rooms
+- isolated benches with no occupants
+- subtle reflections that create uncertainty about depth and scale
+- repeating architectural patterns
+- faintly visible spaces beyond the glass-block walls
+- occasional impossible sightlines
+- quiet ventilation shafts disappearing overhead
+
+The environment should not feel ruined or decayed.
+
+Instead, it should feel forgotten, preserved, and disconnected from time.
+
+Very subtle signs of abandonment:
+
+- slightly aged surfaces
+- minor discoloration on tiles
+- occasional closed-off passages
+- long-unused facilities
+- traces of former activity
+- immaculate water despite lack of occupants
+
+If a character is present:
+
+- realistic interaction between body, clothing, and water
+- subtle wet surfaces
+- physically plausible water behavior
+- natural reflections and refractions
+
+Lighting:
+
+Pale blue-gray daylight filtering through thousands of glass blocks.
+
+Soft geometric illumination spreads across the water and architecture.
+
+Cold ambient lighting mixed with faint greenish fluorescent tones.
+
+No direct sunlight.
+
+Atmosphere:
+
+quiet,
+eerie,
+nostalgic,
+melancholic,
+surreal,
+emotionally distant,
+dreamlike,
+tranquil,
+liminal,
+contemplative,
+beautiful loneliness.
+
+The water surface is highly reflective, creating fragmented reflections of architecture, lighting patterns, and impossible spatial relationships.
+
+Composition:
+
+Wide cinematic framing emphasizing overwhelming scale.
+
+If a character is present:
+
+- the character occupies only a small portion of the frame
+- architecture remains the primary subject
+
+If no character is present:
+
+- emphasize emptiness and monumental scale
+- architecture completely dominates the composition
+
+Strong leading lines guide the eye into seemingly endless space.
+
+Camera:
+
+medium-wide shot,
+slightly low angle,
+architectural photography composition,
+deep perspective,
+cinematic framing.
+
+Style:
+
+masterpiece,
+ultra-detailed anime illustration,
+atmospheric environmental storytelling,
+highly detailed architectural rendering,
+realistic water simulation,
+subtle volumetric haze,
+premium cinematic artwork,
+psychological liminal-space aesthetic,
+surreal contemporary architecture,
+VRChat dream-world atmosphere,
+abstract institutional nostalgia.
+
+Visual references:
+
+liminal spaces,
+dream pools,
+surreal aquatic centers,
+poolrooms,
+VRChat exploration worlds,
+impossible interiors,
+abstract architectural photography,
+silent institutional spaces,
+forgotten public architecture,
+dreamlike modernism,
+Dr. Morro-inspired liminal environments.
+
+Mood:
+
+beautiful loneliness,
+quiet isolation,
+suspended reality,
+dreamlike nostalgia,
+uncanny familiarity,
+peaceful emptiness,
+soft existential melancholy.
+
+Quality:
+
+best quality,
+masterpiece,
+ultra detailed,
+cinematic lighting,
+realistic reflections,
+environmental storytelling,
+high resolution,
+sharp focus,
+immersive atmosphere.
+
+If a character is present:
+
+natural pose,
+dynamic posture,
+relaxed body language,
+physically plausible anatomy,
+avoid T-pose,
+avoid A-pose.
+
+Negative:
+
+low quality,
+crowded scene,
+multiple people,
+busy environment,
+strong sunlight,
+cheerful atmosphere,
+warm colors,
+modern resort feeling,
+party atmosphere,
+heavy decay,
+ruins,
+excessive damage,
+clutter,
+text,
+logo,
+watermark,
+blurry face,
+bad anatomy,
+distorted limbs,
+low detail,
+noise,
+film grain,
+compression artifacts.
+
+If no character reference image is attached:
+
+person,
+human,
+humanoid,
+character,
+anime girl,
+anime boy,
+silhouette,
+figure,
+crowd,
+people,
+pedestrian,
+swimmer,
+lifeguard,
+occupant,
+animal,
+creature,
+living being.
+```
+
+**📎 Requires:** Optional reference image — full prompt covering both branches with detailed architecture, lighting, atmosphere, and negative prompts. **Edit `cat ears` in the identity block to match your reference's species traits.**
+
+**💡 Why it works:** This is the *complete* liminal pool prompt — pool001 establishes the conditional structure, pool002 adds character behavior, and pool003 stacks the full environmental vocabulary on top. The architecture block does precise vocabulary work: `"non-euclidean spatial impressions"`, `"corridors that appear longer than physically possible"`, `"architectural déjà vu"` — these aren't generic "weird architecture" prompts, they're specific perceptual phenomena the model has training data for. Naming `Dr. Morro-inspired liminal environments` and `VRChat exploration worlds` as visual references anchors the aesthetic to a known underground subgenre. The `"memory of a swimming pool rather than a perfectly realistic pool"` line is structurally brilliant — it tells the model to render not a real pool but the *act of remembering one*, which is the entire liminal aesthetic compressed into one phrase. The `"forgotten, preserved, and disconnected from time"` framing prevents the model from drifting toward decay/horror defaults that empty buildings would normally trigger.
+
+**🔧 Variations:** swap `glass-block walls` for `tiled mosaic walls in pale 70s green/beige` for a vintage public-pool variant; change `pale blue-gray daylight` to `late-night fluorescent only with deep blue water` for a nocturnal pool variant; remove the `Dr. Morro / VRChat` references and replace with `inspired by Andreas Gursky photography` for a more high-art architectural feel; tighten the spatial weirdness to one specific element (only impossible corridors, only suspended walkways) for cleaner non-euclidean reads; combine with the Curvy Brazilian Body modifier or any Outfit Variants prompt for liminal-pool-with-specific-styling combos.
+
+---
+
+
+#### Liminal Metro — Elevated Cloud Station (Pure Liminal)
+
+<img src="./assets/images/illustrations/liminal/metro001.webp" width="600" alt="Impossibly large elevated railway terminal suspended above an endless sea of clouds, completely empty with operational lighting and frozen departure boards">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `metro` `station` `pure-liminal` `clouds` `architecture` `empty` `optional-character` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+If a character reference image is provided:
+
+Use the attached image strictly as the character identity reference. Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable anime identity shown in the reference image. Do not redesign, replace, or reinterpret the character.
+
+Preserve exactly the outfit shown in the reference image, including color, shape, proportions, material appearance, and overall design.
+
+Include the character in the scene as a small figure within the environment.
+
+If no character reference image is provided:
+
+Do not create any character, person, silhouette, humanoid figure, reflection, shadow person, passenger, staff member, or living being.
+
+Generate only the environment itself.
+
+The scene must remain completely empty and abandoned.
+
+An impossibly large elevated railway terminal suspended above an endless sea of clouds.
+
+The station appears completely operational yet completely abandoned.
+
+No trains.
+No staff.
+No announcements.
+No passengers.
+
+Only silence.
+
+If a character is present:
+
+The character stands near the platform edge, gazing toward distant tracks that disappear into dense white fog.
+
+The character is not looking at the camera.
+
+The architecture should evoke a powerful liminal-space atmosphere.
+
+Environment:
+
+- endless train platforms
+- hundreds of identical empty benches
+- departure boards frozen on outdated schedules
+- escalators running endlessly without passengers
+- rows of vending machines glowing softly
+- empty ticket gates
+- fluorescent ceiling lights stretching infinitely
+- distant railway tracks vanishing into clouds
+- impossible platform extensions
+- oversized waiting areas
+- glass walls overlooking nothing but sky
+
+The station exists above the clouds.
+
+Outside the windows there is no visible city.
+
+Only an infinite bright overcast sky and vast cloud formations.
+
+The viewer should feel uncertain whether this location exists in the future, the past, a dream, or an afterlife.
+
+Atmosphere:
+
+- profound solitude
+- suspended time
+- dreamlike nostalgia
+- peaceful melancholy
+- quiet anticipation
+- waiting for something that never arrives
+- familiar yet impossible
+
+Lighting:
+
+Soft overcast daylight.
+
+Diffuse white illumination enters through gigantic floor-to-ceiling windows.
+
+No direct sunlight.
+
+No dramatic shadows.
+
+Everything feels softly illuminated as though reality itself has been muted.
+
+Composition:
+
+Wide cinematic framing.
+
+If a character is present:
+
+The character occupies only a small portion of the scene.
+
+The vast architecture dominates the image.
+
+Strong perspective lines created by tracks, platform markings, ceiling lights, and rows of benches.
+
+Camera:
+
+Architectural photography style.
+
+Medium-wide shot.
+
+Eye-level perspective.
+
+Deep depth and spatial scale.
+
+Immense environmental scale.
+
+Style:
+
+Masterpiece.
+
+Ultra-detailed anime illustration.
+
+Premium environmental storytelling.
+
+Photorealistic architecture.
+
+Subtle atmospheric haze.
+
+Dreamlike realism.
+
+Liminal-space aesthetic.
+
+High-detail reflections.
+
+Beautiful cloud rendering.
+
+Immense sense of scale.
+
+Massive architectural volumes.
+
+Quiet surrealism.
+
+Mood:
+
+A place where someone has been waiting for years.
+
+A destination that may not exist.
+
+A station between realities.
+
+The feeling of arriving somewhere important and finding nobody there.
+
+A location suspended outside normal time.
+
+Quality:
+
+best quality,
+masterpiece,
+ultra detailed,
+cinematic lighting,
+environmental storytelling,
+realistic architecture,
+immersive atmosphere,
+high resolution,
+sharp focus
+
+Negative:
+
+crowd,
+multiple people,
+busy station,
+staff,
+passengers,
+background characters,
+silhouettes,
+human figures,
+strangers,
+advertisements everywhere,
+modern commercial clutter,
+party atmosphere,
+strong sunlight,
+warm tropical feeling,
+text,
+logo,
+watermark,
+low quality,
+blurry,
+bad anatomy,
+distorted limbs,
+noise,
+film grain,
+compression artifacts,
+
+If no character reference image is provided also exclude:
+
+person,
+people,
+human,
+anime girl,
+anime boy,
+figure,
+traveler,
+commuter,
+staff member,
+shadow person,
+reflection of a person,
+silhouette,
+portrait,
+human presence
+```
+
+**📎 Requires:** Optional reference image — fully self-contained prompt for both branches.
+
+**💡 Why it works:** The single strongest creative choice is positioning the station *above the clouds* — this immediately solves the "where is the city?" problem that empty stations normally have. By making the exterior literally just sky and clouds, the prompt removes any anchoring detail that would tie the location to a specific place or time, pushing the output deep into liminal territory. The `"completely operational yet completely abandoned"` paradox is the prompt's emotional thesis statement — every other detail (frozen departure boards, escalators running without passengers, vending machines glowing) reinforces this single contradiction. The mood block (`"a place where someone has been waiting for years"`, `"a destination that may not exist"`) gives the model emotional anchors that aren't just architectural — they tell the model what *feeling* to render, which is what separates good liminal output from generic empty architecture.
+
+**🔧 Variations:** swap `elevated cloud station` for `underground station with no surface exit` for an opposite spatial inversion (buried instead of suspended); change `overcast white sky` to `eternal sunset with no horizon` for a more emotionally warm liminal variant; replace `train platforms` with `bus terminal` / `ferry dock` / `monorail station` for related transit liminals; tighten the era (`1980s Japanese commuter station preserved perfectly`, `1960s American train station with original signage`) for period-specific liminal aesthetics.
+
+---
+
+#### Liminal Metro — Impossible Transit Cathedral (Liminal + Abstract)
+
+<img src="./assets/images/illustrations/liminal/metro002.webp" width="600" alt="Vast impossible transit structure combining railway, airport, museum, and cathedral aesthetics with floating platforms, staircases leading nowhere, and endless overcast sky outside every window">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `metro` `transit` `liminal-abstract` `cathedral` `impossible-architecture` `non-euclidean` `optional-character` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+CHARACTER HANDLING:
+
+If a character reference image is provided:
+
+Use the attached image strictly as the character identity reference. Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable identity shown in the reference image.
+
+Do not redesign, replace, reinterpret, or alter the character.
+
+Preserve exactly the outfit shown in the reference image, including color, shape, proportions, material appearance, and overall design.
+
+Include only this character in the scene.
+
+The character occupies only a small portion of the composition.
+
+The character stands naturally and is not looking at the camera.
+
+Use a natural, relaxed pose. Avoid T-pose, A-pose, symmetrical idle poses, mannequin posture, or stiff presentation poses.
+
+If no character reference image is provided:
+
+Do not generate any person, humanoid, animal, creature, robot, mannequin, statue, silhouette, shadow figure, or identifiable character.
+
+The scene must be completely empty.
+
+Focus entirely on architecture, atmosphere, scale, and environmental storytelling.
+
+The feeling of absence should become even stronger due to the complete lack of occupants.
+
+SCENE:
+
+A vast impossible transit structure that does not clearly belong to any known form of transportation.
+
+The architecture feels simultaneously like a railway station, an airport terminal, a museum, a cathedral, and a dream.
+
+The environment is highly abstract, surreal, and strongly liminal.
+
+There is no clear destination.
+
+There are no signs that can be understood.
+
+No staff.
+
+No travelers.
+
+No vehicles.
+
+No announcements.
+
+Only silence.
+
+A narrow platform is suspended above an endless white void.
+
+If a character is present, the character stands motionless on the platform, gazing into the distance.
+
+If no character is present, the platform remains completely empty.
+
+ENVIRONMENT:
+
+- floating platforms disconnected from one another
+- staircases leading nowhere
+- escalators ascending into fog
+- endless rows of identical empty seats
+- giant suspended clocks frozen at different times
+- impossible bridges crossing empty space
+- doorways opening onto clouds
+- illuminated corridors visible in the distance but impossible to reach
+- vast floor-to-ceiling windows overlooking only sky
+- geometric structures repeating infinitely
+- suspended walkways fading into white haze
+- abandoned information boards displaying unreadable symbols
+- large empty halls stretching beyond visibility
+- architecture that subtly contradicts physical reality
+
+Outside every opening there is only an infinite bright overcast sky.
+
+No city.
+
+No landscape.
+
+No horizon.
+
+Only clouds, fog, light, and emptiness.
+
+The viewer should feel uncertain whether this location exists in a dream, a memory, an afterlife, a forgotten future, or outside reality entirely.
+
+ATMOSPHERE:
+
+- profound solitude
+- suspended time
+- dreamlike nostalgia
+- existential calm
+- quiet anticipation
+- familiar yet impossible
+- peaceful unreality
+- the feeling of waiting for something that will never arrive
+
+LIGHTING:
+
+Soft overcast daylight.
+
+Diffuse white illumination enters from every direction.
+
+No visible light source.
+
+No direct sunlight.
+
+No dramatic shadows.
+
+The entire scene feels softly illuminated as though reality itself has been muted.
+
+COMPOSITION:
+
+Wide cinematic framing.
+
+If a character is present, the character occupies only a small portion of the image.
+
+The architecture always dominates the composition.
+
+Strong perspective lines created by platforms, staircases, corridors, bridges, windows, and repeating geometric forms.
+
+Immense negative space.
+
+CAMERA:
+
+Architectural photography style.
+
+Medium-wide or wide architectural shot.
+
+Eye-level perspective.
+
+Deep depth and enormous spatial scale.
+
+STYLE:
+
+Masterpiece.
+
+Ultra-detailed anime illustration.
+
+Premium environmental storytelling.
+
+Photorealistic architecture.
+
+Surreal architectural realism.
+
+Dreamlike liminal-space aesthetic.
+
+Subtle atmospheric haze.
+
+Beautiful cloud rendering.
+
+Infinite sense of scale.
+
+Impossible geometry.
+
+Elegant visual minimalism.
+
+Strong Dr. Morro-inspired liminal atmosphere.
+
+MOOD:
+
+A place between destinations.
+
+A structure built for a purpose that has been forgotten.
+
+A location that feels deeply familiar despite never having existed.
+
+The sensation of arriving somewhere important and realizing that nobody has ever been there.
+
+QUALITY:
+
+best quality,
+masterpiece,
+ultra detailed,
+cinematic lighting,
+environmental storytelling,
+realistic architecture,
+surreal architecture,
+immersive atmosphere,
+high resolution,
+sharp focus
+
+NEGATIVE:
+
+crowd,
+multiple people,
+extra characters,
+busy environment,
+advertisements everywhere,
+commercial clutter,
+vehicles,
+trains,
+airplanes,
+modern city skyline,
+strong sunlight,
+warm tropical feeling,
+text,
+readable signs,
+logo,
+watermark,
+low quality,
+blurry face,
+bad anatomy,
+distorted limbs,
+noise,
+film grain,
+compression artifacts,
+T-pose,
+A-pose,
+stiff pose,
+mannequin pose,
+presentation pose
+```
+
+**📎 Requires:** Optional reference image — works equally well as character-in-space or empty environment.
+
+**💡 Why it works:** This prompt levels up from metro001 by *deliberately removing transit specificity*. The line `"The architecture feels simultaneously like a railway station, an airport terminal, a museum, a cathedral, and a dream"` is a structural inversion — instead of asking the model to render a specific space, it asks the model to render the *idea of transit space without a clear referent*. That ambiguity is what produces the strongest liminal output. The detail `"abandoned information boards displaying unreadable symbols"` is doing important work: unreadable signs avoid the model's tendency to invent plausible-but-wrong text, while still conveying institutional context. `"Staircases leading nowhere"` and `"doorways opening onto clouds"` give the model concrete impossibility anchors — much more effective than abstract `"impossible architecture"` because the model can render specific impossible elements but struggles with vague ones.
+
+**🔧 Variations:** add specific architectural mashups (`"the proportions of a Soviet metro station crossed with a Gothic cathedral"`) for stronger style-anchor pulls; swap `endless white void` for `endless ocean visible through windows` for an aquatic liminal variant; change `unreadable symbols` to `signs in a fictional alphabet that resembles Devanagari/Cyrillic/kanji` for more visually rich unreadability; tighten `floating platforms` to `single suspended platform with no visible support` for a more focused composition.
+
+---
+
+#### Liminal Metro — Frozen Cloud Station (Abstract Surreal)
+
+<img src="./assets/images/illustrations/liminal/metro003.webp" width="600" alt="Surreal elevated railway terminal with subtly impossible architecture, infinite platforms, schedules frozen in time, soft overcast lighting, deeply unsettling liminal atmosphere">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `metro` `station` `abstract-surreal` `vrchat` `dreamlike` `optional-character` `dr-morro-inspired` `masterpiece`
+
+**📋 Prompt:**
+
+```
+If a character reference image is provided:
+
+Use the attached image strictly as the character identity reference.
+
+Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, species traits, outfit impression, color palette, charm, and overall recognizable anime identity shown in the reference image.
+
+Do not redesign, replace, reinterpret, or alter the character in any way.
+
+Preserve exactly the outfit shown in the reference image, including color, shape, proportions, material appearance, and overall design.
+
+The character stands alone inside the environment described below.
+
+If no character reference image is provided:
+
+Do not generate any character, person, silhouette, humanoid figure, animal, creature, robot, mannequin, statue, or visible living being.
+
+The image should depict only the environment itself.
+
+The architecture, atmosphere, scale, and environmental storytelling become the sole focus of the composition.
+
+Scene:
+
+An impossibly large elevated railway terminal suspended above an endless sea of clouds.
+
+The station appears fully maintained and technically operational, yet subtly disconnected from reality.
+
+No trains.
+No staff.
+No announcements.
+No passengers.
+
+Only silence.
+
+If a character is present:
+
+The character stands near the platform edge, gazing toward distant tracks that gradually dissolve into pale white fog.
+
+The character is not looking at the camera.
+
+The character should appear naturally integrated into the environment.
+
+The architecture should evoke a liminal-space atmosphere inspired by the surreal environmental design often seen in VRChat worlds by Dr. Morro: familiar transportation infrastructure that slowly becomes impossible upon closer inspection.
+
+Environment:
+
+- endless train platforms
+- repeating rows of identical empty benches
+- departure boards displaying outdated schedules frozen in time
+- escalators moving endlessly without passengers
+- softly glowing vending machines
+- empty ticket gates leading nowhere
+- fluorescent ceiling lights extending far beyond visible limits
+- railway tracks fading into clouds
+- subtle impossible platform extensions
+- oversized waiting areas with unusual proportions
+- glass walls overlooking only sky
+- corridors that appear to connect back into themselves
+- distant stairways leading to platforms that cannot physically exist
+- elevated walkways suspended in open air
+- occasional architectural elements repeated where they should not be
+
+The station exists above the clouds.
+
+Outside the windows there is no visible city.
+
+Only an infinite bright overcast sky and vast cloud formations.
+
+Reality feels slightly unstable.
+
+Not overtly supernatural.
+
+Just quietly wrong.
+
+The viewer should feel uncertain whether this location exists in the future, the past, a dream, a memory, or somewhere between realities.
+
+Atmosphere:
+
+- profound solitude
+- suspended time
+- dreamlike nostalgia
+- peaceful melancholy
+- quiet anticipation
+- subtle unreality
+- familiar yet impossible
+- the sensation of waiting for a train that may never arrive
+
+Lighting:
+
+Soft overcast daylight.
+
+Diffuse white illumination enters through gigantic floor-to-ceiling windows.
+
+No direct sunlight.
+
+No dramatic shadows.
+
+Everything feels softly illuminated as though reality itself has been muted.
+
+Slight atmospheric haze.
+
+Soft bloom around distant lights.
+
+Composition:
+
+If a character is present:
+
+- wide cinematic framing
+- the character occupies only a small portion of the image
+- the immense architecture dominates the scene
+- strong perspective lines created by tracks, platform markings, ceiling lights, benches, corridors, and elevated walkways
+
+If no character is present:
+
+- wide cinematic environmental shot
+- the station itself becomes the subject
+- emphasize emptiness, scale, perspective, and spatial mystery
+- strong perspective lines created by tracks, platform markings, ceiling lights, benches, corridors, and elevated walkways
+- vast uninterrupted views of the architecture
+- no implied human presence
+
+Camera:
+
+Architectural photography style.
+
+Medium-wide shot.
+
+Eye-level perspective.
+
+Deep depth and immense spatial scale.
+
+Style:
+
+Masterpiece.
+
+Ultra-detailed anime illustration.
+
+Premium environmental storytelling.
+
+Photorealistic architecture.
+
+Subtle surrealism.
+
+Dreamlike realism.
+
+High-detail reflections.
+
+Beautiful cloud rendering.
+
+Immense sense of scale.
+
+Liminal-space aesthetic.
+
+Dr. Morro-inspired environmental design.
+
+Slightly abstract spatial logic.
+
+Elegant environmental mystery.
+
+Mood:
+
+A place where someone has been waiting for years.
+
+A destination that may not exist.
+
+A station between realities.
+
+The feeling of arriving somewhere important and finding nobody there.
+
+The feeling that the station remembers people who are no longer present.
+
+Character presence rules:
+
+- If a character reference image exists, generate exactly one character based on that reference
+- If no character reference image exists, generate no characters whatsoever
+- No background people
+- No distant silhouettes
+- No reflections containing people
+- No shadows implying unseen people
+- No crowds
+
+Quality:
+
+best quality, masterpiece, ultra detailed, cinematic lighting, environmental storytelling, realistic architecture, immersive atmosphere, high resolution, sharp focus
+
+Negative:
+
+crowd, multiple people, busy station, advertisements everywhere, modern commercial clutter, party atmosphere, strong sunlight, warm tropical feeling, horror, monsters, ruins, heavy decay, excessive vegetation, graffiti, post-apocalyptic destruction, text, logo, watermark, low quality, blurry face, bad anatomy, distorted limbs, noise, film grain, compression artifacts, T-pose, A-pose
+```
+
+**📎 Requires:** Optional reference image — most refined version of the metro series.
+
+**💡 Why it works:** This is the *evolved* version of metro001 — same base scenario, but the language becomes more psychologically specific. Key upgrade: `"Reality feels slightly unstable. Not overtly supernatural. Just quietly wrong."` — three lines that perfectly calibrate the unreality dial. Too overt and it becomes horror; too subtle and it becomes generic empty. The phrase `"quietly wrong"` is the entire abstract-surreal liminal genre in two words. Another structural improvement: the architecture block now includes self-referential impossibilities (`"corridors that appear to connect back into themselves"`, `"distant stairways leading to platforms that cannot physically exist"`) instead of just absent details. The closing mood line `"the feeling that the station remembers people who are no longer present"` adds an unusual temporal-emotional dimension — the space itself has memory. This is what separates this prompt from metro001's pure liminal.
+
+**🔧 Variations:** swap "Dr. Morro VRChat" reference for `"inspired by Petit Imp's poolrooms aesthetic"` or `"backrooms level 0 visual logic"` for adjacent subgenre anchors; change `"the station remembers people who are no longer present"` to `"the station is patiently waiting for occupants who haven't been born yet"` for a future-oriented liminal variant; remove the cloud anchor and place the station `"deep underground with no exit"` for a claustrophobic liminal variant; tighten the unreality to one specific impossible element for cleaner composition.
+
+---
+
+#### Liminal Supermarket — Endless 24-Hour Aisles (Pure Liminal)
+
+<img src="./assets/images/illustrations/liminal/market001.webp" width="600" alt="Vast empty 24-hour supermarket with endless aisles, fluorescent lighting, fully stocked shelves, completely devoid of customers or staff">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `supermarket` `retail` `pure-liminal` `fluorescent` `3am-aesthetic` `endless-aisles` `optional-character` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+IF a character reference image is provided:
+
+Use the attached image strictly as the character identity reference. Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable anime identity shown in the reference image. Do not redesign, replace, or reinterpret the character.
+
+Outfit: preserve exactly the outfit shown in the attached reference image, including color, shape, proportions, material appearance, and overall design.
+
+The character stands alone inside the environment described below.
+
+The character is quietly walking through an endless aisle, lightly touching the edge of a shelf while looking toward the far distance.
+
+She is not looking at the camera.
+
+The character occupies only a relatively small portion of the overall composition.
+
+IF no character reference image is provided:
+
+Do not create any characters, people, silhouettes, reflections of people, employees, customers, mannequins, shadows suggesting people, or humanoid figures of any kind.
+
+Generate only the environment described below.
+
+The scene must remain completely empty.
+
+The scene takes place inside a gigantic 24-hour supermarket that feels frozen outside of time.
+
+The store appears perfectly clean, fully stocked, brightly illuminated, and completely empty.
+
+No employees.
+
+No customers.
+
+No sounds except the distant hum of fluorescent lights.
+
+The supermarket should feel impossibly large.
+
+The aisles continue far beyond visibility.
+
+Every row appears almost identical.
+
+The architecture creates uncertainty about whether the building ever ends.
+
+Environment:
+
+- endless grocery aisles
+- fully stocked shelves
+- bright fluorescent lighting
+- polished reflective floors
+- abandoned checkout lanes
+- empty shopping carts
+- frozen digital clocks displaying strange times
+- distant refrigerators softly glowing
+- repeating signs hanging from the ceiling
+- long empty corridors between shelves
+- oversized warehouse-like spaces
+- unused customer service desks
+
+The store should feel simultaneously comforting and unsettling.
+
+Atmosphere:
+
+- profound loneliness
+- late-night nostalgia
+- suspended reality
+- dreamlike familiarity
+- quiet emptiness
+- strange comfort
+- forgotten memories
+- the feeling of being the last person awake
+
+Lighting:
+
+Bright white fluorescent lighting.
+
+No dramatic shadows.
+
+Uniform illumination across the entire scene.
+
+Subtle reflections on polished floors.
+
+A slightly unreal cleanliness.
+
+Composition:
+
+Wide-angle perspective.
+
+Long aisles create powerful leading lines.
+
+The immense empty environment dominates the image.
+
+IF a character is present, the character occupies only a small portion of the frame.
+
+The architecture and scale should remain the primary visual focus.
+
+Camera:
+
+Architectural photography.
+
+Slightly low eye-level angle.
+
+Deep perspective.
+
+Strong sense of depth.
+
+The image should emphasize the overwhelming scale of the supermarket.
+
+Style:
+
+Masterpiece.
+
+Ultra-detailed anime illustration.
+
+Photorealistic environment.
+
+Premium atmospheric artwork.
+
+Hyper-detailed retail architecture.
+
+Dreamlike realism.
+
+Liminal-space aesthetic.
+
+Mood:
+
+A place that should be busy but isn't.
+
+A familiar location transformed into something uncanny.
+
+The sensation of wandering through a memory at 3 AM.
+
+A supermarket that may have existed only in a dream.
+
+The environment should feel both comforting and unsettling at the same time.
+
+Quality:
+
+best quality,
+masterpiece,
+ultra detailed,
+cinematic atmosphere,
+realistic lighting,
+environmental storytelling,
+immersive scale,
+high resolution,
+sharp focus
+
+Negative:
+
+crowd,
+employees,
+customers,
+busy environment,
+shopping activity,
+sunlight,
+outdoor scenery,
+clutter,
+graffiti,
+damaged shelves,
+horror monsters,
+jumpscare elements,
+text,
+logo,
+watermark,
+low quality,
+blurry face,
+bad anatomy,
+noise,
+film grain,
+compression artifacts
+
+Additional negative when NO reference image is provided:
+
+person,
+human,
+girl,
+boy,
+woman,
+man,
+character,
+anime character,
+humanoid,
+silhouette,
+shadow person,
+customer,
+employee,
+shopper,
+reflection of a person,
+mannequin,
+NPC,
+figure,
+portrait,
+people in distance
+
+Additional requirements:
+
+The supermarket must feel endless.
+
+The store should appear fully operational but abandoned.
+
+The architecture should repeat in ways that create uncertainty about scale and distance.
+
+The image should evoke liminal-space photography, late-night nostalgia, suspended reality, and dreamlike familiarity.
+
+No T-pose.
+
+No A-pose.
+
+Natural body posture if a character is present.
+```
+
+**📎 Requires:** Optional reference image — character walks through aisle when attached.
+
+**💡 Why it works:** The supermarket is one of the most culturally loaded liminal locations because *everyone has been in a 24-hour store at 3 AM*, and that experience already feels slightly liminal in real life. The prompt leverages this with `"the sensation of wandering through a memory at 3 AM"` — naming the exact emotional trigger most viewers will recognize. The detail `"frozen digital clocks displaying strange times"` is doing important work: it implies time has stopped without rendering literal stopped clocks (which would be too on-the-nose). The directive `"the store should feel simultaneously comforting and unsettling"` is the key emotional calibration — supermarkets normally read as either *banal* or *horror* (think: backrooms supermarket levels), but the comfort-unease blend is the genuine liminal register. The character-action specificity (`"lightly touching the edge of a shelf"`) is unusually concrete — it gives the model a precise gesture instead of a generic "walking pose," which produces more natural-looking results.
+
+**🔧 Variations:** swap `24-hour supermarket` for `Brazilian hipermercado` (Carrefour/Atacadão aesthetic) for a specific cultural variant; change `bright fluorescent` to `flickering aging fluorescent with some bulbs out` for a slightly more decayed liminal feel; replace `polished reflective floors` with `worn vinyl floor tiles with subtle imperfections` for a more realistic everyday supermarket aesthetic; tighten the scene to a specific aisle (`"endless cereal aisle"`, `"endless frozen foods section with cold haze rolling out of open freezers"`) for stronger atmospheric specificity.
+
+---
+
+#### Liminal Interior — Abstract Memory Hallways (Abstract Surreal)
+
+<img src="./assets/images/illustrations/liminal/market002.webp" width="600" alt="Immense abstract interior with endless repeating hallways, oversized empty rooms, floating ceiling panels, fluorescent lighting, impossible architectural transitions in a forgotten-memory atmosphere">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `interior` `abstract-surreal` `non-euclidean` `dreamcore` `memory-space` `optional-character` `hallways` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+IF a character reference image is attached:
+
+Use the attached image strictly as the character identity reference. Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable anime identity shown in the reference image. Do not redesign, replace, or reinterpret the character.
+
+Outfit: preserve exactly the outfit shown in the attached reference image, including color, shape, proportions, material appearance, and overall design.
+
+The character stands alone inside an immense abstract interior that feels like a forgotten memory rather than a real place.
+
+The character is quietly walking forward through the space, lightly brushing her fingertips against nearby structures while looking toward a distant point far ahead.
+
+She is not looking at the camera.
+
+The character occupies a relatively small portion of the frame.
+
+The environment dominates the composition.
+
+IF no character reference image is attached:
+
+Do not generate any character, person, silhouette, humanoid figure, animal, creature, robot, mannequin, shadow figure, statue, reflection of a person, or any visible living being.
+
+The scene must contain only the environment.
+
+The environment is the sole subject of the image.
+
+Focus entirely on architecture, atmosphere, scale, lighting, composition, and environmental storytelling.
+
+The scene takes place inside an immense abstract interior that feels like a forgotten memory rather than a real place.
+
+The environment cannot be clearly identified as any specific location.
+
+It resembles fragments of familiar spaces merged together into something impossible.
+
+The environment should feel infinite.
+
+The architecture repeats in ways that do not make sense.
+
+Hallways connect to open rooms.
+
+Open rooms connect to elevated platforms.
+
+Platforms connect to empty corridors.
+
+The space seems to continue forever beyond visibility.
+
+Environment:
+
+- endless repeating hallways
+- oversized empty rooms
+- floating ceiling panels
+- isolated fluorescent lights
+- distant doorways leading nowhere
+- elevated walkways suspended in darkness
+- repeating geometric structures
+- large empty observation windows
+- impossible architectural transitions
+- blank walls interrupted by occasional signs
+- abandoned waiting areas
+- silent escalators leading into empty space
+- long polished corridors disappearing into fog
+- subtle reflections on smooth floors
+- strange architectural symmetry
+
+The environment should feel carefully maintained, clean, and functional, yet completely devoid of purpose.
+
+No visible damage.
+
+No graffiti.
+
+No dirt.
+
+No obvious decay.
+
+Only the feeling that nobody has been here for a very long time.
+
+Atmosphere:
+
+- profound loneliness
+- suspended reality
+- dreamlike familiarity
+- quiet emptiness
+- impossible scale
+- forgotten memories
+- gentle melancholy
+- strange comfort
+- nostalgic uncertainty
+- the sensation of wandering inside a dream that almost makes sense
+
+Lighting:
+
+Bright fluorescent lighting mixed with large areas of soft ambient illumination.
+
+No dramatic shadows.
+
+Uniform light distribution.
+
+Occasional pools of light floating in otherwise empty spaces.
+
+Subtle atmospheric haze.
+
+Composition:
+
+Wide-angle perspective.
+
+Strong leading lines.
+
+Large negative space.
+
+The architecture itself becomes the primary subject.
+
+IF a character is present:
+
+The character occupies only a small portion of the frame.
+
+The environment remains the dominant visual element.
+
+Camera:
+
+Architectural photography.
+
+Slightly low eye-level angle.
+
+Deep perspective.
+
+Extreme sense of scale.
+
+Strong depth.
+
+Style:
+
+Masterpiece.
+
+Ultra-detailed anime illustration.
+
+Photorealistic environment.
+
+Dreamlike realism.
+
+Premium atmospheric artwork.
+
+Hyper-detailed architecture.
+
+Abstract liminal-space aesthetic.
+
+Surreal environmental storytelling.
+
+Mood:
+
+A place that feels familiar but cannot be remembered.
+
+A location that may never have existed.
+
+The sensation of walking through fragments of forgotten dreams.
+
+A comforting yet deeply uncanny space suspended outside normal reality.
+
+Quality:
+
+best quality,
+masterpiece,
+ultra detailed,
+cinematic atmosphere,
+realistic lighting,
+environmental storytelling,
+immersive scale,
+high resolution,
+sharp focus
+
+IF a character is present:
+
+Natural dynamic pose.
+
+Relaxed body language.
+
+Realistic weight distribution.
+
+Walking motion.
+
+No T-pose.
+
+No A-pose.
+
+Negative:
+
+crowd,
+people,
+employees,
+customers,
+busy environment,
+outdoor scenery,
+sunlight,
+vehicles,
+horror monsters,
+jumpscare elements,
+gore,
+clutter,
+damaged architecture,
+graffiti,
+excessive decay,
+text,
+logo,
+watermark,
+low quality,
+blurry face,
+bad anatomy,
+noise,
+film grain,
+compression artifacts
+
+IF no character reference image is attached:
+
+additional negative:
+character,
+person,
+human,
+girl,
+boy,
+woman,
+man,
+anime character,
+humanoid,
+silhouette,
+figure,
+creature,
+NPC,
+pedestrian,
+traveler,
+wanderer,
+portrait,
+face,
+body,
+hands,
+eyes
+```
+
+**📎 Requires:** Optional reference image — most abstract version, character has specific walking-and-touching gesture when present.
+
+**💡 Why it works:** This is the most *fully abstract* liminal prompt in the series — it deliberately refuses to identify the location, instead describing it as `"fragments of familiar spaces merged together into something impossible"`. That refusal is the entire trick. By telling the model what the space is *not* (not a hallway, not a hotel, not a mall) while describing universal architectural elements, the prompt forces a synthesis output rather than a category match. The genius detail is `"hallways connect to open rooms. Open rooms connect to elevated platforms. Platforms connect to empty corridors"` — this rhythm tells the model the *transitions themselves* are the dreamlike quality, not any single space. The mood anchor `"a place that feels familiar but cannot be remembered"` captures something universally recognizable: déjà vu without referent. The character gesture (`"lightly brushing her fingertips against nearby structures"`) is poetic and specific — touch as a way of grounding in unstable space.
+
+**🔧 Variations:** swap `bright fluorescent` for `dimly lit emergency lighting only` for a more ominous variant (carefully — this can push toward backrooms horror); change `silent escalators leading into empty space` to specific architectural cliché mashups (`escalators ending in walls`, `staircases that loop back on themselves`); replace `walking forward` with `seated on the floor staring at the ceiling` for a contemplative-stuck pose; combine this prompt with the metro001 cloud-window detail for a hybrid hallway-station liminal.
+
+---
+
+
+#### Liminal Hotel — Convention Center Hallways (Pure Liminal)
+
+<img src="./assets/images/illustrations/liminal/hotel001.webp" width="600" alt="Massive convention hotel complex with endless carpeted hallways, chandeliers, empty registration counters, and prepared banquet tables — perfectly maintained but completely abandoned">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `hotel` `convention-center` `pure-liminal` `corporate-nostalgia` `endless-hallways` `optional-character` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+CHARACTER HANDLING:
+
+If a character reference image is attached:
+
+Use the attached image strictly as the character identity reference.
+
+Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable anime identity shown in the reference image.
+
+Do not redesign, replace, reinterpret, or significantly alter the character.
+
+Preserve exactly the outfit shown in the reference image, including color, shape, proportions, material appearance, and overall design.
+
+Place the character naturally within the environment.
+
+The character should not look at the camera.
+
+The character should appear small compared to the architecture.
+
+Use natural body language and a natural walking, standing, or observing pose.
+
+Avoid T-pose and A-pose.
+
+If no character reference image is attached:
+
+Do not generate any people.
+
+Do not generate any humanoids.
+
+Do not generate any visible characters.
+
+The scene should be purely environmental architecture.
+
+Focus entirely on the atmosphere, scale, lighting, composition, and environmental storytelling.
+
+The architecture becomes the sole subject of the image.
+
+SCENE:
+
+A massive convention hotel complex that feels abandoned moments after an event that never actually happened.
+
+The building is perfectly maintained.
+
+Every light is on.
+
+Every sign is in place.
+
+Nothing is broken.
+
+Nothing is dirty.
+
+Everything appears fully operational.
+
+Yet nobody is there.
+
+If a character is present:
+
+The character slowly walks through an enormous carpeted convention hallway, looking toward distant ballrooms and meeting rooms.
+
+The character is not looking at the camera.
+
+If no character is present:
+
+The corridor remains completely empty.
+
+The absence of people should feel significant and impossible to explain.
+
+The architecture should feel overwhelmingly large.
+
+The convention hotel is not ruined, dirty, or neglected.
+
+It is meticulously maintained, fully operational, and unnervingly clean.
+
+However, subtle signs suggest that nobody has been there for a very long time.
+
+ENVIRONMENT:
+
+- endless hotel corridors
+- patterned convention-center carpets
+- massive chandeliers
+- silent escalators continuously running with no passengers
+- empty registration counters with neatly stacked unused forms
+- abandoned information desks that remain perfectly organized
+- rows of banquet tables prepared for guests who never arrived
+- identical conference room doors extending into the distance
+- glowing directional signs pointing toward empty spaces
+- empty lounges with untouched furniture
+- silent elevators opening onto vacant hallways
+- floor-to-ceiling windows revealing nothing but dense fog
+- conference schedules still displayed for events that never happened
+- decorative plants carefully maintained but slightly overgrown
+- meeting rooms illuminated behind closed doors
+- vending machines softly glowing in empty corridors
+- digital signs looping forgotten announcements
+
+The hallway should seem to continue forever.
+
+Every intersection leads to more empty corridors.
+
+Ballrooms connect to more ballrooms.
+
+The layout should feel impossible to fully understand.
+
+Corridors branch into identical corridors.
+
+The architecture becomes increasingly repetitive and dreamlike.
+
+The space feels trapped between preparation and occupation.
+
+ATMOSPHERE:
+
+- strange familiarity
+- corporate nostalgia
+- forgotten gatherings
+- waiting for people who never arrived
+- silence after anticipation
+- dreamlike emptiness
+- emotional distance
+- suspended time
+- preserved abandonment
+- eternal waiting
+- uncanny familiarity
+- comfortable unease
+- the feeling of arriving years too late
+- a place that never realized the event was cancelled
+
+Everything feels preserved rather than abandoned.
+
+Everything feels functional.
+
+Nothing appears damaged.
+
+Yet the absence of people feels impossible to explain.
+
+The environment feels like it has been waiting for years without realizing it.
+
+LIGHTING:
+
+Soft warm hotel lighting.
+
+Golden chandeliers.
+
+Dim indirect wall lighting.
+
+Gentle reflections on polished surfaces.
+
+Soft pools of light fading into distant hallways.
+
+Everything feels comfortable yet unsettling.
+
+COMPOSITION:
+
+Wide cinematic framing.
+
+If a character is present:
+
+The character appears small compared to the architecture.
+
+If no character is present:
+
+Use architectural elements, furniture, escalators, registration counters, chandeliers, and corridor scale to communicate the immense size of the space.
+
+Long corridors create strong vanishing points.
+
+The environment dominates the image.
+
+The architecture is the true subject of the scene.
+
+CAMERA:
+
+Architectural photography.
+
+Wide-angle lens.
+
+Eye-level perspective.
+
+Deep depth of field.
+
+Strong perspective lines.
+
+STYLE:
+
+Masterpiece.
+
+Ultra-detailed anime illustration.
+
+Photorealistic architecture.
+
+Premium environmental storytelling.
+
+Luxury hotel aesthetic.
+
+Dreamlike realism.
+
+Strong liminal-space atmosphere.
+
+Impossible architecture.
+
+Backrooms-like architecture without horror.
+
+MOOD:
+
+A conference that ended before it began.
+
+A hotel waiting for guests that never arrived.
+
+The feeling of arriving one day too late.
+
+A memory of a place visited only in dreams.
+
+A building eternally preparing for an event that never starts.
+
+ADDITIONAL KEYWORDS:
+
+empty convention center,
+preserved abandonment,
+impossible architecture,
+endless hallways,
+threshold spaces,
+liminal hotel,
+non-euclidean layout,
+corporate nostalgia,
+silent luxury,
+eternal waiting,
+dreamlike emptiness,
+transitional space,
+uncanny familiarity,
+forgotten event,
+infinite convention center,
+liminal convention hotel,
+empty luxury interiors,
+vast architectural spaces,
+psychological liminality,
+subtle loneliness,
+quiet anticipation
+
+QUALITY:
+
+best quality,
+masterpiece,
+ultra detailed,
+cinematic atmosphere,
+realistic lighting,
+environmental storytelling,
+immersive architecture,
+high resolution,
+sharp focus
+
+NEGATIVE:
+
+crowd,
+staff,
+guests,
+busy environment,
+event attendees,
+party atmosphere,
+sunlight,
+outdoor scenery,
+horror monsters,
+jumpscares,
+graffiti,
+heavy decay,
+collapsed structures,
+damage,
+trash,
+vandalism,
+post-apocalyptic,
+text,
+logo,
+watermark,
+low quality,
+blurry face,
+bad anatomy,
+noise,
+film grain,
+compression artifacts,
+T-pose,
+A-pose
+```
+
+**📎 Requires:** Optional reference image — character walks slowly through carpeted hallway when present.
+
+**💡 Why it works:** This prompt taps into a *very specific cultural memory*: corporate convention hotels with patterned carpets, chandeliers, and infinite identical conference rooms. This setting is uniquely liminal because anyone who's ever attended a conference or stayed in a Marriott-style hotel has experienced the slight unreality of these spaces even when they were full. The phrase `"abandoned moments after an event that never actually happened"` is the prompt's emotional thesis — it implies a paradox (something ended that never began) that creates the liminal feeling automatically. The specificity of details like `"empty registration counters with neatly stacked unused forms"` and `"banquet tables prepared for guests who never arrived"` gives the model concrete visual targets that read as *preparation arrested in time*. The mood line `"a place that never realized the event was cancelled"` is the entire genre in one phrase.
+
+**🔧 Variations:** swap `convention hotel` for `cruise ship interior with no passengers` for a maritime variant; change `golden chandeliers` to `cold corporate fluorescents` for a less luxurious / more sterile liminal feel; replace `forgotten event` framing with `eternal preparation for an event tomorrow` for a more anxious anticipatory variant; add specific period anchors (`1990s American business hotel`, `2000s Brazilian eventos hotel`) for cultural-temporal liminal specificity.
+
+---
+
+#### Liminal Hotel — Abstract Threshold Spaces (Abstract Surreal)
+
+<img src="./assets/images/illustrations/liminal/hotel002.webp" width="600" alt="Impossible transitional architectural space combining lobby, corridor, atrium, and waiting room aesthetics — endless floating corridors, doors without walls, repeating geometric structures, preserved emptiness">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `hotel` `interior` `abstract-surreal` `non-euclidean` `threshold-space` `dreamcore` `optional-character` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+[CHARACTER HANDLING]
+
+If a character reference image is attached:
+
+Use the attached image strictly as the character identity reference.
+
+Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable identity shown in the reference image.
+
+Do not redesign, replace, reinterpret, or significantly alter the character.
+
+Preserve exactly the outfit shown in the reference image, including color, shape, proportions, material appearance, and overall design.
+
+The character is present within the environment and naturally interacts with the space.
+
+The character is not looking at the camera.
+
+The character slowly walks through the space as though searching for something she vaguely remembers but cannot name.
+
+The character appears small compared to the architecture.
+
+If no character reference image is attached:
+
+Do not generate any people.
+
+Do not generate any humanoid figures.
+
+Do not generate any silhouettes.
+
+Do not generate any distant individuals.
+
+Do not generate staff, guests, travelers, pedestrians, or background characters.
+
+Focus entirely on the environment itself.
+
+The architecture becomes the sole subject of the image.
+
+The scene should convey the same emotional atmosphere through scale, composition, lighting, atmosphere, and environmental storytelling alone.
+
+--------------------------------------------------
+
+The scene exists inside an impossible transitional space that cannot be identified as any specific place.
+
+The environment feels as if fragments of many familiar locations have been quietly merged together inside a dream.
+
+The architecture should feel overwhelmingly large.
+
+Nothing is broken.
+
+Nothing is dirty.
+
+Nothing is visibly abandoned.
+
+Everything appears perfectly maintained.
+
+Everything appears fully functional.
+
+Yet the purpose of the place cannot be understood.
+
+Environment:
+
+- endless floating corridors leading nowhere
+- large empty platforms suspended in vast interior voids
+- staircases connecting to identical staircases
+- doors standing alone without walls
+- floor-to-ceiling windows revealing only soft white fog
+- waiting areas with perfectly arranged furniture
+- illuminated information boards displaying unreadable schedules
+- escalators continuously operating between indistinguishable levels
+- isolated chandeliers hanging in impossible open spaces
+- repeating geometric structures fading into the distance
+- empty reception desks without any visible destination
+- hallways bending beyond visibility
+- bridges connecting identical rooms
+- clusters of decorative plants growing in unexpected places
+- conference tables arranged for unknown purposes
+- glowing directional signs pointing toward abstract concepts rather than locations
+- distant rooms visible through multiple layers of glass
+- repeating architectural motifs that slowly transform as they recede
+- large open atriums surrounded by impossible balconies
+- silent elevators arriving at undefined floors
+- endless carpets extending across disconnected spaces
+
+The layout should feel impossible to mentally map.
+
+Every path seems familiar.
+
+Every destination seems forgotten.
+
+The architecture gradually loses logical structure while remaining visually believable.
+
+Spaces transition into other spaces without clear boundaries.
+
+Large rooms open into larger rooms.
+
+Corridors become bridges.
+
+Bridges become hallways.
+
+Hallways become waiting rooms.
+
+The environment should feel suspended between memory and reality.
+
+Atmosphere:
+
+- strange familiarity
+- dreamlike nostalgia
+- preserved emptiness
+- forgotten destinations
+- suspended time
+- emotional distance
+- comfortable unease
+- silent anticipation
+- disconnected memories
+- architectural déjà vu
+- impossible familiarity
+- tranquil loneliness
+- transitional existence
+- forgotten purpose
+- eternal waiting
+- subconscious recognition
+- the feeling of remembering a place that never existed
+
+The environment feels preserved rather than abandoned.
+
+The space appears to be patiently waiting for something undefined.
+
+Nothing suggests danger.
+
+Nothing suggests horror.
+
+The unease comes entirely from impossible familiarity.
+
+Lighting:
+
+Soft warm ambient lighting.
+
+Gentle indirect illumination.
+
+Diffuse glow from unseen sources.
+
+Subtle reflections on polished surfaces.
+
+Pools of light fading into vast empty distances.
+
+Mild atmospheric haze.
+
+Everything feels comfortable yet unreal.
+
+Composition:
+
+Wide cinematic framing.
+
+If a character is present, the character appears small compared to the environment.
+
+The architecture dominates the image.
+
+Strong depth and scale.
+
+Large negative spaces.
+
+Emphasis on environmental storytelling.
+
+Camera:
+
+Architectural photography.
+
+Wide-angle lens.
+
+Eye-level perspective.
+
+Deep depth of field.
+
+Strong perspective lines.
+
+Style:
+
+Masterpiece.
+
+Ultra-detailed anime illustration.
+
+Photorealistic architecture.
+
+Dreamlike realism.
+
+Premium environmental storytelling.
+
+Liminal-space atmosphere.
+
+Surreal architectural design.
+
+Impossible yet believable interiors.
+
+Psychological liminality.
+
+Subtle surrealism.
+
+Mood:
+
+A place remembered from a dream.
+
+A destination that never had a name.
+
+A memory that belongs to nobody.
+
+A space waiting for an arrival that was never scheduled.
+
+The feeling of wandering through the architecture of forgotten thoughts.
+
+Additional keywords:
+
+abstract liminal space,
+impossible architecture,
+dream corridors,
+transitional spaces,
+psychological liminality,
+architectural surrealism,
+endless interiors,
+non-euclidean environment,
+forgotten destination,
+empty dreamscape,
+subconscious architecture,
+infinite hallways,
+unreal familiarity,
+liminal realism,
+memory space,
+threshold environment,
+eternal waiting,
+dreamlike emptiness,
+vast interior void,
+architectural nostalgia,
+preserved silence,
+surreal corporate space,
+abstract waiting room,
+impossible transitions,
+familiar unknown place
+
+Quality:
+
+best quality,
+masterpiece,
+ultra detailed,
+cinematic atmosphere,
+realistic lighting,
+environmental storytelling,
+immersive architecture,
+high resolution,
+sharp focus
+
+Negative:
+
+crowd,
+staff,
+guests,
+busy environment,
+party atmosphere,
+sunlight,
+outdoor scenery,
+horror monsters,
+jumpscares,
+graffiti,
+heavy decay,
+collapsed structures,
+damage,
+trash,
+vandalism,
+post-apocalyptic,
+text,
+logo,
+watermark,
+low quality,
+blurry face,
+bad anatomy,
+noise,
+film grain,
+compression artifacts,
+T-pose,
+A-pose,
+
+If no character reference image is attached:
+
+people,
+person,
+human,
+humanoid,
+silhouette,
+figure,
+background character,
+pedestrian,
+traveler,
+employee,
+visitor,
+customer,
+guest,
+staff member
+```
+
+**📎 Requires:** Optional reference image — character walks as if searching for forgotten memory when present.
+
+**💡 Why it works:** This is the most poetic prompt in the series — `"the character slowly walks through the space as though searching for something she vaguely remembers but cannot name"` is the kind of evocative directive that produces strong emotional output from GPT Image 2. The transitional architecture block uses *grammatical transformation* as a rendering technique: `"corridors become bridges. Bridges become hallways. Hallways become waiting rooms."` That cascading become-structure tells the model that *transitions themselves are unstable*, not just the destinations. The detail `"doors standing alone without walls"` is a single concrete impossibility anchor that's visually rich — the model can render it precisely, and one such impossibility reads stronger than many vague ones. `"Glowing directional signs pointing toward abstract concepts rather than locations"` is a Surrealist trick — gives the model permission to render text-like elements without actual readable text. The closing mood line `"a memory that belongs to nobody"` is the entire liminal subgenre compressed into five words.
+
+**🔧 Variations:** swap `warm ambient lighting` for `cold blue-gray morning light` for a more melancholic memory-space variant; tighten the impossible-architecture to one specific element (only doors without walls, only staircases connecting to identical staircases) for cleaner composition; change `searching for something she vaguely remembers` to `having found exactly what she was looking for and forgotten why` for a different emotional register; combine with metro003's frozen-clock detail for a hybrid memory-station liminal.
+
+---
+
+#### Liminal Aquatic Park — Dreamcore Indoor Waterpark (Pure Liminal)
+
+<img src="./assets/images/illustrations/liminal/aquaticpark001.webp" width="600" alt="Immense empty indoor waterpark with endless looping slides, artificial palm trees, glowing signs, wave pools running without swimmers, bright white skylights and timeless atmosphere">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `waterpark` `aquatic` `pure-liminal` `dreamcore` `vacation-memory` `artificial-paradise` `optional-character` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+Use the attached image strictly as the character identity reference. Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable anime identity shown in the reference image. Do not redesign, replace, or reinterpret the character.
+
+Outfit: preserve exactly the outfit shown in the attached reference image, including color, shape, proportions, material appearance, and overall design.
+
+The character stands alone inside an enormous indoor waterpark that appears to exist slightly outside normal reality.
+
+Everything is active.
+Water flows.
+Lights are on.
+Escalators move.
+Wave machines operate.
+Digital signs glow softly.
+Yet nobody is present.
+
+The character stands near the edge of a shallow pool, quietly observing the vast interior. She is not looking at the camera.
+
+Environment:
+
+- gigantic indoor waterpark
+- endless water slides disappearing into distant structures
+- looping slide networks that seem larger on the inside than the building itself
+- artificial palm trees repeating in strangely regular patterns
+- glowing signs with vague unreadable symbols
+- empty food courts extending farther than expected
+- silent ticket counters with nobody working
+- wave pools operating without swimmers
+- floating inner tubes drifting slowly through still water
+- illuminated bridges leading toward distant areas
+- enormous skylights revealing a bright white sky
+- endless tiled walkways
+- observation decks with no visitors
+- balconies overlooking other balconies
+- corridors leading to more pools that should not physically fit inside the structure
+- distant attractions partially obscured by soft atmospheric haze
+- subtle architectural repetition creating dreamlike familiarity
+
+The architecture should feel almost believable.
+
+Only slightly wrong.
+
+The park appears much bigger than physically possible.
+
+Slides disappear behind structures and never seem to end.
+
+Bridges connect areas that seem disconnected.
+
+Some paths loop back into spaces that resemble themselves.
+
+Certain attractions appear duplicated in the distance.
+
+The boundaries of the building are never fully visible.
+
+Atmosphere:
+
+- dreamlike nostalgia
+- artificial paradise
+- liminal-space aesthetic
+- loneliness inside a place designed for crowds
+- vacation memories that never happened
+- suspended time
+- quiet wonder
+- peaceful isolation
+- soft unreality
+- comforting emptiness
+- the feeling of wandering through a forgotten dream
+- subtle Dr. Morro VRChat world atmosphere
+- reality gently bending without becoming surreal horror
+
+Lighting:
+
+Bright white daylight entering through gigantic skylights.
+
+Soft reflections on water.
+
+Clean, slightly overexposed highlights.
+
+Diffuse illumination.
+
+No dramatic shadows.
+
+No sunset lighting.
+
+No horror lighting.
+
+The entire environment should feel bright, open, strangely timeless, and gently detached from reality.
+
+Composition:
+
+Wide cinematic shot.
+
+The character occupies a very small portion of the frame.
+
+Most of the image is dedicated to the enormous environment.
+
+Slides, bridges, pools, escalators, and walkways create powerful perspective lines.
+
+The viewer's eye should continually discover new distant structures.
+
+Camera:
+
+Architectural photography.
+
+Ultra-wide lens.
+
+Deep environmental focus.
+
+Large sense of scale.
+
+Environmental storytelling prioritized over character prominence.
+
+Style:
+
+Masterpiece.
+
+Ultra-detailed anime illustration.
+
+Photorealistic environment.
+
+Premium environmental storytelling.
+
+Dreamlike realism.
+
+Luxury architectural rendering quality.
+
+High-end liminal-space artwork.
+
+Subtle impossible architecture.
+
+Bright dreamcore-inspired atmosphere.
+
+Dr. Morro VRChat-inspired spatial design.
+
+Mood:
+
+A place built for thousands of people.
+
+A place currently occupied by one.
+
+A place that feels remembered rather than visited.
+
+The feeling of discovering a forgotten vacation destination existing somewhere between memory, dream, and reality.
+
+Quality: best quality, masterpiece, ultra detailed, cinematic atmosphere, realistic reflections, immersive scale, environmental storytelling, high resolution, sharp focus.
+
+Negative: crowd, tourists, children, staff, busy environment, horror monsters, decay, vandalism, broken equipment, abandoned ruins, dark atmosphere, creepy horror, text, logo, watermark, low quality, blurry face, bad anatomy, noise, film grain, compression artifacts, T-pose, A-pose.
+```
+
+**📎 Requires:** Reference image (this prompt assumes a character is present near the pool edge).
+
+**💡 Why it works:** The waterpark is a uniquely powerful liminal location because *active operation without people* is its core paradox — wave machines running without swimmers, slides flowing without users, vending machines glowing without customers. This is different from the empty-station or empty-hotel liminals because waterparks are *acoustically and visually busy* even when empty (water sounds, mechanical motion, flowing lights). The directive `"looping slide networks that seem larger on the inside than the building itself"` is a specific impossibility anchor — it tells the model the architecture violates internal/external geometry, which is one of the most reliable dreamcore tricks. The phrase `"vacation memories that never happened"` is the emotional thesis: nostalgia for a place you've never been is the liminal aesthetic distilled. The "bright dreamcore" register (over-bright, over-clean, slightly overexposed) is the opposite of horror lighting — this is critical because waterpark interiors can easily drift into backrooms-horror territory without explicit lighting calibration.
+
+**🔧 Variations:** swap `bright white skylights` for `colored fluorescent glow with no skylights` for a more dreamcore underground variant; change `artificial palm trees` for region-specific decoration (`fake Japanese cherry trees`, `inflatable tropical decor in 1990s Brazilian Hopi Hari style`); replace `floating inner tubes` with `floating pool noodles arranged in geometric patterns` for a more obsessively-arranged dreamcore aesthetic; add `the sound of distant filtered water echoing throughout the building` to the atmosphere block for stronger acoustic-implied atmosphere.
+
+---
+
+#### Liminal Aquatic Park — Self-Rearranging Waterpark (Abstract Surreal)
+
+<img src="./assets/images/illustrations/liminal/aquaticpark002.webp" width="600" alt="Colossal indoor waterpark with subtly impossible architecture — slide networks folding through space, duplicate landmarks, balconies overlooking themselves, skylights revealing only white light, deeply liminal dreamcore atmosphere">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `waterpark` `aquatic` `abstract-surreal` `non-euclidean` `dreamcore` `self-rearranging` `optional-character` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+CHARACTER RULE (CONDITIONAL)
+
+If a character reference image is attached:
+
+- Use the attached image strictly as the character identity reference.
+- Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable anime identity shown in the reference image.
+- Do not redesign, replace, or reinterpret the character.
+- Preserve exactly the outfit shown in the attached reference image, including color, shape, proportions, material appearance, and overall design.
+- Place the character naturally within the environment.
+- The character must occupy only a very small portion of the frame.
+- The environment remains the primary subject.
+
+If NO character reference image is attached:
+
+- Do not generate any person, humanoid, character, silhouette, visitor, staff member, tourist, child, or human figure.
+- The environment must be completely empty.
+- The scene becomes a pure environmental illustration.
+- Preserve all environmental storytelling, atmosphere, scale, architecture, and composition.
+
+SCENE
+
+If a character reference image is attached:
+
+The character stands alone inside an immense indoor waterpark that seems to exist in the uncertain space between architecture, memory, and dream.
+
+She quietly stands near the edge of a shallow reflective pool, gazing toward the interior of the structure.
+
+She is not looking at the camera.
+
+If NO character reference image is attached:
+
+An immense indoor waterpark exists in complete solitude, suspended somewhere between architecture, memory, and dream.
+
+No people are present anywhere.
+
+The structure quietly operates by itself.
+
+Everything is active.
+
+Water flows.
+
+Lights glow.
+
+Escalators move.
+
+Wave machines operate.
+
+Signs illuminate distant corridors.
+
+Yet nobody is present.
+
+ENVIRONMENT
+
+- colossal indoor waterpark
+- endless interconnected slide systems disappearing into distant layers of architecture
+- looping slide networks that seem to fold through the building in impossible ways
+- repeating palm trees placed with almost artificial perfection
+- softly glowing signs displaying unreadable symbols and forgotten directions
+- food courts stretching farther than expected
+- ticket counters operating without staff
+- wave pools running continuously without swimmers
+- floating inner tubes drifting through empty channels
+- elevated bridges crossing vast open spaces
+- enormous skylights revealing a featureless white sky
+- tiled pathways continuing beyond visible destinations
+- observation decks overlooking other observation decks
+- balconies overlooking identical balconies
+- corridors leading toward pools that should not physically fit inside the structure
+- distant attractions partially hidden behind luminous atmospheric haze
+- occasional duplicate landmarks appearing in multiple locations
+- stairways and escalators leading toward spaces that seem familiar before being reached
+
+The architecture should remain mostly believable.
+
+Only gently impossible.
+
+The waterpark feels larger than the building containing it.
+
+Some attractions appear farther away than perspective should allow.
+
+Certain bridges connect locations that seem unrelated.
+
+Some slides vanish behind structures and never visibly emerge.
+
+Entire sections of the park appear to repeat with slight differences.
+
+The boundaries of the complex are never visible.
+
+A faint feeling emerges that the building is quietly rearranging itself when nobody is looking.
+
+ATMOSPHERE
+
+- dreamlike nostalgia
+- artificial paradise
+- liminal-space aesthetic
+- peaceful isolation
+- suspended time
+- forgotten vacation memories
+- subtle unreality
+- comforting emptiness
+- quiet wonder
+- gentle spatial confusion
+- dream logic hidden beneath ordinary architecture
+- reality bending softly at the edges
+- familiar places becoming slightly unfamiliar
+- subtle Dr. Morro VRChat atmosphere
+- the sensation of remembering a place that never existed
+
+SURREAL ELEMENTS (VERY SUBTLE)
+
+- distant pools occasionally reflect locations that are not visible nearby
+- some skylights reveal only bright white light without a visible exterior
+- a few slide entrances seem larger inside than outside
+- reflections sometimes reveal slightly different architectural layouts
+- certain bridges appear to reconnect to themselves far away
+- repeating clusters of palm trees create impossible visual rhythms
+- isolated sections of the park appear suspended in soft haze as if disconnected from physical space
+
+LIGHTING
+
+Bright white daylight enters through enormous skylights.
+
+Soft reflections shimmer across water.
+
+Clean slightly overexposed highlights.
+
+Diffuse illumination.
+
+Minimal shadows.
+
+No sunset colors.
+
+No horror lighting.
+
+The environment feels bright, timeless, sterile, peaceful, and dreamlike.
+
+The white sky outside the skylights appears slightly unreal, as if the concept of daytime has replaced an actual sky.
+
+COMPOSITION
+
+Wide cinematic shot.
+
+If a character reference image is attached:
+
+- The character occupies a very small portion of the frame.
+- The environment overwhelmingly dominates the composition.
+
+If NO character reference image is attached:
+
+- No characters anywhere in the frame.
+- The entire composition is dedicated to the environment.
+
+Slides, bridges, pools, escalators, and pathways create layered perspective lines.
+
+The viewer continuously discovers new distant structures.
+
+Multiple architectural layers fade gradually into luminous haze.
+
+CAMERA
+
+Architectural photography.
+
+Ultra-wide lens.
+
+Deep environmental focus.
+
+Massive sense of scale.
+
+Environmental storytelling prioritized over character prominence.
+
+STYLE
+
+Masterpiece.
+
+Ultra-detailed anime illustration.
+
+Photorealistic environment.
+
+Premium environmental storytelling.
+
+Dreamlike realism.
+
+Luxury architectural visualization.
+
+High-end liminal-space artwork.
+
+Subtle impossible architecture.
+
+Soft surrealism.
+
+Dreamcore-inspired atmosphere.
+
+Dr. Morro VRChat-inspired spatial design.
+
+Backrooms-adjacent comfort without horror.
+
+MOOD
+
+A place built for thousands.
+
+A place occupied by one.
+
+Or by nobody at all.
+
+A place remembered more than visited.
+
+A place that feels suspended between vacation memory, dream, simulation, and reality.
+
+The sensation that if one keeps walking long enough, the waterpark might gradually become something else.
+
+QUALITY
+
+best quality,
+masterpiece,
+ultra detailed,
+cinematic atmosphere,
+realistic reflections,
+immersive scale,
+environmental storytelling,
+high resolution,
+sharp focus,
+atmospheric depth,
+subtle surrealism
+
+NEGATIVE
+
+crowd,
+tourists,
+children,
+staff,
+busy environment,
+horror monsters,
+decay,
+vandalism,
+broken equipment,
+abandoned ruins,
+dark atmosphere,
+creepy horror,
+aggressive surrealism,
+eldritch imagery,
+text,
+logo,
+watermark,
+low quality,
+blurry face,
+bad anatomy,
+noise,
+film grain,
+compression artifacts,
+T-pose,
+A-pose
+
+Additional negative when NO reference image is attached:
+
+people,
+person,
+human,
+humanoid,
+character,
+anime girl,
+anime boy,
+visitor,
+tourist,
+staff member,
+employee,
+pedestrian,
+silhouette,
+population,
+crowd,
+group,
+portrait,
+figure,
+model
+```
+
+**📎 Requires:** Optional reference image — fully self-contained both branches.
+
+**💡 Why it works:** This is the upgrade to aquaticpark001 — same scenario, but the surrealism gets its own dedicated block. The `SURREAL ELEMENTS (VERY SUBTLE)` section is structurally unique in this collection: it's a checklist of *specific impossibilities* (pools reflecting non-visible locations, skylights showing only white light, slide entrances larger inside than outside) rather than vague "weird architecture." This specificity is what produces actual dreamlike output instead of generic-strange output. The closing mood line `"the sensation that if one keeps walking long enough, the waterpark might gradually become something else"` introduces a *temporal* dimension to the liminality — implying the space is alive and changes through engagement. `"Reality bending softly at the edges"` is a precise calibration phrase: the liminal effect should be in peripheral vision, not central focus. The directive `"Backrooms-adjacent comfort without horror"` is doing critical genre work — it acknowledges the cultural reference but explicitly rejects the horror direction.
+
+**🔧 Variations:** swap `bright white daylight` for `late afternoon golden hour through skylights` for a warmer, more melancholic variant; add the directive `"some pools contain reflections of the same waterpark seen from different angles"` for stronger recursive-architecture reads; change `palm trees` to `pine trees` or `bamboo` for region-specific dreamcore (Japanese onsen-style waterpark); tighten to a single impossibility for cleaner abstract reads (`"only the duplicate-landmarks effect, all other architecture conventional"`).
+
+---
+
+#### Liminal Airport — Mall + Terminal Fusion (Pure Liminal)
+
+<img src="./assets/images/illustrations/liminal/airport001.webp" width="600" alt="Vast architectural fusion of luxury shopping mall and international airport terminal — empty storefronts, active departure boards, silent escalators, suspended bridges, all completely devoid of people">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `airport` `mall` `pure-liminal` `commercial-space` `mall-fusion` `vrchat` `optional-character` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+If a character reference image is attached:
+
+Use the attached image strictly as the character identity reference. Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable identity shown in the reference image. Do not redesign, replace, or reinterpret the character.
+
+Preserve exactly the outfit shown in the reference image, including color, shape, proportions, materials, and overall design.
+
+Include the character naturally within the environment.
+
+The character should occupy only a small portion of the frame and should not be the primary focus.
+
+The character stands beside a glass railing overlooking the immense interior, quietly gazing into the distance.
+
+The character is not looking at the camera.
+
+If no character reference image is attached:
+
+Do not generate any person, humanoid figure, anime character, animal character, silhouette, crowd, traveler, staff member, or visible living subject.
+
+The image should focus entirely on the environment itself.
+
+The architecture and atmosphere become the sole subject of the composition.
+
+Scene:
+
+An impossible architectural space that feels like a fusion between a luxury shopping mall and a massive international airport terminal.
+
+The building appears fully operational.
+
+All lights are on.
+
+Departure boards are active.
+
+Escalators are moving.
+
+Store displays are illuminated.
+
+Yet there are no people anywhere.
+
+The architecture should feel both familiar and impossible.
+
+Environment:
+
+- airport departure gates connected directly to shopping corridors
+- luxury storefronts with no customers
+- moving walkways extending into the distance
+- gigantic departure boards displaying destinations
+- empty cafés
+- glowing vending machines
+- silent escalators
+- endless glass elevators
+- vast atriums
+- decorative indoor trees
+- polished marble floors
+- enormous skylights
+- suspended bridges connecting distant sections
+
+The space should appear much larger than physically possible.
+
+Corridors continue beyond visibility.
+
+Gate numbers become increasingly distant and unreadable.
+
+The viewer should feel uncertain whether this place is a shopping mall, an airport, a dream, or a memory.
+
+Atmosphere:
+
+- quiet anticipation
+- suspended journeys
+- nostalgia for a place never visited
+- artificial comfort
+- loneliness inside a public space
+- endless waiting
+- dreamlike familiarity
+- peaceful emptiness
+
+Lighting:
+
+Bright daytime illumination.
+
+Large skylights fill the interior with soft white light.
+
+Reflections cover polished floors and glass surfaces.
+
+No harsh shadows.
+
+The entire environment feels frozen in a perfect afternoon.
+
+Composition:
+
+Wide cinematic framing.
+
+IF a character is present, the character occupies only a small area of the image.
+
+Most of the frame is dedicated to the immense architecture.
+
+Strong perspective lines from bridges, walkways, storefronts, and terminals.
+
+Camera:
+
+Architectural photography.
+
+Wide-angle lens.
+
+Eye-level perspective.
+
+Deep environmental focus.
+
+Massive sense of scale.
+
+Style:
+
+Masterpiece.
+
+Ultra-detailed anime illustration.
+
+Photorealistic architecture.
+
+Luxury commercial interior design.
+
+Premium environmental storytelling.
+
+Dreamlike realism.
+
+Strong liminal-space aesthetic.
+
+Architecture inspired by impossible yet believable spaces similar to high-end VRChat liminal environments.
+
+Mood:
+
+A journey that never begins.
+
+A destination that cannot be reached.
+
+A place where thousands of people should be present but none are.
+
+A memory from a future that never happened.
+
+Quality:
+
+best quality, masterpiece, ultra detailed, cinematic atmosphere, realistic reflections, environmental storytelling, immersive architecture, high resolution, sharp focus
+
+Negative:
+
+crowd, travelers, airport staff, shoppers, busy environment, advertisements everywhere, clutter, horror monsters, decay, vandalism, darkness, text, logo, watermark, low quality, blurry face, bad anatomy, noise, film grain, compression artifacts, T-pose, A-pose
+```
+
+**📎 Requires:** Optional reference image — character stands at glass railing when present.
+
+**💡 Why it works:** The mall + airport fusion is one of the most psychologically loaded liminal locations because both spaces share specific architectural DNA — high ceilings, polished floors, retail storefronts, transitory atmosphere, fluorescent lighting. By explicitly fusing them (`"airport departure gates connected directly to shopping corridors"`), the prompt creates a synthesis that feels familiar yet wrong. Most travelers have walked through the duty-free shopping section of an airport and felt this exact ambiguity in real life. The detail `"gate numbers become increasingly distant and unreadable"` is doing precise rendering work: it gives the model a way to imply infinity through *visual degradation of detail* rather than through impossible spatial geometry. `"A journey that never begins"` and `"a destination that cannot be reached"` is the mood thesis — transit liminals always trade on the gap between *being on the way* and *never arriving*.
+
+**🔧 Variations:** swap `luxury shopping mall` for `airport food court` for a less prestige-coded variant; change `daytime skylights` to `night with massive panoramic windows showing dark runways and distant lit planes that never move` for nocturnal airport liminal; replace `bridges connecting distant sections` with `escalators descending into other terminals visible through glass floors` for stronger vertical layering; tighten to a specific real airport aesthetic (`Singapore Changi style with indoor gardens`, `2000s Brazilian Guarulhos terminal feeling`) for cultural specificity.
+
+---
+
+#### Liminal Airport — Eternal Afternoon Terminal (Abstract Surreal)
+
+<img src="./assets/images/illustrations/liminal/airport002.webp" width="600" alt="Surreal architectural fusion of luxury mall, airport terminal, and dream — subtly impossible details, recursive balconies, terminals visible through windows inside other terminals, eternal afternoon light">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `airport` `mall` `abstract-surreal` `recursive-architecture` `vrchat` `eternal-afternoon` `optional-character` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+Character Logic (Conditional)
+
+IF a character reference image is attached:
+
+Use the attached image strictly as the character identity reference. Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable anime identity shown in the reference image. Do not redesign, replace, or reinterpret the character.
+
+Outfit: preserve exactly the outfit shown in the attached reference image, including color, shape, proportions, material appearance, and overall design.
+
+The character stands alone beside a glass railing overlooking an immense central atrium, quietly gazing into the distance. She is not looking at the camera.
+
+IF no character reference image is attached:
+
+Do not generate any person, humanoid figure, silhouette, traveler, staff member, shopper, character, animal, creature, or visible living being.
+
+The scene becomes a pure environmental illustration focused entirely on the architecture, atmosphere, scale, lighting, and liminal-space qualities of the location.
+
+Main Scene
+
+An impossible architectural space that feels like a fusion between a luxury shopping mall, an international airport terminal, and a carefully constructed dream.
+
+The building appears fully operational.
+
+All lights are on.
+
+Departure boards are active.
+
+Escalators are moving.
+
+Store displays are illuminated.
+
+Glass elevators travel silently between floors.
+
+Yet there are no people anywhere.
+
+The architecture initially appears realistic, but subtle impossibilities reveal themselves the longer the viewer observes.
+
+Environment
+
+- airport departure gates connected directly to shopping corridors
+- luxury storefronts with no customers
+- moving walkways extending far beyond visible destinations
+- gigantic departure boards displaying unfamiliar city names
+- empty cafés with untouched tables
+- glowing vending machines
+- silent escalators
+- endless glass elevators
+- enormous atriums
+- decorative indoor trees
+- polished marble floors
+- vast skylights
+- suspended bridges connecting distant sections
+
+Additional surreal architectural elements
+
+- terminals visible through windows inside other terminals
+- bridges that appear to connect spaces impossibly far apart
+- skylights revealing layers of interior architecture above instead of the sky
+- storefronts repeating in the distance with subtle variations
+- gates numbered in non-sequential patterns
+- distant corridors fading into bright atmospheric haze
+- balconies overlooking larger versions of themselves
+- faint reflections suggesting spaces that do not physically exist
+
+The space should feel believable at first glance, but increasingly dreamlike upon inspection.
+
+The viewer should feel uncertain whether this place is a shopping mall, an airport, a memory, or a location that only exists between destinations.
+
+Atmosphere
+
+- quiet anticipation
+- suspended journeys
+- nostalgia for a place never visited
+- artificial comfort
+- loneliness inside a public space
+- endless waiting
+- dreamlike familiarity
+- peaceful emptiness
+- subtle unreality
+- architectural déjà vu
+
+Liminal-Space Influence
+
+Inspired by large-scale VRChat liminal environments, particularly the feeling of impossibly clean, oversized public architecture.
+
+The environment should feel intentionally designed for people, yet completely abandoned.
+
+No horror.
+
+No danger.
+
+Only a persistent feeling that something about the space is slightly wrong.
+
+The world feels paused rather than empty.
+
+Lighting
+
+Bright daytime illumination.
+
+Large skylights fill the interior with soft white light.
+
+Reflections cover polished floors and glass surfaces.
+
+No harsh shadows.
+
+The entire environment feels frozen in a perfect afternoon.
+
+A slight atmospheric bloom softens distant structures.
+
+Far-away areas gradually dissolve into bright haze.
+
+Composition
+
+IF a character reference image is attached:
+
+- wide cinematic framing
+- the character occupies a small area of the image
+- most of the frame is dedicated to the immense architecture
+- strong perspective lines from bridges, walkways, storefronts, terminals, and layered atriums
+
+IF no character reference image is attached:
+
+- wide cinematic framing
+- no visible characters anywhere
+- architecture occupies the entire frame
+- strong perspective lines from bridges, walkways, storefronts, terminals, and layered atriums
+- emphasis on environmental storytelling and scale
+
+Camera
+
+Architectural photography.
+
+Wide-angle lens.
+
+Eye-level perspective.
+
+Deep environmental focus.
+
+Massive sense of scale.
+
+Style
+
+Masterpiece.
+
+Ultra-detailed anime illustration.
+
+Photorealistic architecture.
+
+Dreamlike realism.
+
+Premium environmental storytelling.
+
+High-end architectural visualization.
+
+Subtle surrealism.
+
+VRChat liminal-space aesthetic.
+
+DrMorro-inspired atmosphere.
+
+Clean futuristic public architecture.
+
+Mood
+
+A journey that never begins.
+
+A destination that cannot be reached.
+
+A public place that seems to remember its visitors long after they are gone.
+
+A perfect afternoon repeating forever.
+
+A memory from a future that never happened.
+
+Quality
+
+best quality,
+masterpiece,
+ultra detailed,
+cinematic atmosphere,
+realistic reflections,
+environmental storytelling,
+immersive architecture,
+high resolution,
+sharp focus
+
+Negative
+
+crowd,
+travelers,
+airport staff,
+shoppers,
+busy environment,
+horror monsters,
+decay,
+vandalism,
+darkness,
+abandoned ruins,
+post-apocalyptic elements,
+graffiti,
+clutter,
+excessive advertisements,
+text,
+logo,
+watermark,
+low quality,
+blurry face,
+bad anatomy,
+noise,
+film grain,
+compression artifacts,
+T-pose,
+A-pose
+
+Additional Negative When No Reference Image Is Attached
+
+person,
+people,
+human,
+woman,
+man,
+girl,
+boy,
+character,
+anime character,
+humanoid,
+silhouette,
+background character,
+NPC,
+anthropomorphic character,
+animal,
+creature,
+visible living being
+```
+
+**📎 Requires:** Optional reference image.
+
+**💡 Why it works:** This is the *Borgesian* version of airport001 — the architecture gets explicit recursive impossibilities. The `Additional surreal architectural elements` block is the most important section: `"terminals visible through windows inside other terminals"`, `"skylights revealing layers of interior architecture above instead of the sky"`, `"balconies overlooking larger versions of themselves"`. These are *recursive geometry* impossibilities — the architecture contains itself, which is a fundamentally different kind of impossibility from `"hallway connects to nothing"`. Recursive impossibilities feel more dreamlike because they suggest the space is *aware of itself*. The detail `"gates numbered in non-sequential patterns"` is doing nuanced work: it implies the systematization is broken without rendering literal misnumbered signs. The mood line `"a public place that seems to remember its visitors long after they are gone"` introduces a *haunting* quality without horror — the space has emotional memory of crowds that no longer exist.
+
+**🔱 Variations:** swap `eternal afternoon` for `eternal sunset golden hour` for a warmer melancholic variant; change `terminals visible through windows` to `terminals visible only in reflections of polished floors` for a more uncanny detail; add `"large clocks throughout the terminal all show different times that never change"` for stronger frozen-time reads; replace `Borges-like recursive architecture` framing with `M.C. Escher-inspired impossible geometry` for a more visually aggressive variant.
+
+---
+
+#### Liminal Beach — Rio Boardwalk (Pure Liminal)
+
+<img src="./assets/images/illustrations/liminal/rjbeach001.webp" width="600" alt="Empty Brazilian seaside promenade stretching endlessly along the coastline — calm ocean, open kiosks, perfectly arranged beach umbrellas, no people anywhere, dreamlike afternoon haze">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `beach` `brazil` `rio` `pure-liminal` `boardwalk` `coastal` `optional-character` `nostalgia` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+If a character reference image is attached:
+
+Use the attached image strictly as the character identity reference. Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable identity shown in the reference image. Do not redesign, replace, or reinterpret the character.
+
+The character is naturally present within the environment.
+
+Use a natural, relaxed, believable pose. Avoid T-pose, A-pose, mannequin posture, rigid symmetry, presentation-sheet poses, or standing unnaturally straight.
+
+If no character reference image is attached:
+
+Do not generate any character, person, silhouette, humanoid figure, animal, creature, reflection, shadow-person, distant pedestrian, or any other living subject.
+
+The environment itself is the sole subject of the image.
+
+The scene depicts an enormous Brazilian seaside boardwalk stretching endlessly along the coastline.
+
+The ocean is calm.
+
+The kiosks are open.
+
+The streetlights remain illuminated despite full daylight.
+
+Beach umbrellas are arranged perfectly.
+
+The promenade extends for kilometers without a single person.
+
+Apartment towers line the coastline.
+
+Every balcony contains furniture.
+
+Every window reflects sunlight.
+
+Yet no movement can be seen anywhere.
+
+The city feels inhabited but empty.
+
+The horizon is obscured by bright white haze.
+
+The ocean and sky almost merge together.
+
+The atmosphere feels like a forgotten family vacation remembered incorrectly decades later.
+
+Bright.
+
+Peaceful.
+
+Beautiful.
+
+Slightly surreal.
+
+The viewer should feel uncertain whether this place exists in reality or inside a memory.
+
+Subtle liminal atmosphere.
+
+Dreamlike familiarity.
+
+Quiet nostalgia.
+
+Soft atmospheric haze.
+
+Long uninterrupted sightlines.
+
+Photorealistic Brazilian coastal architecture.
+
+Empty yet convincingly inhabited.
+
+Cinematic composition.
+
+High environmental detail.
+
+Natural daylight.
+
+No crowds.
+
+No vehicles.
+
+No signs of ongoing activity.
+
+A place that feels remembered rather than visited.
+```
+
+**📎 Requires:** Optional reference image.
+
+**💡 Why it works:** This is the only outdoor liminal in the entire collection, which makes it visually distinct from the others. The Brazilian beach boardwalk is a culturally specific liminal — it taps into the experience of childhood vacations in Rio/Recife/Salvador, the wave-pattern Copacabana pavement, the row of apartment towers along the coastline. The detail `"streetlights remain illuminated despite full daylight"` is a *specific subtle wrongness* that anyone who's been on a Brazilian beach at midday recognizes as off (streetlights should be on at night). The phrase `"a forgotten family vacation remembered incorrectly decades later"` is doing all the emotional work — the *incorrectness of memory* is what makes this liminal rather than just empty. The `"empty yet convincingly inhabited"` paradox is the central tension: every balcony has furniture, every window has reflections, but no movement exists. This implies recent abandonment without showing it, which is more unsettling than literal ruins. The prompt is significantly shorter than others in this category — the brevity is intentional, leaving room for the model to fill in Brazilian coastal aesthetics from training data.
+
+**🔧 Variations:** specify the location explicitly (`Copacabana boardwalk with the wave-pattern Portuguese stone pavement`, `Boa Viagem promenade in Recife with anti-shark netting visible offshore`, `Ipanema with the Two Brothers mountains in the distant haze`) for stronger cultural anchors; swap `midday daylight` for `golden hour with empty beach`; add `tiny tropical birds visible in the distance but no people` if you want to suggest non-human life; change apartment towers to `colonial Portuguese-style buildings in Salvador` for a different Brazilian coastal aesthetic.
+
+---
+
+#### Liminal Beach — Memory of Rio (Abstract Surreal)
+
+<img src="./assets/images/illustrations/liminal/rjbeach002.webp" width="600" alt="Surreal Brazilian seaside promenade dissolving into abstract memory — wave-pattern pavement losing geometric consistency, repeating kiosks, hovering buildings, horizon merging with sky in white haze">
+
+**Category:** Liminal & Abstract Spaces · **Tags:** `liminal` `beach` `brazil` `abstract-surreal` `memory-reconstruction` `non-euclidean` `optional-character` `nostalgia` `dr-morro-inspired`
+
+**📋 Prompt:**
+
+```
+If a character reference image is attached:
+
+Use the attached image strictly as the character identity reference.
+
+Preserve exactly the same face, eyes, hairstyle, hair color, facial features, proportions, expression style, age appearance, outfit impression, color palette, charm, and overall recognizable anime identity shown in the reference image.
+
+Do not redesign, replace, reinterpret, or alter the character's identity in any way.
+
+Place the character naturally within the environment.
+
+Natural standing pose.
+
+Relaxed posture.
+
+Looking naturally toward the viewer or into the distance.
+
+Not T-pose.
+
+Not A-pose.
+
+If no character reference image is attached:
+
+Do not create any character.
+
+Do not create any person.
+
+Do not create silhouettes, crowds, pedestrians, distant figures, reflections of people, shadows suggesting people, or implied human presence.
+
+The image should depict only the environment itself.
+
+The scene must remain completely empty.
+
+An immense Brazilian seaside promenade feels less like a physical location and more like a memory attempting to reconstruct itself.
+
+The environment is inspired by the atmosphere of a childhood beach vacation remembered thousands of times over many years.
+
+The ocean is calm.
+
+The air is bright.
+
+The weather is clear.
+
+Nothing appears damaged, abandoned, or threatening.
+
+Everything is maintained, beautiful, and strangely permanent.
+
+The famous wave-pattern pavement begins normally near the viewer, but gradually loses geometric consistency as it stretches into the distance.
+
+The curves become larger.
+
+The waves become softer.
+
+The pattern slowly transforms into oversized abstract shapes that resemble someone's imperfect memory of the original design rather than the real pavement itself.
+
+The promenade extends impossibly far.
+
+The coastline bends in directions that should not be physically possible.
+
+Far away, sections of the beach seem to curve upward into the sky before disappearing into white haze.
+
+Rows of beach umbrellas repeat endlessly.
+
+Some rows continue for kilometers.
+
+Some rows subtly overlap each other despite occupying the same space.
+
+The kiosks are open.
+
+Many kiosks appear identical.
+
+The same kiosk seems to reappear repeatedly throughout the landscape at impossible distances.
+
+Apartment towers line the coast.
+
+Every balcony contains furniture.
+
+Every window reflects sunlight.
+
+Every detail suggests that people live here.
+
+Yet no people exist anywhere.
+
+No movement exists anywhere.
+
+No vehicles.
+
+No birds.
+
+No waves breaking.
+
+No visible wind.
+
+No signs of activity.
+
+The city feels inhabited but completely still.
+
+Several distant buildings hover slightly above the ground.
+
+Some towers appear duplicated.
+
+Others seem partially unfinished, fading into haze before reaching the sky.
+
+Streetlights remain illuminated despite full daylight.
+
+They continue endlessly toward the horizon.
+
+As they recede into the distance, they become smaller and smaller until they resemble stars suspended inside the daytime sky.
+
+The horizon cannot be clearly located.
+
+Ocean, sky, architecture, beach, and promenade gradually dissolve into a continuous white brightness where perspective becomes unreliable.
+
+Certain parts of the environment appear reconstructed from incomplete memories.
+
+Some buildings repeat.
+
+Some streets lead nowhere.
+
+Some spaces feel larger on the inside than on the outside.
+
+The architecture remains familiar but subtly impossible.
+
+The viewer should constantly question whether this place is real, remembered, dreamed, or being generated from memories in real time.
+
+The atmosphere should evoke:
+
+Liminal space.
+
+Dreamlike nostalgia.
+
+Comforting emptiness.
+
+Peaceful solitude.
+
+Familiarity without certainty.
+
+Reality blending with memory.
+
+Subtle impossible geometry.
+
+Dr. Morro-style environmental storytelling.
+
+Bright daylight liminality.
+
+The scene should feel emotionally warm rather than eerie.
+
+The emptiness should feel comforting.
+
+The surrealism should feel gentle.
+
+The abstraction should emerge gradually from the environment rather than appearing chaotic.
+
+Ultra-detailed environmental storytelling.
+
+Strong atmospheric depth.
+
+Volumetric white haze.
+
+Soft reflections.
+
+Dreamlike perspective.
+
+Memory-like architecture.
+
+Impossible but believable spatial relationships.
+
+Large-scale environment.
+
+Cinematic composition.
+
+High-quality anime illustration.
+```
+
+**📎 Requires:** Optional reference image — works best as pure environment.
+
+**💡 Why it works:** This is the most *poetic* prompt in the entire repo. The central conceit — `"the famous wave-pattern pavement begins normally near the viewer, but gradually loses geometric consistency as it stretches into the distance"` — is a brilliant rendering trick. It gives the model permission to render *partial accuracy*: photorealistic in foreground, gradually abstracting toward background. This mimics how human memory actually works (clear details up close, increasingly approximate in distant past). The detail `"streetlights ... as they recede into the distance, they become smaller and smaller until they resemble stars suspended inside the daytime sky"` is a single concrete impossibility that perfectly captures dream logic — scale violation rendered as a specific visual phenomenon. The framing `"a memory attempting to reconstruct itself"` is structurally fascinating: the space isn't *containing* a memory, it *is* the act of remembering. The `"emotional warmth rather than eerie"` directive is critical calibration — the prompt deliberately avoids the cold-empty-horror direction that liminal Brazilian coastal would otherwise drift toward. This prompt also showcases the *gradient abstraction* technique — the surreal quality emerges progressively across the image rather than being uniform.
+
+**🔧 Variations:** swap `Brazilian seaside` for `Mediterranean coastline in summer` or `1990s Japanese beach town with vending machines` for parallel cultural memory-spaces; tighten the gradient abstraction to one specific element (`"only the pavement pattern abstracts"`, `"only the towers duplicate"`) for cleaner surreal reads; add `"the sound of waves is absent — the ocean is silent"` to the negative space for stronger acoustic implication; change `bright daylight` to `late afternoon golden hour with long shadows from objects that have no visible source` for a more uncanny lighting variant; combine with the streetlights-as-stars detail extracted as standalone variation for use in other coastal prompts.
 
 ---
 
