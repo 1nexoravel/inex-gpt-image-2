@@ -40,6 +40,7 @@
   - [👗 Outfit Variants](#-outfit-variants)
   - [💪 Body Variants](#-body-variants)
   - [✏️ Sketches & Drawings](#️-sketches--drawings)
+  - [🤸 Dynamic Poses & Action](#-dynamic-poses--action)
   - [😂 Meme & Cursed](#-meme--cursed)
   - [📝 Typography & Poster Art](#-typography--poster-art)
   - [🇧🇷 Brazilian Heritage & Print Culture](#-brazilian-heritage--print-culture)
@@ -2225,6 +2226,189 @@ low quality, blurry, bad anatomy, wrong angle, incorrect expression, different p
 
 ---
 
+#### Bedroom Guitar Studio (Top-Down Musician)
+
+<img src="./assets/images/illustrations/outfits/rock001.webp" width="600" alt="Extreme bird's-eye view of an adult anime woman sitting on a wooden floor beside a bed, tuning a white electric guitar with headphones around her neck, laptop with DAW software and audio interface, cozy home studio">
+
+**Category:** Outfit Variants · **Tags:** `music` `guitar` `home-studio` `top-down` `birds-eye` `casual` `adult` `character-reference` `identity-lock`
+
+**📋 Prompt:**
+
+```
+Use the attached image strictly as the character identity reference. Preserve exactly the same face, hairstyle, hair color, eye shape, facial features, proportions, expression style, and overall recognizable anime identity from the reference image. Do not redesign or replace the character. Maintain the exact character appearance shown in the attached image.
+
+IMPORTANT: adult woman, age 25-30, fully mature adult, mature facial features, mature anatomy, adult proportions.
+
+Ultra detailed anime semi-realistic illustration of the same character from the reference image sitting on a polished wooden floor beside a bed, extreme bird's-eye view perspective, top-down camera angle almost directly overhead, dynamic diagonal composition.
+
+Long glossy hair identical to the reference character, highly detailed strands, realistic shine. Professional studio headphones resting around her neck.
+
+She is holding a white electric guitar, left hand adjusting the tuning pegs on the headstock while right hand rests naturally near the strings, appearing to tune or prepare for recording. Relaxed natural seated posture with crossed legs, barefoot, casual home clothing, comfortable home-studio atmosphere.
+
+Beside her is an open laptop displaying a professional digital audio workstation (DAW) and virtual guitar amplifier software, connected through cables to a compact audio interface on the floor. Multiple cables naturally scattered across the wooden floor, creating an authentic musician workspace.
+
+Large bed with soft white sheets occupies one side of the composition. Cozy bedroom studio environment, creative atmosphere, quiet evening mood, realistic interior details.
+
+Extreme top-down view, bird's-eye perspective, realistic wood grain floor texture, subtle reflections, cinematic indoor lighting, soft shadows, premium anime rendering, masterpiece quality, ultra detailed hair, realistic skin shading, detailed hands, realistic electronics, depth and perspective, ambient occlusion, global illumination, photorealistic lighting, sharp focus, high detail environment, professional musician setup, artistic and immersive composition.
+
+masterpiece, best quality, absurdres, ultra detailed, anime semi-realistic style, cinematic lighting, bird's-eye view, top-down perspective, highly detailed environment, realistic reflections, depth of field, premium illustration, natural dynamic pose (avoid T-pose, avoid A-pose), fully visible face, mature adult woman.
+
+Negative prompt: child, teen, loli, underage, immature body, baby face, low quality, blurry, bad anatomy, extra limbs, malformed hands, deformed fingers, distorted guitar, incorrect perspective, cropped body, flat lighting, low detail background, watermark, logo, text, jpeg artifacts, poorly drawn hands, poorly drawn face, different character, character redesign, different hairstyle, different face, T-pose, A-pose.
+```
+
+**📎 Requires:** An attached reference image — identity locked through face, hair, proportions.
+
+**💡 Why it works:** Two structural choices carry this prompt. First, the **extreme bird's-eye / top-down camera** is unusual and high-payoff — most anime illustrations default to eye-level or three-quarter angles, so explicitly requesting "almost directly overhead" produces a striking composition that reads as intentional art direction rather than a snapshot. The diagonal composition note prevents the overhead view from feeling static. Second, the prompt builds an **authentic environment through specific props** (DAW on laptop, audio interface, scattered cables, headphones around neck) — these details signal "real musician workspace" rather than "girl posing with guitar," which is the difference between believable and generic. The explicit `adult woman, age 25-30` block plus the matching negative-prompt terms (`child, teen, loli, underage`) is doing important age-anchoring work — GPT Image 2 sometimes drifts toward younger-looking anime faces by default, and this locks the output to mature proportions.
+
+**🔧 Variations:** swap `white electric guitar` for `acoustic guitar`, `bass guitar`, or `synthesizer/MIDI keyboard` for different musician setups; change `tuning pegs` action to `mid-strum with motion blur on the strumming hand` for a more active pose; replace `bedroom studio` with `professional recording booth with acoustic foam panels` for a pro-studio context; remove the top-down angle and use `low side angle at floor level` if you want a less experimental composition; tighten `casual home clothing` to a specific outfit if you want to combine with another aesthetic.
+
+---
+
+#### Japanese School Gyaru (Classic Style)
+
+<img src="./assets/images/illustrations/outfits/gyaru001.webp" width="600" alt="Anime gyaru schoolgirl with tanned skin, voluminous layered hair, glossy makeup, customized Japanese school uniform with oversized cardigan and loose socks, playful confident expression in a bright classroom">
+
+**Category:** Outfit Variants · **Tags:** `gyaru` `school-uniform` `japanese-fashion` `tanned` `playful` `classroom` `subculture` `character-design`
+
+**📋 Prompt:**
+
+```
+Create a high-quality anime-style illustration featuring a classic Japanese school gyaru girl as the central character.
+
+She has deeply tanned skin, long voluminous hair with layered styling, loose waves, soft highlights, and fashionable gyaru-inspired hair accessories. Her makeup follows authentic gyaru fashion: prominent eyelashes, subtle eyeliner, glossy lips, lightly contoured features, and bright expressive eyes. Her expression is playful, energetic, confident, and slightly teasing.
+
+She wears a modern Japanese school uniform customized with gyaru fashion sensibilities: an oversized cardigan loosely worn over a fitted blouse, a shortened skirt, loose socks, fashionable accessories, bracelets, rings, and a stylish school bag decorated with charms and personal touches. The outfit appears trendy, youthful, and expressive while remaining recognizable as a Japanese high school uniform.
+
+Her body language reflects classic gyaru mannerisms: relaxed posture, casual confidence, playful hand gestures, cheerful smile, expressive poses, peace signs, slightly tilted head, lively facial expressions, and an outgoing social personality. She exudes popularity, charisma, confidence, and a fun-loving attitude.
+
+The setting is an authentic contemporary Japanese high school. Bright afternoon sunlight streams through classroom windows, illuminating rows of desks, chalkboards, school bags, and colorful personal belongings. Additional elements may include hallways lined with lockers, outdoor school courtyards, rooftop areas, sports fields, vending machines, or club activity spaces. The atmosphere is lively, youthful, fashionable, and full of everyday school-life energy.
+
+The composition should emphasize the contrast between the structured school environment and the character's bold gyaru individuality. Include subtle details associated with gyaru culture such as decorated accessories, personalized school items, trendy nails, stylish makeup, and fashionable self-expression.
+
+Highly detailed anime artwork, professional illustration quality, expressive facial features, natural anatomy, dynamic pose, detailed eyes, detailed hair strands, soft lighting, vibrant colors, cinematic composition, depth of field, authentic Japanese school atmosphere, masterpiece quality.
+
+Important: natural dynamic pose, relaxed body language, avoid T-pose, avoid A-pose, face fully visible and unobstructed.
+```
+
+**📎 Requires:** No reference image needed — this is a character-design prompt that generates a gyaru archetype from scratch. (Attach a reference if you want to apply the gyaru style to a specific character.)
+
+**💡 Why it works:** This prompt is essentially a *subculture-fashion encyclopedia entry* translated into image-generation instructions. Gyaru (ギャル) is a specific, well-documented Japanese fashion subculture, and the prompt nails it by hitting every authentic signature: tanned skin, voluminous layered hair, glossy makeup, oversized cardigan, loose socks, decorated school bag. The reason it works is *specificity of cultural markers* — naming "loose socks" (a defining gyaru element from the late 90s/2000s) instead of generic "socks" anchors the output to genuine gyaru aesthetics. The directive to emphasize "contrast between the structured school environment and the character's bold gyaru individuality" gives the composition a thematic tension — gyaru fashion is fundamentally about rebellion within a uniform system, and stating that explicitly produces more meaningful framing. The behavioral details (peace signs, tilted head, outgoing personality) ensure the character *acts* gyaru, not just *dresses* gyaru.
+
+**🔧 Variations:** swap `classic gyaru` for specific sub-styles — `kogal` (lighter, schoolgirl-focused), `manba` (extreme tan with white makeup), `hime gyaru` (princess-style, frilly), or `agejo` (sexy/elegant gyaru); change `school uniform` to `casual street fashion in Shibuya 109` for an off-duty gyaru look; replace `bright classroom` with `purikura photo booth` or `Shibuya street at night with neon` for iconic gyaru settings; attach a character reference and add an identity-lock paragraph to apply gyaru style to your own character.
+
+---
+
+#### Gothic Gyaru (Elegant Dark Fusion)
+
+<img src="./assets/images/illustrations/outfits/gyarugoth001.webp" width="600" alt="Anime gothic gyaru schoolgirl blending tanned gyaru fashion with elegant gothic aesthetics — lace ribbons, crosses, chains, gothic school uniform, dramatic makeup, in an atmospheric gothic-influenced Japanese school">
+
+**Category:** Outfit Variants · **Tags:** `gyaru` `gothic` `school-uniform` `japanese-fashion` `dark-fashion` `subculture-fusion` `elegant` `character-design`
+
+**📋 Prompt:**
+
+```
+Create a high-quality anime-style illustration featuring a unique Gothic Gyaru schoolgirl as the central character, blending authentic Japanese gyaru fashion with elegant gothic aesthetics.
+
+She has lightly to deeply tanned skin, long voluminous hair styled with layered waves, dramatic volume, and fashionable gothic accessories. Her hair may be black, dark brown, platinum blonde, silver, or a combination of dark and light tones. She wears lace ribbons, black bows, gothic hair ornaments, small crosses, chains, roses, and elegant decorative accessories.
+
+Her makeup combines classic gyaru and gothic influences: long dramatic eyelashes, defined eyeliner, glossy lips, subtle dark eyeshadow, carefully styled eyebrows, and striking expressive eyes. Her expression is playful, confident, mischievous, and slightly mysterious, maintaining the outgoing charisma of a gyaru while adding a gothic aura.
+
+She wears a Japanese school uniform reimagined through gothic gyaru fashion. The outfit includes an oversized black cardigan or tailored gothic jacket, fitted blouse, pleated skirt with lace accents, loose socks or patterned stockings, platform loafers, chains, silver jewelry, rings, bracelets, chokers, lace gloves, and personalized accessories. The overall appearance is fashionable, rebellious, stylish, and distinctly Japanese.
+
+Her nails are carefully decorated with gothic-inspired nail art. Her school bag is customized with charms, chains, ribbons, gothic motifs, plush keychains, and fashionable decorations reflecting her personality.
+
+Her body language reflects authentic gyaru mannerisms: confident posture, playful teasing smile, expressive gestures, peace signs, casual leaning poses, energetic movement, and outgoing social confidence. At the same time, she carries an elegant gothic presence that feels dramatic, stylish, and refined rather than dark or sinister.
+
+The setting is an atmospheric Japanese high school with gothic influences. Sunlight filters through large classroom windows while dark decorative elements, ornate architecture, climbing ivy, old stone walkways, rose gardens, wrought iron details, stained-glass accents, and dramatic shadows create a romantic gothic atmosphere. The environment remains unmistakably a Japanese school while incorporating stylish gothic aesthetics.
+
+The composition should emphasize the contrast between youthful gyaru energy and elegant gothic sophistication. The character appears fashionable, charismatic, rebellious, trendy, and visually striking.
+
+masterpiece, best quality, highly detailed anime illustration, ultra detailed eyes, detailed hair strands, cinematic lighting, soft shadows, dramatic atmosphere, elegant gothic fashion, authentic gyaru fashion, Japanese school setting, dynamic composition, depth of field, professional character design, vibrant yet moody color palette.
+
+Important: natural dynamic pose, relaxed body language, expressive personality, face fully visible and unobstructed, avoid T-pose, avoid A-pose, avoid stiff mannequin-like posture.
+```
+
+**📎 Requires:** No reference image needed — generates a gothic-gyaru archetype. (Attach a reference + identity-lock paragraph to apply to a specific character.)
+
+**💡 Why it works:** This prompt's strength is in *balancing two competing aesthetics without letting either dominate*. Gyaru is bright, tanned, energetic, social; gothic is dark, dramatic, mysterious. The prompt explicitly resolves the tension with the line "maintaining the outgoing charisma of a gyaru while adding a gothic aura" and the critical calibration "dramatic, stylish, and refined rather than dark or sinister." That last phrase prevents the model from drifting into full goth (which would lose the gyaru energy) or horror. The fusion is sold through specific paired elements: tanned skin (gyaru) + crosses and chains (gothic), peace signs (gyaru) + lace gloves (gothic). The setting does the same fusion work — "Japanese school" (gyaru context) + "wrought iron, stained-glass, rose gardens" (gothic atmosphere). The directive to emphasize "contrast between youthful gyaru energy and elegant gothic sophistication" tells the model the *fusion itself* is the subject.
+
+**🔧 Variations:** shift the balance toward `EGL (Elegant Gothic Lolita) with subtle gyaru makeup` for a more gothic-dominant look, or `mostly gyaru with small gothic accents (just crosses and dark nails)` for a gyaru-dominant look; swap `Japanese school setting` for `gothic cathedral courtyard` or `Victorian-inspired café` for non-school gothic gyaru; change hair to a specific color from your reference; add `visual-kei influences` for a band-fashion edge.
+
+---
+
+#### Pastel Goth Gyaru (Crimson Cat Variant)
+
+<img src="./assets/images/illustrations/outfits/gyarugothpastel001.webp" width="600" alt="Pastel goth gyaru anime schoolgirl with black hair and crimson red streaks, fluffy cat ears, golden amber eyes, pastel purple gothic accessories, sitting on a classroom desk in dreamy pastel lighting">
+
+**Category:** Outfit Variants · **Tags:** `gyaru` `pastel-goth` `cat-ears` `school-uniform` `kawaii-gothic` `pastel` `character-reference` `identity-lock`
+
+**📋 Prompt:**
+
+```
+masterpiece, best quality, ultra detailed anime illustration, highly detailed character design, pastel goth gyaru schoolgirl, authentic Japanese gyaru fashion mixed with pastel goth aesthetics, fashionable and rebellious, playful and mischievous personality
+
+same character from reference image, black hair with vivid crimson red streaks, long voluminous layered hair, soft waves, dramatic volume, fluffy cat ears with white inner fur, golden amber eyes, lightly tanned skin, youthful anime face, glossy lips, long eyelashes, subtle eyeliner, soft pink blush, detailed hair strands
+
+pastel goth fashion, oversized black cardigan decorated with pastel purple accessories, lace ribbons, bows, chains, heart charms, crosses, bat motifs, cute gothic decorations, layered silver jewelry, choker necklace, rings, bracelets, decorated nails, gothic school uniform, white blouse, plaid lavender skirt, lace trim, garter straps, one fishnet stocking, one striped pastel thigh-high sock, platform loafers
+
+customized school bag covered with chains, pastel charms, plush keychains, gothic cute mascots, heart accessories, ribbons, kawaii gothic details
+
+playful teasing smile, peace sign gesture near face, confident gyaru attitude, sitting casually on a classroom desk, relaxed natural pose, expressive body language, energetic and charismatic
+
+pastel goth classroom, Japanese high school classroom, soft pink and lavender sunlight, dreamy atmosphere, pastel decorations, gothic posters, hearts, bats, crosses, cute gothic accessories, desks and school supplies, bubble tea on desk, romantic pastel lighting
+
+cinematic lighting, soft shadows, depth of field, vibrant pastel purple color palette, pink highlights, dreamy glow, sparkling details, highly detailed eyes, professional anime artwork, beautiful composition, dynamic camera angle, visually striking, elegant yet cute
+
+face fully visible, unobstructed face, natural dynamic pose, avoid T-pose, avoid A-pose, avoid stiff posture
+```
+
+**📎 Requires:** An attached reference image — identity locked through specific listed traits (black hair with crimson streaks, cat ears, golden amber eyes). **Edit the trait list to match your reference.**
+
+**💡 Why it works:** This is the third entry in a gyaru progression (classic → gothic → pastel goth), and it shows how the same subculture can be re-skinned with a different color philosophy. Pastel goth is a real aesthetic — gothic motifs (crosses, bats, chains) rendered in soft pastel colors (lavender, pink) instead of black. The prompt nails it by pairing dark motifs with pastel execution: "crosses, bat motifs" + "pastel purple accessories, soft pink blush, lavender skirt." The **asymmetric legwear** detail (`one fishnet stocking, one striped pastel thigh-high sock`) is an authentic pastel-goth / decora styling signature — mismatched socks are a deliberate fashion choice in these subcultures, and specifying it adds credibility. Unlike the previous two gyaru prompts (which generate from scratch), this one is written as an **identity-locked tag-style prompt** with specific character traits, showing the booru-tag prompt structure that GPT Image 2 also handles well. The "bubble tea on desk" is a small but effective contemporary detail that grounds the scene.
+
+**🔧 Variations:** swap the pastel palette (`mint green + lavender`, `baby blue + pink`, `peach + cream`) for different pastel goth color schemes; change `crimson red streaks` to match your reference's hair; remove `cat ears` if your character doesn't have them; replace `classroom` with `bedroom with pastel goth decor` or `themed café`; shift toward `pastel goth + decora` by adding more layered accessories and hair clips; tighten to `menhera-kei` (medical/cute aesthetic) by adding syringe motifs and bandage accessories.
+
+---
+
+#### Sweet Lolita Chocolate Theme (Crimson Cat Variant)
+
+<img src="./assets/images/illustrations/outfits/gyarugothsweet001.webp" width="600" alt="Anime character in elaborate chocolate-themed Sweet Lolita fashion — rich brown dress with cream accents, lace, teddy bear and dessert motifs, decorative headdress, cat ears, in a warm classroom transformed into a sweet paradise">
+
+**Category:** Outfit Variants · **Tags:** `sweet-lolita` `lolita-fashion` `chocolate-theme` `cat-ears` `kawaii` `frills` `character-reference` `identity-lock`
+
+**📋 Prompt:**
+
+```
+Anime-style illustration of the exact character from the reference images. Preserve the same identity, face shape, eye color, hairstyle, black hair with vivid red highlights, cat ears with white inner fur and ribbons, youthful appearance, and overall character design.
+
+The character is dressed in an elaborate Sweet Lolita fashion outfit with a luxurious chocolate theme. Rich chocolate brown dress with ivory cream accents, multiple layers of lace, frills, ribbons, bows, heart-shaped decorations, chocolate-inspired patterns, teddy bear prints, candy motifs, dessert accessories, elegant apron details, pearl embellishments, and delicate embroidery.
+
+Large decorative chocolate-colored headdress with lace trim, ribbon ornaments, heart charms, miniature dessert accessories, cute teddy bear decorations, and matching sweet lolita jewelry. Elegant lace cuffs, frilled sleeves, decorative stockings, cute platform shoes, and highly detailed accessories.
+
+The character carries a fashionable chocolate-themed handbag decorated with teddy bear charms, ribbons, heart-shaped ornaments, miniature sweets, plush keychains, and luxurious lolita details.
+
+Expression is cheerful, playful, charming, cute, and slightly teasing. Bright sparkling eyes, warm smile, energetic personality, peace sign pose. Face fully visible and unobstructed.
+
+Warm pastel chocolate color palette with brown, cream, caramel, cocoa, soft pink, ivory, and rose-gold accents.
+
+Setting: romantic Japanese classroom transformed into a Sweet Lolita chocolate paradise. Sunlight streaming through large windows, warm golden afternoon lighting, heart decorations, ribbons, teddy bears, chocolate-themed decorations, cute desserts, elegant furniture, cozy atmosphere, sparkling dust particles, soft glow.
+
+Highly detailed fabric textures, intricate lace, layered frills, embroidered details, luxury fashion design, premium accessories, realistic folds, beautiful hair strands, ultra detailed eyes.
+
+masterpiece, best quality, ultra detailed, highly detailed anime illustration, professional character design, cinematic lighting, soft warm sunlight, depth of field, gorgeous composition, adorable aesthetic, sweet lolita fashion, chocolate theme, elegant fashion illustration, luxury details, vibrant colors, dynamic composition.
+
+Important: natural dynamic pose, relaxed body language, expressive personality, face fully visible, looking at viewer, avoid T-pose, avoid A-pose, avoid stiff mannequin pose, no obscured face, no excessive shadows on face.
+```
+
+**📎 Requires:** An attached reference image — identity locked (black hair with red highlights, cat ears with ribbons). **Edit the trait list to match your reference.**
+
+**💡 Why it works:** This prompt demonstrates **themed Lolita fashion** — Sweet Lolita (甘ロリ) is a real, codified fashion movement, and "themed" coordinates (where the whole outfit follows a single motif) are a genuine practice in the community. The chocolate theme is executed through consistent material language: "chocolate brown dress, ivory cream accents, caramel, cocoa" for the palette, plus "teddy bear prints, candy motifs, dessert accessories" for the motif. This thematic consistency is what separates authentic Lolita from generic frilly dresses — every element reinforces one concept. The prompt's color discipline is notable: it specifies a full palette (brown, cream, caramel, cocoa, soft pink, ivory, rose-gold) that stays within the chocolate-dessert family, which prevents the model from adding random colors that would break the theme. The "classroom transformed into a chocolate paradise" setting extends the theme into the environment, making the whole image cohesive. Like the pastel goth prompt, this uses identity-lock to apply the fashion to a specific recurring character (the crimson-streak cat girl appears in both).
+
+**🔧 Variations:** swap the `chocolate theme` for other classic Sweet Lolita themes — `strawberry/berry theme` (red + white + green), `tea party theme` (pastel + teacups + roses), `celestial theme` (navy + gold stars + moons), `library/academia theme` (brown + book motifs); change `Sweet Lolita` to other Lolita substyles — `Gothic Lolita` (black + crosses), `Classic Lolita` (muted, mature, floral), `Country Lolita` (gingham + straw hats); remove `cat ears` if not applicable; replace the classroom with `elegant tea room` or `pâtisserie interior` to match the dessert theme more literally.
+
+---
+
+
 ### 💪 Body Variants
 
 Body-type modifier prompts designed to be **combined with other prompts** (typically Outfit Variants or full scene prompts). These describe anatomical proportions and physique only — paste them alongside a scene prompt to shape the character's body type in the output.
@@ -2401,6 +2585,45 @@ logo
 
 ---
 
+### 🤸 Dynamic Poses & Action
+
+Prompts focused on extreme dynamic posing, dramatic foreshortening, and high-energy action — sports manga energy, explosive movement, exaggerated perspective. The pose and kinetic energy are the subject, with environment and effects amplifying the motion.
+
+---
+
+#### Billiards Prodigy (Sports Manga Miracle Shot)
+
+<img src="./assets/images/illustrations/poses/002.webp" width="600" alt="Anime character reimagined as a wild genius billiards prodigy mid-impossible-shot, stretched dramatically across a pool table with explosive kinetic energy, chalk dust, motion trails, and dramatic spotlights in classic sports manga style">
+
+**Category:** Dynamic Poses & Action · **Tags:** `action` `sports-manga` `billiards` `dynamic-pose` `foreshortening` `kinetic` `dramatic` `character-reference` `identity-lock`
+
+**📋 Prompt:**
+
+```
+Analyze the uploaded illustration carefully and redraw the character from the attached image as a wild genius billiards prodigy inspired by classic Japanese sports manga energy, recreating the dramatic atmosphere of a legendary impossible miracle shot.
+
+Preserve the attached character's face, very large expressive eyes, hairstyle, hair color, halo, outfit motifs, proportions, colors, personality, and worldbuilding, while reinterpreting them as a unique fantasy professional billiards player. The billiards outfit, cue stick, gloves, shoes, accessories, patterns, colors, and silhouette must naturally reflect the original artwork's atmosphere, symbols, motifs, and emotional tone.
+
+Low-angle dynamic composition, intense determined eyes, fearless grin, rough powerful stance, body stretched across the billiards table, dramatic foreshortening, one hand planted firmly on the felt, cue extended forward with explosive momentum. Expression should feel bold, mischievous, confident, and unstoppable, as if the character is about to perform an impossible miracle shot that defies logic.
+
+Dynamic natural pose only, avoid T-pose and A-pose completely. Powerful body movement, exaggerated manga action, extreme perspective, explosive kinetic energy.
+
+The cue ball launches with overwhelming force, billiard balls scattering across the table like meteorites, shockwaves of chalk dust, sparks, flying felt fibers, dramatic motion trails, speed lines, impact bursts, swirling particles, shattered tension in the air.
+
+Cinematic billiards hall illuminated by intense spotlights, deep shadows, sharp rim lighting, high contrast, dramatic reflections on polished balls, dynamic anime sports poster composition. The entire scene should feel like the climactic final shot of a legendary sports manga match.
+
+Ultra detailed, premium anime illustration quality, masterpiece, absurdres, highly detailed eyes, dynamic lighting, cinematic composition, dramatic perspective, action-packed sports manga energy, no text, no watermark, fully visible face, uncensored face, no spectators, no background characters, focus entirely on the player and the shot.
+```
+
+**📎 Requires:** An attached reference image — the prompt reinterprets the character's existing motifs (outfit, colors, halo, symbols) into a billiards-player redesign rather than just dropping them at a pool table.
+
+**💡 Why it works:** The opening instruction `"Analyze the uploaded illustration carefully and redraw the character... while reinterpreting them as a unique fantasy professional billiards player"` is the key move — it's not "put this character at a pool table," it's "translate this character's entire design language into a billiards-player version." That distinction produces a coherent themed redesign (the prompt explicitly asks for the cue, gloves, and outfit to "reflect the original artwork's atmosphere, symbols, motifs"). The **sports manga genre** is invoked through specific kinetic vocabulary: "speed lines," "impact bursts," "motion trails," "chalk dust shockwaves," "billiard balls scattering like meteorites." These are literal sports-manga visual conventions (think the climactic panels of any Shonen Jump sports title). The dramatic foreshortening + low-angle + "body stretched across the table" gives the model concrete extreme-perspective instructions that produce the dynamic compositions sports manga is known for. The "no spectators, no background characters, focus entirely on the player and the shot" directive is important — it prevents the model from filling the billiards hall with a distracting crowd, keeping all visual energy on the hero moment.
+
+**🔧 Variations:** swap `billiards` for any sport — `basketball mid-dunk`, `tennis impossible serve`, `table tennis smash`, `racing kart drift`, `fencing lunge` — the sports-manga energy structure transfers; change `legendary impossible miracle shot` to `exhausted final effort` for a different emotional beat; replace `intense spotlights` with `outdoor stadium under floodlights` for team-sport contexts; tighten the manga-era reference (`1990s Shonen Jump style`, `modern Ufotable-anime polish`, `retro 1980s sports anime`) for different rendering aesthetics; remove the `halo` reference if your character doesn't have one.
+
+---
+
+
 ### 😂 Meme & Cursed
 
 Silly, playful, or cursed transformations where the character becomes something it shouldn't — food, household objects, hybrid creatures. The aesthetic embraces absurdity and the joke is the point.
@@ -2481,6 +2704,79 @@ nsfw
 **🔧 Variations:** swap `shokupan loaf` for `croissant`, `bagel`, `melon-pan` (very on-theme with anime), `donut`, or `dumpling` for different food-hybrid creatures; change `cozy bakery atmosphere` to `kitchen counter at night` for a cuter sleepy-snack vibe; replace `cat paws underneath` with `tiny bird feet` or `frog legs` for different absurd anatomy combinations; tighten the cursed-cute balance by removing `cat ears` if your reference character doesn't have them.
 
 ---
+
+#### Manuka Raw Honey Drink (Beverage Ad Parody)
+
+<img src="./assets/images/illustrations/meme/manuka_drink001.webp" width="600" alt="Ultra realistic commercial beverage photography of an orange aluminum can labeled MANUKA RAW HONEY with condensation, honeycomb, ice cubes, and a dramatic honey splash on a golden-orange background">
+
+**Category:** Meme & Cursed · **Tags:** `meme` `product-mockup` `beverage-ad` `commercial` `photorealistic` `branding` `honey` `json-prompt`
+
+**📋 Prompt:**
+
+```
+Create an image:
+{
+  "prompt": "Ultra realistic commercial beverage photography of a sleek orange aluminum can labeled 'MANUKA RAW HONEY', local: made in brazil, 473ml, energetic, standing upright in the center, covered in cold condensation droplets, surrounded by honeycombs of manuka honey, and transparent ice cubes, dramatic honey juice splash exploding around the can, vibrant golden-orange gradient background, cinematic lighting, macro detail, glossy reflections, dynamic composition, premium soda advertisement aesthetic, shallow depth of field, highly detailed liquid physics, refreshing atmosphere, studio quality, sharp focus, realistic textures, luxury beverage campaign style, girl with smug face",
+  "aspect_ratio": "4:5",
+  "style": "photorealistic",
+  "camera": "Canon EOS R5, 85mm macro lens, f/2.0",
+  "lighting": "high contrast studio lighting with backlit liquid splash",
+  "quality": "ultra detailed"
+}
+```
+
+**📎 Requires:** No reference needed for the can itself. The `girl with smug face` clause at the end optionally incorporates a character — attach a reference if you want a specific character.
+
+**💡 Why it works:** This prompt demonstrates the **JSON-structured prompt format** that GPT Image 2 parses surprisingly well. Instead of prose, the entire request is a JSON object with named fields (`prompt`, `aspect_ratio`, `style`, `camera`, `lighting`, `quality`). The model reads these as explicit parameters, which produces more controlled output than burying the same info in a paragraph. The beverage-ad genre is nailed through *specific product-photography vocabulary*: "condensation droplets," "liquid physics," "backlit liquid splash," "shallow depth of field," "macro detail." These are real commercial-photography techniques, and naming them pulls the model toward authentic advertisement aesthetics. The camera spec (`Canon EOS R5, 85mm macro, f/2.0`) is a concrete optical anchor that reinforces the photoreal look. The cursed/meme element is the absurd premise itself — turning honey into an energy drink, plus the deadpan "girl with smug face" tacked onto an otherwise serious product shot, which is what lands the joke.
+
+**🔧 Variations:** swap `MANUKA RAW HONEY` for any product name to mock up different fake brands; change `orange aluminum can` to `glass bottle`, `tetra pak`, or `energy drink slim can` for different packaging; replace `honey + honeycomb` with other flavors (`açaí`, `guaraná`, `cupuaçu` for Brazilian flavors); adjust `aspect_ratio` to `1:1` for social-media-ad format or `9:16` for story/reels format; remove `girl with smug face` for a clean product-only shot, or expand it to `character holding the can triumphantly` for a mascot-style ad.
+
+---
+
+#### Manuka Honey Typography Poster (Conceptual)
+
+<img src="./assets/images/illustrations/meme/manuka_drink002.webp" width="600" alt="Premium conceptual typography poster for the title MANUKA HONEY with custom letterforms as the dominant visual structure, editorial museum-quality graphic design with restrained color system and risograph grain">
+
+**Category:** Meme & Cursed · **Tags:** `typography` `poster` `conceptual` `editorial` `branding` `graphic-design` `templated` `input-text`
+
+**📋 Prompt:**
+
+```
+Create ONE finished premium conceptual typography poster for the exact title:
+
+"[INPUT_TEXT]"
+
+Single poster only. No moodboard, grid, presentation board, mockup, captions, prompt text, process sheet, or sample labels.
+
+The title "[INPUT_TEXT]" must be the dominant visual structure of the poster: huge, readable, powerful, and spelled exactly. Do not translate, shorten, replace, or misspell it. Do not add other large readable text. Optional micro catalog text is allowed only if it stays subtle and secondary.
+
+Silently interpret the title's meaning, mood, cultural aura, symbolic associations, psychological tension, and visual rhythm. Turn that interpretation into one strong visual metaphor.
+
+Typography is the hero. Design custom-looking letterforms whose weight, width, contrast, spacing, rhythm, distortion, negative space, edge quality, and ink texture express the temperament of the title. The type should feel intentionally designed, not like a default font.
+
+If "[INPUT_TEXT]" refers to a widely known person, make a large editorial portrait or full / half-body figure a major visual presence, occupying roughly 40-70% of the composition. The figure should feel recognizable through aura, posture, styling, era, expression, lighting, and symbolic atmosphere, but should not copy a specific existing photograph, official poster, campaign image, logo, slogan, or copyrighted composition. The portrait must interact with the typography: overlapping the letters, emerging from them, being framed by them, casting shadows on them, breaking through them, or being partially hidden behind them.
+
+For all other titles, use a human figure, landscape, object, or atmospheric setting only when it strengthens the meaning. It must interact with the typography and deepen the concept, not decorate it.
+
+Use a rich but restrained 4-6 color system matched to the theme: dominant background color, primary typography color, figure / landscape tone, emotional accent color, muted support color, and subtle paper / ink texture tone. Avoid flat black-white-red defaults unless conceptually necessary.
+
+Composition style: high-end editorial poster, museum-quality graphic design, dramatic scale, strong hierarchy, few elements, intelligent whitespace, bold flat color areas, sharp cropping, silkscreen / lithograph / risograph grain, paper fibers, subtle ink imperfections, refined visual tension.
+
+The final image should feel like a complete visual sentence: the title, the figure or setting, the color, and the typography explain each other.
+
+Avoid generic word art, glossy 3D lettering, random icons, stock-photo realism, cluttered collage, excessive grunge, tourist clichés, official logos, copied slogans, copied campaign aesthetics, unrelated text, and misspelled typography.
+
+INPUT_TEXT：Manuka Honey
+```
+
+**📎 Requires:** No reference image — this is a templated typography generator. Replace `INPUT_TEXT` with any title.
+
+**💡 Why it works:** This is one of the most sophisticated *templated* prompts in the collection — the `[INPUT_TEXT]` placeholder makes it a reusable poster-generation engine for any title. Its power comes from treating **typography as the subject rather than decoration**: "Typography is the hero" plus the detailed list of typographic properties (weight, width, contrast, spacing, distortion, negative space, ink texture) forces the model to design intentional letterforms instead of slapping a default font on an image. The "silently interpret the title's meaning" instruction is clever — it tells the model to do conceptual work (translate meaning → visual metaphor) before rendering, which produces posters where form expresses content. The conditional branch for famous-person titles (with explicit anti-copyright guardrails: "should not copy a specific existing photograph, official poster, logo, copyrighted composition") is a thoughtful inclusion that keeps outputs original. The restrained 4-6 color system instruction prevents the model's tendency toward over-saturated chaos. The strong negative list (no moodboard, no grid, no mockup, no process sheet) is critical — without it, the model often outputs a *presentation board showing multiple poster options* instead of one finished poster.
+
+**🔧 Variations:** replace `INPUT_TEXT: Manuka Honey` with literally any title — a band name, movie title, single word, person's name, abstract concept; change the grain style (`silkscreen` / `lithograph` / `risograph`) for different print aesthetics; specify a design-movement anchor (`Swiss International Style`, `1960s psychedelic poster`, `Bauhaus`, `Saul Bass`) for stronger stylistic direction; tighten the color system to specific hex values for brand-matched output; adjust the figure percentage (40-70%) up or down depending on whether you want type-dominant or image-dominant composition.
+
+---
+
 
 ### 📝 Typography & Poster Art
 
@@ -2698,6 +2994,46 @@ IMPORTANT:
 **🔧 Variations:** swap `rainbow crystal` for `obsidian black mirror`, `liquid mercury`, or `frozen ice sculpture` for different material aesthetics with the same poster structure; change `shopping mall atrium` to `airport terminal exhibition` or `art biennale pavilion` for different commercial contexts; replace the example text strings with your own brand/concept for a real promotional mockup; tighten `low-poly faceted` to `Swarovski crystal precision faceting` for jewelry-grade detail.
 
 ---
+
+#### Watercolor Travel Poster (Couple Exploring a City)
+
+<img src="./assets/images/illustrations/nordeste/nordeste019.webp" width="600" alt="Delicate watercolor and ink travel poster of two characters walking hand-in-hand through a historic city street adapted from a reference location, with handwritten calligraphy title, rain-reflected cobblestones, and travel-diary aesthetic">
+
+**Category:** Typography & Poster Art · **Tags:** `travel-poster` `watercolor` `ink-sketch` `couple` `cityscape` `templated` `location-adaptive` `multi-character`
+
+**📋 Prompt:**
+
+```
+LOCATION = the location depicted in the reference image
+CHARACTERS = the characters depicted in the reference image
+
+Elegant travel poster featuring CHARACTERS exploring LOCATION as the central subjects. Both characters walk naturally side-by-side while holding hands, enjoying the atmosphere of the city. Preserve each character's recognizable facial features, hairstyle, hair color, clothing design language, accessories, proportions, silhouette, and overall visual identity from the reference images.
+
+Adapt the environment specifically to the real-world location shown in the reference image, accurately reproducing its architecture, street layout, vegetation, lighting, urban details, cultural atmosphere, landmarks, storefronts, signage style, pavement materials, and local character.
+
+Delicate watercolor and ink sketch illustration, hand-drawn architectural linework, soft pastel washes, architectural journal sketch style, travel diary aesthetic, visible white paper texture, premium stationery art, refined ink outlines, subtle paint splashes, elegant composition, museum-quality watercolor rendering, editorial travel illustration, sophisticated perspective drawing, high-detail watercolor rendering.
+
+Historic urban streetscape with detailed architecture, charming cafés, outdoor terraces, flower boxes, inviting storefronts, decorative balconies, pedestrians strolling, cozy urban storytelling, atmospheric perspective, layered watercolor washes, ink-and-watercolor interplay, visible paper grain, old-world charm, travel magazine cover quality.
+
+The street surface reflects recent rainfall, creating beautiful reflections of warm street lamps and illuminated storefronts. Natural pedestrian activity, lively but relaxed atmosphere, authentic local character, inviting travel destination mood.
+
+Include an elegant handwritten calligraphy-style title area at the top featuring the name of LOCATION as part of the poster design. Integrate decorative travel-poster typography naturally into the composition. If text generation quality is unreliable, use decorative calligraphic title shapes or stylized placeholder lettering.
+
+Light and airy atmosphere, muted earthy palette with selective warm highlights, premium illustrated travel-poster design, masterpiece, ultra-detailed, 8K quality, travel book cover illustration, watercolor and ink masterpiece, elegant composition, no watermark, no logo.
+
+Natural expressive poses for all characters, walking hand-in-hand, interacting naturally with each other and the environment, dynamic body language, subtle movement in clothing and hair, candid travel photography feeling translated into watercolor illustration.
+
+Avoid T-pose, avoid A-pose, avoid stiff standing poses, avoid mannequin-like posture, avoid character sheets, avoid reference-sheet presentation, avoid isolated characters on blank backgrounds.
+```
+
+**📎 Requires:** An attached reference image — used for BOTH the characters AND the location. The prompt reads `LOCATION` and `CHARACTERS` from the reference. Works with one or two characters.
+
+**💡 Why it works:** This prompt uses **semantic variables** (`LOCATION` and `CHARACTERS` defined at the top as "the X depicted in the reference image") to make a single template adaptable to any place and any characters. Rather than hardcoding a city, it instructs the model to *read the location from the reference and accurately reproduce its specific architecture, signage, pavement, and local character* — which means the same prompt produces a Paris poster, a Recife poster, or a Tokyo poster depending on the input. The watercolor-and-ink travel-diary aesthetic is anchored through specific media vocabulary ("ink-and-watercolor interplay, visible paper grain, architectural journal sketch style"). The rain-reflection detail ("street surface reflects recent rainfall") adds the single atmospheric element that elevates travel illustrations — wet streets reflecting warm lights are a classic travel-art device. The title-handling instruction is pragmatic: it asks for calligraphy text but provides a fallback ("if text generation quality is unreliable, use decorative calligraphic title shapes") — acknowledging that AI text rendering is unreliable and giving the model permission to fall back to decorative lettering shapes rather than producing garbled text.
+
+**🔧 Variations:** swap the `watercolor and ink` medium for `colored pencil sketch`, `gouache travel poster`, or `vintage 1950s lithograph travel poster` for different illustration styles; change `walking hand-in-hand` to `sitting at a café terrace` or `looking at a map together` for different couple interactions; replace `recent rainfall reflections` with `golden hour warm light` or `early morning mist` for different atmospheres; use a single character reference for a solo-traveler version; specify a famous location directly in the prompt (overriding the reference) if you want a specific city like `Lisbon's Alfama district` or `Olinda's colorful historic center`.
+
+---
+
 
 ### 🇧🇷 Brazilian Heritage & Print Culture
 
