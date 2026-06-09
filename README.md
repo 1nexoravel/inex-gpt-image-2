@@ -1058,7 +1058,7 @@ masterpiece, best quality, ultra detailed anime illustration, fisheye perspectiv
 
 ---
 
-#### Tiny Character Under a Meteor Shower (16:9)
+#### Cosmic Solitude (16:9)
 
 <img src="./assets/images/illustrations/fantasy/fantasy002.webp" width="600" alt="Tiny character beneath an enormous cosmic sky filled with meteor trails, ultra-wide 16:9 cinematic composition">
 
